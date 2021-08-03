@@ -1,0 +1,698 @@
+<!DOCTYPE html><html lang="en" author="Ankit_Saikia" date="16/07/2021">
+    <head>
+        <title>BCA-webDoc-2021 | ANKITSAIKIA</title><meta name="viewport" content="width=device-width, user-scalable=no"/>
+        <meta property="author" content="Ankit_Saikia"/><meta name="dateCreated"content="16/07/2021"/>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+            @media (min-width:1024px){
+                body{font-size:1em !important;}p{font-size:1em !important;}h1,h2,h3,h4,h5{font-size:2em !important;}
+                table,th,td,tr{font-size:18px !important;}svg{width:2em !important;height:2em !important;}.clearfix{margin:5% !important;}
+                .dropdown:hover .dropdown-content{display:block !important;}.top-banner{left:42vw !important;top:1vw !important;}
+            }/*desktop- 1024 x 768 - 1920 x 1080
+                mobile- 360 x 640 - 414 x 896 
+                tablets- 601 x 962 - 1280 x 800 */
+                /*page plan- 
+                topic-item-content.*/
+        </style>
+        <style>/*font-family: 'Shadows Into Light', cursive;*/
+            .dark-mode{background-color:black;color:white;}.dark-mode #topbartext h2{color:white;}#topbartext h2{color:black;}h1{font-size: 16px;}h2{font-size:14px;}h3{font-size:12px;}h4{font-size:10px;}.bordered{border:1px solid green;padding:10px 0 10px 0;text-align:center;position:relative;}
+            .container{margin:100px 20px 100px 20px;}.center{text-align:center;}.row{display:inline-block;}.up{text-transform:uppercase;}#menu h2{font-size:16px;}.imp{text-transform:uppercase;}.hide{display:none;}.center-block{text-align:center;margin:0 12% 0 12%;}.up-cap{text-transform:capitalize;}
+            .footer-container{margin-top: 150px;}#menu{background-color:rgb(17, 180, 131);}a{text-decoration:none;color:inherit;}.lightyellow{background-color:rgb(168, 168, 60);color:black;}topic{background-color:pink;color:black;font-weight:bold;font-size:18px;}
+            #navigation{margin-top:-10px;margin-left:-10px;margin-right:-10px;width:101%;font-family:Arial,sans-serif !important;position:fixed;top:0;z-index: 5;}#footer{margin-bottom:0;}green{color:green;}orange{color:orange;}.code{margin:18px 0 18px 0;}
+            .top-banner{display:inline-block;font-size:2em;font-weight:bold;letter-spacing:4px;position:absolute;top:2vw;left:25vw;} .clearfix{margin:10%;} #source-char tr,td{border:none !important;}#author{font-family: 'Shadows Into Light', cursive;}small{font-size:12px;letter-spacing:0 !important;}
+           #navigation red{color:red;border:1px solid black;border-radius:50%;background-color:black;} small{background-color:white;border:3px solid white;}.dark-mode small{background-color:black;border:3px solid black;}
+        </style>
+        <style>
+            #detailed{margin:5rem 0 5rem 0; display:none;} #detailed .no{background-color:red;color:white;} #detailed .yes{background-color:green;color:black;}#detailed .yes-50{background-color:rgb(63, 241, 101);color:black;}#detailed .no-50{background-color:rgb(253, 124, 73);color:white;}
+            table{width:100%;font-size: 12px;border-collapse:collapse;} tr,th,td{border:solid 1px !important;padding: 4px 0 4px 0 !important;}
+        </style>
+        <style>
+            .dropdown {background-color: transparent;color: white;padding: 16px;font-size: 16px;border: none;}.dropdown {position: relative;display: inline-block;}
+            .dropdown-content {position: absolute;background-color: rgb(214, 72, 72);min-width: 280px;box-shadow: 0 8px 16px 0 black;z-index: 5;}
+            .dropdown-content a {color: black;font-weight: bold;padding: 12px 16px;text-decoration: none;display: block;}
+            .switch {position: relative;display: inline-block;width: 40px;height: 20px;}.switch input {opacity: 0;width: 0;height: 0;}
+            .slider {position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;background-color: red;-webkit-transition: .4s;transition: .4s;}
+            .slider:before {position: absolute;content: "";height: 15px;width: 15px;left: 4px;bottom: 2px;background-color: black;-webkit-transition: .4s;transition: .4s;}
+            input:checked + .slider {background-color: #2196F3;}input:focus + .slider {box-shadow: 0 0 1px #2196F3;}input:checked + .slider:before {-webkit-transform: translateX(17px);-ms-transform: translateX(17px);transform: translateX(17px);}
+            .slider.round {border-radius: 30px;}.slider.round:before {border-radius: 50%;}
+            #modech{position:absolute;right:20px;top:20px;}#modech .center {text-align: center;border: 3px solid black;}.dark-mode #modech .center {text-align: center;border: 3px solid white;}.clearfix::after {content: "";clear: both;display: table;}
+        </style>
+        <style>
+            #home h1::selection{background:yellow;color:black;}
+            #home h1{font-size:15vw !important;;letter-spacing:1px;}
+            #home red{color:red;}
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/androidstudio.min.css">
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <style>
+            pre code{font-size: 16px !important;margin: 10px 8px 10px 8px !important;}
+        </style>
+        <!--
+        <style>
+            /*code testing completion easy maker--------table updater-------
+                when this style script is active, no other functions or
+                buttons can work except those which point to external sources.*/
+            #detailed {display:block !important;} #home{display: none !important;} #vlink1{display: none !important;}
+            #vlink2 {display: none !important;} #vlink3{display: none !important;} #vlink4{display: none !important;}
+            #vlink5 {display: none !important;} #comingsoon{display: none !important;}
+        </style>
+    -->
+    </head>
+
+    <body class="dark-mode">
+
+        <div id="navigation">
+            <div id="menu">
+            <div class="dropdown">
+            <div id="topbartext"><a href="#menu-nav"onclick="menut();"><svg xmlns="http://www.w3.org/2000/svg" width="30"class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></a></div>
+            <div class="dropdown-content hide" style="text-transform: capitalize;"id="menu-content">
+              <a href="#content0"onclick="home();"class="imp" style='display:inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="white" class="bi bi-house" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/></svg></a> 
+              <a href="https://chat.whatsapp.com/KsWgfKDffIKDVWs3iMytkw" style="display: inline-block;"> <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></a>
+              <a href='#attendace' onclick="tablelink();" style='display: inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="white" class="bi bi-table" viewBox="0 0 16 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/></svg></a>
+              <a href='#youtube' style='display: inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="35" fill="black" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg></a>
+              <a href="#content1" onclick="vlink1();">Digital Logic</a>
+              <a href="#content2" onclick="vlink2();">Data Structure and Algorithms</a>
+              <a href="#content3" onclick="vlink3();">C++</a>
+              <a href="#content4" onclick="vlink4();">Mathematics</a>
+              <a href="#content5" onclick="vlink5();">Accounting and Finance Management</a>
+              <a href='#extraa'style='display:inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="yellow" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+              <a href="#musical"style='display: inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="blue" class="bi bi-music-note-list" viewBox="0 0 16 16"><path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/><path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/><path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/><path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/></svg></a>
+            </div>
+            </div>
+            <div class="top-banner"><red>W</red>ebDev<small>080221</small></div>
+            <label class="switch" id="modech"><input type="checkbox" onclick="mode()"><span class="slider round"></span></label>
+            </div>
+        </div>
+
+        <div class='clearfix'></div>
+
+<section id='mainhtmlpart' onclick='menuH();'>
+        <section id="home">
+            <div class="container center up">
+                <h1>|<br>personel<br><red>space</red><br><orange>wanted</orange><br>|</h1>
+            </div>
+        </section>
+
+        <section id="vlink1"style="display:none;"><!--digital logic-->
+            <div class="center up"><h1 style="letter-spacing:3px;">digital logic</h1></div>
+            <div class="container">
+                  
+            </div>
+        </section>
+
+        <section id="vlink2"style="display:none;"><!--data structures and algorithms-->
+            <div class="center up"><h1 style="letter-spacing:3px;">Data structures and algorithms</h1></div>
+            <div class="container">
+                <p>
+                    <topic>Data : </topic>Data is represented by the values held temporarily in the program's data area or recorded permanently on a file. 
+                    The different data values may be related to each other; which needs to be organised to form a proper data structure.
+                    The program follows certain rules to access, manipulate and process the structured data.
+                </p>
+                <p>
+                    <topic>Data Structure : </topic>A data structure refers to an organised way of arrangement of data, related to each other in the memory which allows the program to handle the data in an efficient way. 
+                    A data structure can thus be represented as follows :
+                    <div class="center code">Data structure = data organization + allowed operations.</div>
+                    For example consider a single dimensional array in C declared as follows :
+                    <div class="center code"><green>int</green> <orange>a[5]</orange>;</div>
+                    In the above declaration the array structure 'a' holds 5 elements of integer type. The index sunscripting starts from 0 and ends with 4. The array elements are accessed by their index positions.
+                </p>
+                <p>
+                    <div class="center-block up"><p class="bordered">types of data structures</p></div>
+                    A data structure is a logical method of representing data in memory using the simple and complex data tyes provided by the language.<br>The data structure can be classified into following two types:
+                </p>
+                <p>    
+                    <div class="up-cap center"><topic>simple data structure</topic></div>
+                    These data structures are generally built from fundamental data types i.e, int, float, char, etc. Following data structures can be termed as simple data structures :
+                    <div><ul style="display:inline-block;"><li style="list-style-type:number;display:inline-block;position:absolute;left:20%;">Array</li><li style="list-style-type:number;display:inline-block;position:absolute;right:20%;">Structure</li></ul></div>
+                </p>
+                <p>
+                    <div class="center-block up"><topic>compound data structure</topic></div>
+                    These data structures are formed by using simple data structures and are more complex. Its two types are :
+                    <div><ul style="display:inline-block;"><li style="list-style-type:number;display:inline-block;position:absolute;left:5%;">Linear data structures</li><li style="list-style-type:number;display:inline-block;position:absolute;right:5%;">Non-linear structures</li></ul></div>
+                </p>
+                <p>
+                    <div class="center">
+                        <topic>Linear data structures. </topic>These are single level data structures, having their elements in a sequence. Examples of such structures are :
+                        <div><ul style="display:inline-block;"><li style="list-style-type:number;display:inline-block;position:absolute;left:20%;">Stack</li><li style="list-style-type:number;display:inline-block;position:absolute;left:30%;right:30%;">Queue</li><li style="list-style-type:number;display:inline-block;position:absolute;right:20%;">Linked<br>list</li></ul></div>
+                    </div>
+                </p>
+                <p>
+                    <div class="center">
+                        <topic>Non-linear data structures. </topic>These are multilevel data structures. Examples of non-linear data structures are :
+                        <div><ul style="display:inline-block;"><li style="list-style-type:number;display:inline-block;position:absolute;left:20%;">Tree</li><li style="list-style-type:number;display:inline-block;position:absolute;right:20%;">Graph</li></ul></div>
+                    </div>
+                </p>
+                <p>
+                    <topic>Array</topic><div>It is a collection of homogenous (similar type) data elements. An array is also called linear data structure. It's elements are stored in computer memory in a linear fashion.</div>
+                </p>
+            </div>
+        </section>
+
+        <section id="vlink3"style="display:none;"><!--C++-->
+            <div class="center up"><h1 style="letter-spacing:3px;">C++</h1></div>
+            <div class="container-big">
+                <div>
+                    <h3 onclick='whatiscpp();'><a href='#whatiscpp'>What is C++ <strong>?</strong></a></h3><script>function whatiscpp(){document.getElementById('whatiscpp').classList.toggle('hide');};</script>
+                    <div class="hide" id='whatiscpp'>
+                        C++ is an object oriented programming language. It is a superset of C, that is, C with extentions to support OOP. It was developed by <red>Bjarne Stroustrup</red> of AT&T Bell Labs in 1986 as a means of making complex programs easier to write and maintain.
+                        The name C++ is a combination of C and the increment operator '++' indicating an incremental development of C.<br><br>C++ is an object oriented programming language. It was developed by Bjarne Stroustrup in 1983 at the AT&T Bell Laboratories, New Jersey, USA. It is basically a super set of C. which provided low level features and Simula 67, which provided the class concept. The version 1.0 became available commercially in 1985, version 2 in 1989 and version 3 in 1992.
+                        <br><br>
+                        <ol>
+                            It has the following characteristics:
+                            <li>Reduces complexity while solving problems.</li>
+                            <li>Correctness of results is ensured.</li>
+                            <li>Affordable in terms of hardware and other resources.</li>
+                            <li>Easier and cheaper for integrating existing software facilities and libraries.</li>
+                            <li>Portable i.e, can be used on different types of computers with little or no change in the programs.</li>
+                        </ol>
+                        C++, was originally named as 'C with classes. The name is derived from the 'increment' operator in C, which is '++. So C++ is an incremented version of C. C++ can be used for writing procedural code like C but its real strength lies in the writing of object-oriented programs.
+                        <p>
+                            An object oriented program is a collection of discrete objects, which are self contained collections of both data structures and functions that interact with other objects.
+                        </p>
+                        <p>
+                            C++ adds classes, inheritance, function overloading and operator overloading. With the help of these one can create abstract data types, inherit properties from existing data types and use polymorphism. Thus we can say that C++ is an advancement of C. providing an additional set of object-oriented facilities.
+                        </p>
+                    </div>
+                    <h3 onclick='characterset();'><a href='#characterset'>CHARACTER SET</a></h3><script>function characterset(){document.getElementById('characterset').classList.toggle('hide');}</script>
+                    <div class='hide' id='characterset'>
+                        We have two character sets in C++. These are:
+                        <ol>
+                            <li>Source characters</li>
+                            <li>Escape sequences / Execution characters</li>
+                        </ol>
+                        <h3>1. Source Characters</h3>
+                        <div>
+                            The source text is created with the help of source characters. Following are the source characters:
+                            <div><br>
+                                <table id='source-char'>
+                                    <tr>
+                                        <td>Alphabets</td><td>A to Z, a to z and _ (underscore)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Digits</td><td>0 to 9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Special characters</td><td>+ - * / ^ ~ % = ! & ` ? ; : ( ) { } " , \ # blank</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="up-cap" onclick='coopl();'><a href='#coopl'>Characteristics of object oriented languages</a></h3><script>function coopl(){document.getElementById('coopl').classList.toggle('hide');}</script>
+                    <div id='coopl'class='hide'>
+                        The fundamental idea behind Objectoriented programming languages is to combine into a single unit both data and the functions that operate on the data. Such a unit is called an 'object'. To create such a unit or object a prototype is defined. The prototype defination is the class. A class therefore is a major component of C++. 
+                    </div>
+                    <h3 onclick='classs()'><a href='#classs'>Class</a></h3><script>function classs(){document.getElementById('classs').classList.toggle('hide');}</script>
+                    <div class='hide' id='classs'>
+                        Class describes the data and its behaviour or functionality. Objects are said to be 'members' of classes. This is the very much like what you see in nature, where <blue>Animal </blue>is a class and <red>Cat </red>is an object of this class. The basic features of animals, that is - 2 eyes, 2 ears, legs, etc... are common to all the Animals. Thus Cat
+                        which is an object of class Animal inherits these characteristics like colour, their nature, etc...<div>Just as <red>int </red>a predefined data-type in C++ can have many variables declared of its type, e.g, <strong>int a</strong>, <strong>count</strong>, <strong>total</strong> <strong>amount</strong>; declares 4 variables, all of the integer type. Similarly, you can define many objects of the same class.<italic> A class is a data-type defined by the user describing the data it represents and the function to be used to manipulate the data. It serves as a plan / template.</italic> <bold>Defining the class does not create any object.</bold> The class only describes how the object must be created and how it will behave.</div>  
+                    </div>
+                    <div style="margin-top: 10px;"><strong>User defined data type: </strong>A class is also a userdefined data type that determines the data structures and operations associated with that type.</div>
+                    <h3 onclick="ioopcicpp()"><a href="#ioopcicpp">Implementation of Object Oriented Programming Concepts in C++</a></h3><script>function ioopcicpp(){document.getElementById('ioopcicpp').classList.toggle("hide");}</script>
+                    <div id='ioopcicpp'class='hide'>
+                        "C with classes" was the original name given by the originator, Stroustrup initially. which now-a-days is popularly known as C++. Classes and objects are the most important features of C++. The class implements OOP features and ties them together. We have already seen that a structure groups different type of elements and a function organizes the program actions to perform the desired task.
+                    </div>
+                    <h3 onclick='doac()'><a href='#doac'>DEFINITION OF A CLASS</a></h3><script>function doac(){document.getElementById('doac').classList.toggle('hide');}</script>
+                    <div id='doac' class='hide'>
+                        A class in C++ combines related data and functions together. It makes a data type which is used for creating objects of this type. Classes represent real world entities that have both data type properties (characteristics) and associated operations (behaviour). The syntax of a class definition is shown below:
+                        <div>
+                            <pre><code class="cpp">
+class name_of_class
+{
+    private : variable declaration; //Data Member
+              function declaration; //Member Function (method)
+    protected : variable declaration;
+                function declaration;
+    public : variable declaration;
+             function declaration;
+};                     
+                            </code></pre>
+                        </div>
+                        Here, the keyword <strong>class</strong> specifies that we are using a new data type and is followed by the class name. For example, the following declaration shows the defination of a class:
+                        <div>
+                            <strong>student</strong>:<br>
+                            <pre><code class='cpp'>
+class student
+{
+    private:
+        char reg_no[10]; //Data Member
+        char name[30]; //Data Member
+        int age;
+        char address[25];
+    public:
+        // inline function definition (inline by default as defined in class)
+        void init_data() //Member Function
+        {
+            count << "\n\t\t Enter data of student";
+            count << "\n\t\t ----------------------";
+            count << "\n\n1 . Registration Number: ";
+            gets (reg_no);
+            count << "\n\n2 . Name: ";
+            gets (name);
+            count << "\n\n3 . Age: ";
+            cin >> age;
+            count << "\n\n4 . Address: ";
+            gets (address);
+        }
+        // inline function definition (inline by default as defined in class)
+        void display_data() //Member Function
+        {
+            clrscr();
+            count << "Student data is : \n";
+            count << "\n\n1 . Reg. No : " << reg_no;
+            count << "n2 . Name : " << name;
+            count << "\n3 . Age : " << age;
+            count << "\n4 . Address : " << address;
+        }
+}; //class must have ; as terminator
+                            </code></pre>
+                        </div>
+                        As we have seen earlier with structures, the body of the class is also delimited by braces and is terminated by a semicolon.
+                    </div>
+                    <h3>Object</h3>
+                    <div>
+                        An object is created from a class. Each object is an instance of that class and has the data and behaviour descibed in that class. The term object and instance of a class can be used interchangably.
+                        <div>
+                            <ul>
+                                <li>Physical Objects. e.g. Electrical components in a circuit design problem, Elements of the computer - user environment: Windows, Menus, Mouse, Keyboard, Graphics - objects (line, circle, etc.)</li>
+                                <li>Programming Constructs Stacks, Customized Arrays. Linked lists, Binary trees.</li>
+                                <li>User-defined data types: Angles, Complex numbers, Points on the plane.</li>
+                                <li>Collections of data: Dictionary, an inventory.</li>
+                                <li>Components in Computer games: Positions in a board game (chess, checkers), Opponents and friends in adventure games.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Encapsulation and Data Hiding</h3>
+                    <div>
+                        Encapsulation and Data hiding. A class defintion is a combination of data and its methods, an encapsulation. Encapsulation enables 'Data hiding' where the data can be declared to be private to the object and therefore its manipluation is possible only through a function of that class. This feature with all OO languages also makes it possible for the developer to change the data structure of an object without affecting the operation of the program.
+                    </div>
+                    <h3>Inheritance</h3>
+                    <div>
+                        Classes are divided into subclasses. Like the Animal, described above, can be divided into subclasses like Land animal, Water Animal etc. Animal in turn may be a subclass of the Fauna class. Thus Land Animal inherits all or some properties of the higher classes and can add properties of its own. The principle here is that each subclass shares common characteristics with the class from which it has been derived. In addition to the characteristics shared with other members of the class, each subclass has its own particular characteristics. 
+                        In C++, the original class that is, the main class is called the 'Base class'. Other classes can be defined that share the 'Base class' characteristics and add their own as well. These are called 'Derived Classes. The derived class can be a base class of another class.
+                    </div>
+                    <h3>Reusability</h3>
+                    <div>
+                        The concept of inheritance provides an important extension to the idea of reusability Once a class has been written, created and debugged, it can be distributed to other programmers for use in their own programs. This is called reusability. A programmer can take an existing class, and without modifying it, add additional features and capabilities to it. This is done by deriving a new class from the existing one.
+                    </div>
+                    <h3>Polymorphism and Overloading</h3>
+                    <div>
+                        Polymorphism means "many forms and allows the programmer to create multiple definitions for operators and functions. During run-time depending on the context a particular definition of the operator or function will be used.
+                    </div>
+                    <h3>Operator overloading:</h3>
+                    <div>
+                        An existing operator like + used with integer values (built-in data type) constitutes addition. When a new data type is defined, the same operator can be made to operate in a particular manner on the new data type. This capability of an operator to operate on many data types or in a new manner. constitutes "operator overloading". Overloading is a kind of polymorphism. For eg is normally used to add numbers. This operator can be overloaded to add strings (concatenation) or sets (union) and so on. Similarly functions also can be overloaded as shown in the next section. The terms 'Overloading' and 'Polymorphism are used interchangeably.
+                    </div>
+                    <h3>Function overloading:</h3>
+                    <div>
+                        An overloaded function appears to perform different activities depending on the kind of data that is sent to it. A function can be overloaded depending on the factors like the number of arguments, the kind of arguments etc. The compiler can also distinguish between overloaded functions with the same number of arguments, provided their data types are different.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vlink4"style="display:none;"><!--mathematics-->
+            <div class="center up"><h1 style="letter-spacing:3px;">Mathematics</h1></div>
+            <div class="container">
+                  
+            </div>
+        </section>
+
+        <section id="vlink5"style="display:none;"><!--Accounting and Finance Management-->
+            <div class="center up"><h1 style="letter-spacing:3px;">Accounting and Finance Management</h1></div>
+            <div class="container">
+                  
+            </div>
+        </section>   
+
+        <section id="detailed">
+            <div class="center">
+                <table onclick="showall();">
+                    <thead>
+                        <tr>
+                            <th scope="row"colspan="7"class="lightyellow"onclick='tablejuly();'>July 2021</th>
+                        </tr>
+                        <tr id='tablejulyh' class='hide'>
+                            <th scope="col" class='lightyellow'></th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Day</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Teacher</th>
+                            <th scope="col">Attended Student</th>
+                        </tr>
+                    </thead>
+                    <tbody id='tablejuly'class='hide'>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>16</td>
+                            <td>Fri</td>
+                            <td rowspan="3">10:00-11:00</td>
+                            <td class="no">C++</td>
+                            <td rowspan="3">Eliza</td>
+                            <td rowspan="2">0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>17</td>
+                            <td>Sat</td>
+                            <td class="no">C++</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td rowspan="2">19</td>
+                            <td rowspan="2">Mon</td>
+                            <td class="yes-50">C++</td>
+                            <td id="d1"></td><script>var x=document.getElementById('d1');onload=x.innerHTML=('2');function d1(){x.innerHTML=('Ankit Saikia <br>Bipon Dutta');setTimeout(function(){x.innerHTML=('2');},2000);}</script>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>11:00-12:00</td>
+                            <td class="no">Mathematics</td>
+                            <td>Gautam</td>
+                            <td rowspan="8">0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td rowspan="2">20</td>
+                            <td rowspan="2">Tue</td>
+                            <td>10:00-11:00</td>
+                            <td class="no">C++</td>
+                            <td>Eliza</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>11:00-12:00</td>
+                            <td class="no">Mathematics</td>
+                            <td>Gautam</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td rowspan="2">22</td>
+                            <td rowspan="2">Thu</td>
+                            <td>10:00-11:00</td>
+                            <td class='no'>C++</td>
+                            <td>Eliza</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>11:00-12:00</td>
+                            <td class='no'>Mathematics</td>
+                            <td>Gautam</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td rowspan="2">23</td>
+                            <td rowspan="2">Fri</td>
+                            <td>10:00-11:00</td>
+                            <td class='no'>C++</td>
+                            <td>Eliza</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>11:00-12:00</td>
+                            <td class='no'>Mathematics</td>
+                            <td>Gautam</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>24</td>
+                            <td>Sat</td>
+                            <td rowspan="7">10:00-11:00</td>
+                            <td class='no'>C++</td>
+                            <td rowspan='7'>Eliza</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>26</td>
+                            <td>Mon</td>
+                            <td rowspan="6" class='yes-50'>C++</td>
+                            <td rowspan="6" id='d2'></td><script>var da=document.getElementById('d2');onload=da.innerHTML=('1');function d2(){da.innerHTML=('Bipon Dutta');setTimeout(function(){da.innerHTML=('1');},2000);}</script>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>27</td>
+                            <td>Tue</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>28</td>
+                            <td>Wed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>29</td>
+                            <td>Thu</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>30</td>
+                            <td>Fri</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>31</td>
+                            <td>Sat</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class='clearfix'></div>
+                <table onclick='showallt2();'>
+                    <thead>
+                        <tr>
+                            <th scope="row"colspan="7"class="lightyellow">August 2021</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class='lightyellow'></th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Day</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Teacher</th>
+                            <th scope="col">Attended Student</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>Mon</td>
+                        <td rowspan="2">10-11 am</td>
+                        <td class='yes-50' rowspan="2">C++</td>
+                        <td rowspan="2">Eliza</td>
+                        <td id='d3' rowspan="2"></td><script>var da3=document.getElementById('d3');onload=da3.innerHTML=('2');function d3(){da3.innerHTML=('Ankit Saikia<br>Bipon Dutta');setTimeout(function(){da3.innerHTML=('2');},2000);}</script>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>Tue</td>
+                        </tr>    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="comingsoon"style="display:none;">
+            <div class="center">
+                <div class="container">
+                    <h1 style="border: 2px solid red;padding:50px 0 50px 0;">No data uploaded yet...</h1>
+                </div>    
+            </div>
+        </section>
+
+        <section id="numbersystem"style="display:none;">
+            <div class="small-container">
+                <div class="center">
+                    <h1 class="up">number systems</h1>
+                    <div>
+                        <h2>conversion</h2>
+                        <div>Conversion is easy as cake. All you got to do is remember the basics.<br>The rest is upto the method you choose, the fastest way to do this is through the method described in here.<br>MI users can use their calculators to do this the easy way.</div>
+                        <div>
+                            <h3>binary to decimal</h3>
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id='mainheattopics' style='display: none;'>
+            <section id='notobacco'>
+                <div class='bordered'style='text-align:left !important;background-color:black;color:white;'>
+                    <h1 style='text-align:center !important;color:red;'>Avoid chewing Tobacco !</h1>
+                    As commonly known as "Gutka, Pan masala, Prasadh , or other names in common at different places."<br>
+                    It has a major setback for the health for the body, as these products contain several items that can affect the body especially the oral part of one's body, i.e, the mouth, tongue, gums , cavity, etc...
+                    Chewing causes oral cancer, although it's not the same case for everybody, certain people might already know of this as we speak.
+                </div>
+            </section>
+
+            <section id='travelblog'>
+                <div><h1>roing</h1></div>
+            </section>
+        </section>
+
+        <div id="footer">
+            <div class="footer-container">
+                <div class="center">
+                    <div class="row">
+                       &copy; 2021 ALL RIGHTS RESERVED
+                    </div><br>
+                    &hearts; FROM THE AUTHOR<br>
+                   - Ankit Saikia
+                   <div class='up'style='margin-top:50px;'>
+                        a<br> webpage <br>developed for<br> research purpose<br>
+                        final version <br>of this project will <br>be released online<br> and <br>
+                        will be avilable <br>throughout<br> the whole world.<br>Peace
+                   </div>
+                   <div style='margin-top:30px;'>
+                       <marquee class='up' style='width: 40vw;' scrolldelay='0'scrollamount='5'>support and share this file for us please - for us to go GLOBAL - we need your support. SHARE THIS PAGE AND LINK AS MUCH AS POSSIBLE.</marquee>
+                   </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+        <script>function mode(){document.body.classList.toggle('dark-mode');}</script>
+        <script>
+            var menu=document.getElementById('menu-content');
+            var l0=document.getElementById('home');
+            var l1=document.getElementById('vlink1');
+            var l2=document.getElementById('vlink2');
+            var l3=document.getElementById('vlink3');
+            var l4=document.getElementById('vlink4');
+            var l5=document.getElementById('vlink5');
+            var table=document.getElementById('detailed');
+            var ic=document.getElementById('comingsoon');
+            function menuH(){
+                menu.classList.add('hide');
+            }
+            function menut(){
+                menu.classList.toggle('hide');
+            };
+            function home() {
+                menu.classList.add('hide');
+                l0.style.display="block";
+                l1.style.display="none";
+                l2.style.display="none";
+                l3.style.display="none";
+                l4.style.display="none";
+                l5.style.display="none";
+                table.style.display="none"
+                ic.style.display="none";
+            };
+            function vlink1(){
+                menu.classList.add('hide');
+                l0.style.display="none";
+                l1.style.display="block";
+                l2.style.display="none";
+                l3.style.display="none";
+                l4.style.display="none";
+                l5.style.display="none";
+                table.style.display="none";
+                ic.style.display="block";
+            };
+            function vlink2(){
+                menu.classList.add('hide');
+                l0.style.display="none";
+                l1.style.display="none";
+                l2.style.display="block";
+                l3.style.display="none";
+                l4.style.display="none";
+                l5.style.display="none";
+                table.style.display="none";
+                ic.style.display="none";
+            };
+            function vlink3(){
+                menu.classList.add('hide');
+                l0.style.display="none";
+                l1.style.display="none";
+                l2.style.display="none";
+                l3.style.display="block";
+                l4.style.display="none";
+                l5.style.display="none";
+                table.style.display="none";
+                ic.style.display="none";
+            };
+            function vlink4(){
+                menu.classList.add('hide');
+                l0.style.display="none";
+                l1.style.display="none";
+                l2.style.display="none";
+                l3.style.display="none";
+                l4.style.display="block";
+                l5.style.display="none";
+                table.style.display="none";
+                ic.style.display="block";
+            };
+            function vlink5(){
+                menu.classList.add('hide');
+                l0.style.display="none";
+                l1.style.display="none";
+                l2.style.display="none";
+                l3.style.display="none";
+                l4.style.display="none";
+                l5.style.display="block";
+                table.style.display="none";
+                ic.style.display="block";
+            };
+            function tablelink(){
+                menu.classList.add('hide');
+                l0.style.display="none";
+                l1.style.display="none";
+                l2.style.display="none";
+                l3.style.display="none";
+                l4.style.display="none";
+                l5.style.display="none";
+                table.style.display="block";
+                ic.style.display="none";
+            };
+        </script>
+        <script>
+            function showall(){
+                d1();
+                d2();
+            }
+            function showallt2(){
+                d3();
+            }
+            function tablejuly(){
+                var head = document.getElementById("tablejulyh");
+                var content = document.getElementById("tablejuly");
+                head.classList.toggle('hide');
+                content.classList.toggle('hide');
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+        
+    </body></html>
