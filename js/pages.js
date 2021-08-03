@@ -17,7 +17,3 @@ function menuH(){
 function menut(){
     menu.classList.toggle('hide');
 };
-
-function navClose(){
-    
-};
