@@ -13,9 +13,10 @@ function mode(){document.body.classList.toggle('dark-mode');}
     var ic=document.getElementById('comingsoon');
     function menuH(){
         menu.classList.add('hide');
-    }
+    };
     function menut(){
         menu.classList.toggle('hide');
+        setTimeout(function(){menuH();},4000);
     };
     function home() {
         menu.classList.add('hide');
