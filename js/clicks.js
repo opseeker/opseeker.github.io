@@ -101,6 +101,7 @@ function mode(){document.body.classList.toggle('dark-mode');}
     }
     function showallt2(){
         d3();
+        d4();
     }
     function tablejuly(){
         var head = document.getElementById("tablejulyh");
