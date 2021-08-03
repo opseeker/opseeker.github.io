@@ -32,11 +32,12 @@ input:checked + .slider {background-color: #2196F3;}input:focus + .slider {box-s
 
 
 pre code{font-size: 16px !important;margin: 10px 8px 10px 8px !important;}
-<!--
+
+
 /*code testing completion easy maker--------table updater-------
     when this style script is active, no other functions or
-    buttons can work except those which point to external sources.*/
+    buttons can work except those which point to external sources.
 #detailed {display:block !important;} #home{display: none !important;} #vlink1{display: none !important;}
 #vlink2 {display: none !important;} #vlink3{display: none !important;} #vlink4{display: none !important;}
 #vlink5 {display: none !important;} #comingsoon{display: none !important;}
--->
+*/
