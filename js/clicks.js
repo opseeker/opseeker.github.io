@@ -134,3 +134,7 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function goBack(){
+    window.history.back();
+};
