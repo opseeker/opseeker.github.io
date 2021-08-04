@@ -172,8 +172,8 @@ orange {
     font-weight: bold;
     letter-spacing: 4px;
     position: absolute;
-    top: 5vw;
-    left: 25vw;
+    top: 4vw;
+    left: 24vw;
 }
 
 .clearfix {
@@ -472,4 +472,14 @@ pre code {
 .orangeBorderB a {
     padding-top: 10px;
     display: block !important;
+}
+
+#vlink5 .container {
+    margin-bottom:0px;
+}
+
+.lead {
+    font-family: 'Shadows Into Light', cursive;
+    color:rgb(97, 97, 97);
+    margin:2px 2px;
 }
