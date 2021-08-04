@@ -6,7 +6,7 @@
 }/*desktop- 1024 x 768 - 1920 x 1080
     mobile- 360 x 640 - 414 x 896 
     tablets- 601 x 962 - 1280 x 800 
-    page plan- 
+    page plan->>
     topic-item-content.
 font-family: 'Shadows Into Light', cursive;*/
 .dark-mode{background-color:black;color:white;}.dark-mode #topbartext h2{color:white;}#topbartext h2{color:black;}h1{font-size: 16px;}h2{font-size:14px;}h3{font-size:12px;}h4{font-size:10px;}.bordered{border:1px solid green;padding:10px 0 10px 0;text-align:center;position:relative;}
