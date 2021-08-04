@@ -399,7 +399,7 @@ pre code {
     background-color: rgb(41, 19, 19);
     opacity: 0.8;
 }
-
+/*pcs*/
 @media only screen and (min-width: 600px) {
     .orangeBorder {
         border-top-width: 30px;
