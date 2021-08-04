@@ -41,3 +41,18 @@ pre code{font-size: 16px !important;margin: 10px 8px 10px 8px !important;}
 #vlink2 {display: none !important;} #vlink3{display: none !important;} #vlink4{display: none !important;}
 #vlink5 {display: none !important;} #comingsoon{display: none !important;}
 */
+
+/*orange border box for blog and other uses copied from THE WATCH CARTOONS */
+.orangeBorder{
+    border:1px solid rgb(207, 115, 9);
+    border-radius: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    padding: 5px 10px 10px 20px;
+    color:rgb(207, 115, 9);
+    background-color:rgb(24, 13, 13);
+}
+.orangeBorder a{
+    padding-top:10px;
+    display: block !important;
+}
