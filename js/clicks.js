@@ -1,7 +1,7 @@
 /* javascriptt author ankit*/
 
 
-function mode(){document.body.classList.toggle('dark-mode');}
+/*function mode(){document.body.classList.toggle('dark-mode');}*/
     var menu=document.getElementById('menu-content');
     var l0=document.getElementById('home');
     var l1=document.getElementById('vlink1');
