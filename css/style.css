@@ -1,37 +1,382 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-@media (min-width:1024px){
-    body{font-size:1em !important;}p{font-size:1em !important;}h1,h2,h3,h4,h5{font-size:2em !important;}
-    table,th,td,tr{font-size:18px !important;}svg{width:2em !important;height:2em !important;}.clearfix{margin:5% !important;}
-    .dropdown:hover .dropdown-content{display:block !important;}.top-banner{left:42vw !important;top:1vw !important;}
-}/*desktop- 1024 x 768 - 1920 x 1080
+
+@media (min-width:1024px) {
+    body {
+    font-size: 1em !important;
+    }
+    p {
+        font-size: 1em !important;
+    }
+
+    h1,h2,h3,h4,h5 {
+        font-size: 2em !important;
+    }
+
+    table,th,td,tr {
+        font-size: 18px !important;
+    }
+
+    svg {
+        width: 2em !important;
+        height: 2em !important;
+    }
+
+    .clearfix {
+        margin: 5% !important;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block !important;
+    }
+
+    .top-banner {
+        left: 42vw !important;
+        top: 1vw !important;
+    }
+}
+
+/*desktop- 1024 x 768 - 1920 x 1080
     mobile- 360 x 640 - 414 x 896 
     tablets- 601 x 962 - 1280 x 800 
     page plan->>
     topic-item-content.
 font-family: 'Shadows Into Light', cursive;*/
-.dark-mode{background-color:black;color:white;}.dark-mode #topbartext h2{color:white;}#topbartext h2{color:black;}h1{font-size: 16px;}h2{font-size:14px;}h3{font-size:12px;}h4{font-size:10px;}.bordered{border:1px solid green;padding:10px 0 10px 0;text-align:center;position:relative;}
-.container{margin:100px 20px 100px 20px;}.center{text-align:center;}.row{display:inline-block;}.up{text-transform:uppercase;}#menu h2{font-size:16px;}.imp{text-transform:uppercase;}.hide{display:none;}.center-block{text-align:center;margin:0 12% 0 12%;}.up-cap{text-transform:capitalize;}
-.footer-container{margin-top: 150px;}#menu{background-color:orange;}a{text-decoration:none;color:inherit;}.lightyellow{background-color:rgb(168, 168, 60);color:black;}topic{background-color:pink;color:black;font-weight:bold;font-size:18px;}
-#navigation{margin-top:-10px;margin-left:-10px;margin-right:-10px;width:101%;font-family:Arial,sans-serif !important;position:fixed;top:0;z-index: 5;}#footer{margin-bottom:0;}green{color:green;}orange{color:orange;}.code{margin:18px 0 18px 0;}
-.top-banner{display:inline-block;font-size:2em;font-weight:bold;letter-spacing:4px;position:absolute;top:5vw;left:25vw;} .clearfix{margin:10%;} #source-char tr,td{border:none !important;}#author{font-family: 'Shadows Into Light', cursive;}small{font-size:12px;letter-spacing:0 !important;}
-#navigation red{color:red;border:1px solid black;border-radius:50%;background-color:black;} small{background-color:white;border:3px solid white;}.dark-mode small{background-color:black;border:3px solid black;}
-#detailed{margin:5rem 0 5rem 0; display:none;} #detailed .no{background-color:red;color:white;} #detailed .yes{background-color:green;color:black;}#detailed .yes-50{background-color:rgb(63, 241, 101);color:black;}#detailed .no-50{background-color:rgb(253, 124, 73);color:white;}
-table{width:100%;font-size: 12px;border-collapse:collapse;} tr,th,td{border:solid 1px !important;padding: 4px 0 4px 0 !important;}
-.dropdown {background-color: transparent;color: white;padding: 16px;font-size: 16px;border: none;}.dropdown {position: relative;display: inline-block;}
-.dropdown-content {position: absolute;background-color: rgb(214, 72, 72);min-width: 280px;box-shadow: 0 8px 16px 0 black;z-index: 5;}
-.dropdown-content a {color: black;font-weight: bold;padding: 12px 16px;text-decoration: none;display: block;}
-.switch {position: relative;display: inline-block;width: 40px;height: 20px;}.switch input {opacity: 0;width: 0;height: 0;}
-.slider {position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;background-color: red;-webkit-transition: .4s;transition: .4s;}
-.slider:before {position: absolute;content: "";height: 15px;width: 15px;left: 4px;bottom: 2px;background-color: black;-webkit-transition: .4s;transition: .4s;}
-input:checked + .slider {background-color: #2196F3;}input:focus + .slider {box-shadow: 0 0 1px #2196F3;}input:checked + .slider:before {-webkit-transform: translateX(17px);-ms-transform: translateX(17px);transform: translateX(17px);}
-.slider.round {border-radius: 30px;}.slider.round:before {border-radius: 50%;}
-#modech{position:absolute;right:20px;top:20px;}#modech .center {text-align: center;border: 3px solid black;}.dark-mode #modech .center {text-align: center;border: 3px solid white;}.clearfix::after {content: "";clear: both;display: table;}
-#home h1::selection{background:yellow;color:black;}
-#home h1{font-size:15vw !important;;letter-spacing:1px;}
-#home red{color:red;}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode #topbartext h2 {
+    color: white;
+}
+
+#topbartext h2 {
+    color: black;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+h4 {
+    font-size: 10px;
+}
+
+.bordered {
+    border: 1px solid green;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.container {
+    margin: 100px 20px 100px 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.row {
+    display: inline-block;
+}
+
+.up {
+    text-transform: uppercase;
+}
+
+#menu h2 {
+    font-size: 16px;
+}
+
+.imp {
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
+
+.center-block {
+    text-align: center;
+    margin: 0 12% 0 12%;
+}
+
+.up-cap {
+    text-transform: capitalize;
+}
+
+.footer-container {
+    margin-top: 150px;
+}
+
+#menu {
+    background-color: orange;
+    width: 100.5vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lightyellow {
+    background-color: rgb(168, 168, 60);
+    color: black;
+}
+
+topic {
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#navigation {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    width: 101%;
+    font-family: Arial, sans-serif !important;
+    top: -4px;
+    z-index: 5;
+}
+
+#footer {
+    margin-bottom: 0;
+}
+
+green {
+    color: green;
+}
+
+orange {
+    color: orange;
+}
+
+.code {
+    margin: 18px 0 18px 0;
+}
+
+.top-banner {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 5vw;
+    left: 25vw;
+}
+
+.clearfix {
+    margin: 10%;
+}
+
+#source-char tr,
+td {
+    border: none !important;
+}
+
+#author {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+small {
+    font-size: 12px;
+    letter-spacing: 0 !important;
+}
+
+#navigation red {
+    color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+}
+
+small {
+    background-color: white;
+    border: 3px solid white;
+}
+
+.dark-mode small {
+    background-color: black;
+    border: 3px solid black;
+}
+
+#detailed {
+    margin: 5rem 0 5rem 0;
+    display: none;
+}
+
+#detailed .no {
+    background-color: red;
+    color: white;
+}
+
+#detailed .yes {
+    background-color: green;
+    color: black;
+}
+
+#detailed .yes-50 {
+    background-color: rgb(63, 241, 101);
+    color: black;
+}
+
+#detailed .no-50 {
+    background-color: rgb(253, 124, 73);
+    color: white;
+}
+
+table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+tr,th,td {
+    border: solid 1px !important;
+    padding: 4px 0 4px 0 !important;
+}
+
+.dropdown {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: rgb(214, 72, 72);
+    min-width: 280px;
+    box-shadow: 0 8px 16px 0 black;
+    z-index: 5;
+}
+
+.dropdown-content a {
+    color: black;
+    font-weight: bold;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 2px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+}
+
+.slider.round {
+    border-radius: 30px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#modech {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#modech .center {
+    text-align: center;
+    border: 3px solid black;
+}
+
+.dark-mode #modech .center {
+    text-align: center;
+    border: 3px solid white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#home h1::selection {
+    background: yellow;
+    color: black;
+}
+
+#home h1 {
+    font-size: 15vw !important;
+    ;
+    letter-spacing: 1px;
+}
+
+#home red {
+    color: red;
+}
 
 
-pre code{font-size: 16px !important;margin: 10px 8px 10px 8px !important;}
+pre code {
+    font-size: 16px !important;
+    margin: 10px 8px 10px 8px !important;
+}
 
 
 
@@ -44,75 +389,87 @@ pre code{font-size: 16px !important;margin: 10px 8px 10px 8px !important;}
 */
 
 /*orange border box for blog and other uses copied from THE WATCH CARTOONS */
-.orangeBorder{
-    border:1px solid rgb(207, 115, 9);
+.orangeBorder {
+    border: 1px solid rgb(207, 115, 9);
     border-radius: 10px;
-    border-top-width: 20px;
-    border-bottom-width: 10px;
-    padding: 5px 10px 10px 20px;
-    color:rgb(245, 94, 6);
-    background-color:rgb(41, 19, 19);
+    border-top-width: 30px;
+    border-bottom-width: 20px;
+    padding: 5px 10px 30px 20px;
+    color: rgb(245, 94, 6);
+    background-color: rgb(41, 19, 19);
     opacity: 0.8;
 }
-@media only screen and (min-width: 600px){
+
+@media only screen and (min-width: 600px) {
     .orangeBorder {
         border-top-width: 30px;
-        width:50vw;
-        position:relative;
+        width: 50vw;
+        position: relative;
         left: 24vw;
     }
-    .orangeBorder h1{
-        margin-top:-38px !important;
+
+    .orangeBorder h1 {
+        margin-top: -38px !important;
     }
+
     .orangeBorderB {
         border-top-width: 30px;
-        width:50vw;
-        position:relative;
+        width: 50vw;
+        position: relative;
         left: 24vw;
     }
-    body{
-        background-position:top;
+
+    body {
+        background-position: top;
         background-attachment: fixed;
         background-image: none !important;
     }
-    #prog1img{
-        width:300px;
-        border-radius:50%;
-        border:4px solid red;
+
+    #prog1img {
+        width: 300px;
+        border-radius: 50%;
+        border: 4px solid red;
     }
 }
-#prog1img{
-    width:120px;
-    border-radius:50%;
+
+#prog1img {
+    width: 120px;
+    border-radius: 50%;
     display: inline-block;
 }
-#pro1h2{
+
+#pro1h2 {
     display: inline-block;
-    position:absolute;
+    position: absolute;
     left: 180px;
-    padding-right:5px;
+    padding-right: 5px;
 }
-.orangeBorder a{
-    padding-top:10px;
+
+.orangeBorder a {
+    padding-top: 15px;
     display: block !important;
 }
-.orangeBorder h1{
-    margin-top:-24px;
+
+.orangeBorder h1 {
+    margin-top: -34px;
     text-align: center;
-    color:white;
+    font-size: 1.5em;
+    color: white;
 }
+
 /*Big Borderboss*/
-.orangeBorderB{
-    border:1px solid rgb(207, 115, 9);
+.orangeBorderB {
+    border: 1px solid rgb(207, 115, 9);
     border-radius: 10px;
     border-top-width: 20px;
     border-bottom-width: 10px;
     padding: 10px 10px 10px 20px;
-    color:white;
-    background-color:rgb(207, 115, 9);
+    color: white;
+    background-color: rgb(207, 115, 9);
     opacity: 0.8;
 }
-.orangeBorderB a{
-    padding-top:10px;
+
+.orangeBorderB a {
+    padding-top: 10px;
     display: block !important;
 }
