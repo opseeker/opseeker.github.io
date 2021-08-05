@@ -13,3 +13,4 @@ function startCl(){
     setTimeout(function(){target.classList.add('startupOff');},0);
     setTimeout(function(){target.classList.add('hide');},4000);
 }
+
