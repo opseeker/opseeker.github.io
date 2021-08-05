@@ -2,7 +2,7 @@ var num=document.getElementById('version');
 var target=document.getElementById('startup');
 
 onload=function() {
-    num.innerHTML=('080421')
+    num.innerHTML=('080521')
     setTimeout(function(){target.classList.remove('hide');target.classList.add('startupOn')},4000);
 };
 
