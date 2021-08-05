@@ -499,7 +499,7 @@ pre code {
 
 .startupOn{
     animation-name: screenOn;
-    animation-duration:1s;
+    animation-duration:0.5s;
     animation-delay: 0s;
     animation-timing-function:ease-in;
     animation-fill-mode: forwards;
@@ -516,7 +516,7 @@ pre code {
 
 .startupOff{
     animation-name:screenOff;
-    animation-duration:1s;
+    animation-duration:0.5s;
     animation-delay: 0s;
     animation-timing-function:ease-out;
     animation-fill-mode: forwards;
