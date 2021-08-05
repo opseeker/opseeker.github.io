@@ -531,3 +531,43 @@ pre code {
             opacity: 0;
     }
 }
+
+#loader{
+    position:fixed;
+    color:black;
+    font-weight: bold;
+    min-width:100%;
+    min-height: 100%;
+    box-shadow: 0 4px 8px 4px black;
+    background-image:linear-gradient(to right,rgb(255, 5, 5),rgb(17, 0, 255));
+    padding: 4px 4px;
+    z-index: 5;
+    top: 30vw;
+    left:5vw;
+}
+
+.login{
+    animation-name: login;
+    animation-duration:0.3s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1; 
+}
+@keyframes login {
+    0% { opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.logout{
+    animation-name: logout;
+    animation-duration:0.3s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1; 
+}
+@keyframes logout{
+    0% { opacity:1;}
+    100%{opacity: 0;}
+}
