@@ -16,7 +16,7 @@ window.onload=function() {
     ads.classList.remove('hide');
     setTimeout(function(){ads.classList.add('enter-right');},2000);
 
-    var minutes = 60;
+    var minutes = 5;
     var now = new Date().getTime();
     var setupTime = localStorage.getItem('setupTime');
         if (setupTime == null) {
