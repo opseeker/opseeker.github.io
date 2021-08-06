@@ -588,3 +588,46 @@ body{
     0% { opacity:1;}
     100%{opacity: 0;}
 }
+
+.ad-box {
+    z-index:5;
+    position:fixed;
+    background-color: black;
+    border:2px solid red;
+    border-radius: 20px 0 0 20px;
+    width:60vw;
+    top:10vh;
+    right:-62vw;
+    padding: 1px 2px;
+}
+
+.enter-right {
+    animation-name: e-right;
+    animation-duration:1s;
+    animation-delay: 1s;
+    animation-timing-function:ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1; 
+}
+@keyframes e-right {
+    from {right:-62vw;}
+    to{right: 1vw;}
+}
+@keyframes ex-right {
+    from {right:1vw;}
+    to{right: -62vw;}
+}
+.exit-right {
+    animation-name: ex-right;
+    animation-duration:0.4s;
+    animation-delay: 0s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1; 
+}
+
+#closebtnad{
+    position: relative;
+    top:0.5vh;
+    left:54vw;
+}
