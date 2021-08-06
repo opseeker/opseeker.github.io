@@ -5,3 +5,18 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
 }
+.frame{
+    margin: 4px 1px 2px 1px;
+    padding: 1px 1px 1px 1px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.statusbar{
+    position: fixed;
+    bottom:1px;
+    left:20vw;
+    z-index: 2;
+    border: 1px solid red;
+    min-width: 60vw;
+    min-height: 10vh;
+    border-radius:10px 10px 0 0;
+}
