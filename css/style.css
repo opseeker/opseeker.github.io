@@ -598,7 +598,11 @@ body{
     width:60vw;
     top:10vh;
     right:-62vw;
-    padding: 1px 2px;
+    font-family: 'Shadows Into Light', cursive;
+}
+.adC{
+    padding-left:3px;
+    padding-right:2px;
 }
 
 .enter-right {
