@@ -1,6 +1,19 @@
 /* javascriptt author ankit*/
+/*
+var menu=document.getElementById('menu-content');
 
-
+function menuH(){
+    menu.classList.remove('menu-enter');
+    menu.classList.add('menu-exit');
+    setTimeout(function(){menu.classList.add('hide');},2000);
+};
+function menut(){
+    //menu.classList.toggle('hide');
+    menu.classList.remove('hide');
+    menu.classList.add('menu-enter');
+    setTimeout(function(){menuH();},5000);
+};
+*/
 /*function mode(){document.body.classList.toggle('dark-mode');}*/
 /*
     var menu=document.getElementById('menu-content');
