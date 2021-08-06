@@ -2,6 +2,7 @@
 
 
 /*function mode(){document.body.classList.toggle('dark-mode');}*/
+/*
     var menu=document.getElementById('menu-content');
     var l0=document.getElementById('home');
     var l1=document.getElementById('vlink1');
@@ -110,7 +111,8 @@
         head.classList.toggle('hide');
         content.classList.toggle('hide');
     }
-
+*/    
+/*
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -135,6 +137,7 @@ $(document).ready(function(){
     } // End if
   });
 });
+*/
 
 function goBack(){
     window.history.back();
