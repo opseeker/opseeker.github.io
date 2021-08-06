@@ -607,8 +607,8 @@ body{
 
 .enter-right {
     animation-name: e-right;
-    animation-duration:1s;
-    animation-delay: 1s;
+    animation-duration:0.5s;
+    animation-delay: 0s;
     animation-timing-function:ease-in;
     animation-fill-mode: forwards;
     animation-iteration-count: 1; 
@@ -634,4 +634,33 @@ body{
     position: relative;
     top:0.5vh;
     left:54vw;
+}
+
+/*let the menu-nav aniate*/
+.menu-entry {
+    right:18vw;
+}
+.menu-enter {
+    animation-name: menuIn;
+    animation-duration:0.3s;
+    animation-delay: 0s;
+    animation-timing-function:ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1; 
+}
+@keyframes menuIn {
+    from{right:18vw;}
+    to{right:-58vw;}
+}
+.menu-exit {
+    animation-name: menuOut;
+    animation-duration:0.3s;
+    animation-delay: 0s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1; 
+}
+@keyframes menuOut {
+    from{right:-58vw;}
+    to{right:18vw;}
 }
