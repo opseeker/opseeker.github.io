@@ -11,7 +11,7 @@ window.onload=function() {
         setTimeout(function(){load.classList.add('hide');},2000);
         localStorage.setItem("startMesseges", "true");
     }
-    num.innerHTML=('080621FRI'); 
+    num.innerHTML=('080721SAT'); 
 
     ads.classList.remove('hide');
     setTimeout(function(){ads.classList.add('enter-right');},2000);
