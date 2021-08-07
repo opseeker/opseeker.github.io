@@ -5,7 +5,7 @@ var menu=document.getElementById('menu-content');
 function menuH(){
     menu.classList.remove('menu-enter');
     menu.classList.add('menu-exit');
-    setTimeout(function(){menu.classList.add('hide');},100);
+    setTimeout(function(){menu.classList.add('hide');},300);
 };
 function menut(){
     menu.classList.remove('hide');
