@@ -25,9 +25,9 @@
         margin: 5% !important;
     }
 
-    .dropdown:hover .dropdown-content {
+    /*.dropdown:hover .dropdown-content {
         display: block !important;
-    }
+    }*/
 
     .top-banner {
         left: 42vw !important;
