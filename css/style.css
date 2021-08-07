@@ -593,6 +593,7 @@ body{
     z-index:5;
     position:fixed;
     background-color: black;
+    opacity: 0.9;
     border:2px solid red;
     border-radius: 20px 0 0 20px;
     width:60vw;
