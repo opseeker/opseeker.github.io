@@ -389,8 +389,8 @@ pre code {
     border-bottom-width: 20px;
     padding: 5px 10px 30px 20px;
     color: rgb(245, 94, 6);
-    background-color: rgb(41, 19, 19);
-    opacity: 0.8;
+    background-color: rgb(29, 13, 13);
+    opacity: 0.96;
 }
 .orangeBorder h1,a{
     text-transform: capitalize;
@@ -415,12 +415,6 @@ pre code {
         left: 24vw;
     }
 
-    body {
-        background-position: top;
-        background-attachment: fixed;
-        background-image: none !important;
-    }
-
     #prog1img {
         width: 300px;
         border-radius: 50%;
@@ -432,6 +426,7 @@ pre code {
     width: 120px;
     border-radius: 50%;
     display: inline-block;
+    border: 2px dashed red;
 }
 
 #pro1h2 {
@@ -462,7 +457,7 @@ pre code {
     padding: 10px 10px 10px 20px;
     color: white;
     background-color: rgb(207, 115, 9);
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .orangeBorderB a {
@@ -665,3 +660,4 @@ body{
     from{right:-58vw;}
     to{right:18vw;}
 }
+
