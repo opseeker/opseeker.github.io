@@ -1,6 +1,7 @@
 /* javascriptt author ankit*/
 
 var menu=document.getElementById('menu-content');
+var menubtn=document.getElementById('menu-nav');
 
 function menuH(){
     menu.classList.remove('menu-enter');
