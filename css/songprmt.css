@@ -1,0 +1,15 @@
+/*text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;*/
+#songbody {
+    display: none;
+}
+#controlthebeat {
+    position: fixed;
+    top:30vh;
+    left:10vw;
+}
+#controlthebeat img {
+    width: 80vw;
+    border:1px solid red;
+    border-radius: 50%;
+}
+
