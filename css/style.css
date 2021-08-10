@@ -315,7 +315,7 @@ tr,th,td {
     -webkit-transition: .4s;
     transition: .4s;
 }
-
+/*8*/
 input:checked+.slider {
     background-color: white;
 }
