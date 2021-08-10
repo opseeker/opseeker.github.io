@@ -389,7 +389,7 @@ pre code {
     border-top-width: 30px;
     border-bottom-width: 20px;
     padding: 5px 10px 30px 20px;
-    color: rgb(255, 123, 0);
+    color: white;
     background-color: black;
     opacity: 0.96;
 }
@@ -663,3 +663,13 @@ body{
     to{right:18vw;}
 }
 
+.dark-mode .orangeBorder {
+    color: rgb(255, 123, 0);
+}
+body{background:black;}
+.dark-mode #vlink5{
+    display: block;
+}
+#vlink5{
+    display:none;
+}
