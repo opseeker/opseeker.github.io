@@ -119,7 +119,7 @@ h4 {
 }
 
 #menu {
-    background-color: orange;
+    background-color: darkorange;
     width: 100.5vw;
 }
 
@@ -264,7 +264,7 @@ tr,th,td {
 
 .dropdown-content {
     position: absolute;
-    background-image: linear-gradient(to bottom,red,green,blue);
+    background-image: linear-gradient(to top,red,darkorange);
     border-radius: 30px;
     min-width: 280px;
     box-shadow: 0 8px 16px 0 black;
@@ -299,7 +299,7 @@ tr,th,td {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: red;
+    background-color:darkorange;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -383,12 +383,13 @@ pre code {
 
 /*orange border box for blog and other uses copied from THE WATCH CARTOONS */
 .orangeBorder {
-    border: 1px solid rgb(207, 115, 9);
+    border: 1px solid ;
+    border-color: rgb(255, 123, 0);
     border-radius: 10px;
     border-top-width: 30px;
     border-bottom-width: 20px;
     padding: 5px 10px 30px 20px;
-    color: rgb(245, 94, 6);
+    color: rgb(255, 123, 0);
     background-color: rgb(29, 13, 13);
     opacity: 0.96;
 }
