@@ -48,6 +48,8 @@ function closeAd(){
 function splay(){
     var mainaud=document.getElementById('controlthebeat');
     var audio=document.getElementById('saud');
+    var soaud=document.getElementById('songp');
     audio.play();
-    setTimeout(function(){mainaud.classList.add('startupOff')})
+    mainaud.classList.add('startupOff');
+    setTimeout(function(){soaud.classList.add('hide');},500);
 }
