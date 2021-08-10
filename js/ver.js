@@ -3,7 +3,7 @@ var target=document.getElementById('startup');
 var load=document.getElementById('loader');
 var ads=document.getElementById('ad001');
 var menu=document.getElementById('menu-content');
-
+//start
 window.onload=function() {
     if(!localStorage.getItem('startMesseges')){
         //load.classList.remove('hide');
