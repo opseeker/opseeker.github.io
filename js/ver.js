@@ -13,7 +13,7 @@ window.onload=function() {
        // setTimeout(function(){load.classList.add('hide');},2000);
         localStorage.setItem("startMesseges", "true");
     }
-    num.innerHTML=('080921MON'); 
+    num.innerHTML=('081021'); 
 
     //ads.classList.remove('hide');
     //setTimeout(function(){ads.classList.add('enter-right');},2000);
@@ -45,3 +45,9 @@ function closeAd(){
 
 //localStorage.removeItem("name of localStorage variable you want to remove");
 
+function splay(){
+    var mainaud=document.getElementById('controlthebeat');
+    var audio=document.getElementById('saud');
+    audio.play();
+    setTimeout(function(){mainaud.classList.add('startupOff')})
+}
