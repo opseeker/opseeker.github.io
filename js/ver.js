@@ -45,7 +45,7 @@ function closeAd(){
 
 //localStorage.removeItem("name of localStorage variable you want to remove");
 
-function splay(){
+function splay(){   //songpromotion
     var mainaud=document.getElementById('controlthebeat');
     var audio=document.getElementById('saud');
     var soaud=document.getElementById('songp');
