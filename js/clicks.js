@@ -16,7 +16,7 @@ function menut(){
     //setTimeout(function(){menuH();},5000);
 };
 
-/*function mode(){document.body.classList.toggle('dark-mode');}*/
+function mode(){document.body.classList.toggle('dark-mode');}
 /*
     var menu=document.getElementById('menu-content');
     var l0=document.getElementById('home');
