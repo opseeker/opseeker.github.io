@@ -14,14 +14,15 @@
     border:1px solid red;
     border-radius: 50%;
 }
-#homeVid {
-    z-index: -1;
+#vlink4 video {
+    z-index: -100;
     position: fixed;
-    bottom: 0;
+    top: 0;
     left:0;
-    opacity: 0.8;
-}
-#homeVid video {
     width:100vw;
+    opacity: 0.8;
+    background-size: cover;
+    transition: 1s opacity;
 }
+
 
