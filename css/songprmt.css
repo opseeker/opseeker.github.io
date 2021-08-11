@@ -6,10 +6,21 @@
     position: fixed;
     top:30vh;
     left:10vw;
+    z-index: 6;
+    box-shadow:2px black;
 }
-#controlthebeat img {
+#controlthebeat video {
     width: 80vw;
     border:1px solid red;
     border-radius: 50%;
+}
+#homeVid {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
+#homeVid video {
+    width:100vw;
 }
 
