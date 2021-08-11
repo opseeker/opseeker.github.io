@@ -7,13 +7,13 @@ var menu=document.getElementById('menu-content');
 window.onload=function() {
     if(!localStorage.getItem('startMesseges')){
         //load.classList.remove('hide');
-        menu.classList.add('hide');
         setTimeout(function(){load.classList.add('logout');},1000);
         setTimeout(function(){target.classList.remove('hide');target.classList.add('startupOn')},1550);
        // setTimeout(function(){load.classList.add('hide');},2000);
         localStorage.setItem("startMesseges", "true");
     }
-    num.innerHTML=('081021'); 
+        menu.classList.add('hide');
+        num.innerHTML=('081121'); 
 
     //ads.classList.remove('hide');
     //setTimeout(function(){ads.classList.add('enter-right');},2000);
@@ -49,7 +49,9 @@ function splay(){   //songpromotion
     var mainaud=document.getElementById('controlthebeat');
     var audio=document.getElementById('saud');
     var soaud=document.getElementById('songp');
+    var prVid=document.getElementById('prV');
     audio.play();
+    prVid.pause();
     mainaud.classList.add('startupOff');
     setTimeout(function(){soaud.classList.add('hide');},500);
 }
