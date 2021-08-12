@@ -33,7 +33,7 @@
     top: 5vh;
     left:0;
     width:100vw;
-    opacity: 0.5;
+    opacity: 0.99;
     background-size: cover;
     transition: 1s opacity;
 }
