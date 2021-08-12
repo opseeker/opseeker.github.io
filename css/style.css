@@ -89,7 +89,7 @@ font-family: 'Shadows Into Light', cursive;*/
 /*anime listing================================================================*/
 .orangeBorder {
     border: 1px solid ;
-    border-color: rgb(255, 123, 0);
+    border-color:white;
     border-radius: 10px;
     border-top-width: 30px;
     border-bottom-width: 20px;
@@ -98,6 +98,9 @@ font-family: 'Shadows Into Light', cursive;*/
     background-color: black;
     opacity: 0.8;
 }
+
+
+
 .orangeBorder h1,a{
     text-transform: capitalize;
 }
@@ -131,7 +134,7 @@ font-family: 'Shadows Into Light', cursive;*/
     text-align: center;
     font-size: 1.5em;
     opacity: 1;
-    color: white;
+    color: black;
 }
 
 
@@ -164,6 +167,17 @@ font-family: 'Shadows Into Light', cursive;*/
     display: block;
 }
 
+.dark-mode .orangeBorder {
+    border-color: rgb(255, 123, 0);
+}
+
+.dark-mode .orangeBorder h1 {
+    color:white;
+}
+
+.dark-mode #vlink4 video {
+    opacity:0.5;
+}
 /*SWITCH MODE==============*/
 .switch {
     position: relative;
