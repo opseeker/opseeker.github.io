@@ -44,7 +44,7 @@ function closeAd(){
 }
 
 //localStorage.removeItem("name of localStorage variable you want to remove");
-
+/*
 function splay(){   //songpromotion
     var mainaud=document.getElementById('controlthebeat');
     var audio=document.getElementById('saud');
@@ -55,3 +55,4 @@ function splay(){   //songpromotion
     mainaud.classList.add('startupOff');
     setTimeout(function(){soaud.classList.add('hide');},500);
 }
+*/
