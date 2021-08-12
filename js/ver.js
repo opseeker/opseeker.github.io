@@ -44,15 +44,15 @@ function closeAd(){
 }
 
 //localStorage.removeItem("name of localStorage variable you want to remove");
-/*
+
 function splay(){   //songpromotion
     var mainaud=document.getElementById('controlthebeat');
     var audio=document.getElementById('saud');
     var soaud=document.getElementById('songp');
     var prVid=document.getElementById('prV');
-    audio.play();
+    //audio.play();
     prVid.pause();
     mainaud.classList.add('startupOff');
     setTimeout(function(){soaud.classList.add('hide');},500);
 }
-*/
+
