@@ -1,14 +1,9 @@
 /*text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;*/
+
 #songbody {
     display: none;
 }
 
-#controlthebeat{
-    position: fixed;
-    top:30vh;
-    left:10vw;
-    z-index: 6;
-}
 
 .sonGcontent{
     hyphens: auto;
@@ -21,12 +16,20 @@
     text-shadow: -1px -1px 0px white, 1px 1px 0px #00ccff;
 }
 
+#controlthebeat{
+    position: fixed;
+    top:30vh;
+    left:10vw;
+    z-index: 6;
+}
+
 #controlthebeat video {
     width: 80vw;
     border:1px solid red;
     border-radius: 50%;
     box-shadow:5px 5px 0 0 white;
 }
+
 #vlink4 video {
     z-index: -100;
     position: fixed;
