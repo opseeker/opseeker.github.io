@@ -644,8 +644,7 @@ tr,th,td {
 
 .dropdown-content {
     position: absolute;
-    background-image: linear-gradient(to top,red,#FF7C00);
-    border-radius: 30px;
+    background: red;
     min-width: 280px;
     box-shadow: 0 8px 16px 0 black;
     z-index: 5;
