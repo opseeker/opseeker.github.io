@@ -1,5 +1,3 @@
-/* javascriptt author ankit*/
-
 var menu=document.getElementById('menu-content');
 var menubtn=document.getElementById('menu-nav');
 var i1=document.getElementById('ico1');
@@ -19,8 +17,6 @@ function menut(){
     menu.classList.remove('hide');
     menu.classList.add('menu-enter');
     menu.classList.remove('menu-exit');
-    //menu.classList.toggle('hide');
-    //setTimeout(function(){menuH();},5000);
 };
 
 function mode(){document.body.classList.toggle('dark-mode');}
