@@ -95,7 +95,9 @@ font-family: 'Shadows Into Light', cursive;*/
     opacity: 0.8;
 }
 
-
+.orangeBorder a:active {color:green;}
+.orangeBorder a:hover {color:red;}
+.orangeBorder a:visited {color:white;}
 
 .orangeBorder h1,a{
     text-transform: capitalize;
