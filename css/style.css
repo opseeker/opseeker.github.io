@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
+html {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*=================================================
+    common occurences
+-==================================================*/
+#startup, .slider, .orangeBorderB, #menu {
+    background-color: #FF7C00;
+}
+
+.startupOn, .startupOff, 
+.enter-right, .exit-right, 
+.menu-exit, .menu-enter, 
+.logout {
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;  
+}
+
+#loader .loadtxt h1, #loader .loadtxt p, 
+#closebtnad, .switch, .dropdown, .bordered {
+    position: relative;
+}
+
+
 /*Media querries================================================================*/
 @media (min-width:1024px) {
     body {
@@ -95,9 +125,8 @@ font-family: 'Shadows Into Light', cursive;*/
     opacity: 0.8;
 }
 
-.orangeBorder a:active {color:green;}
-.orangeBorder a:hover {color:red;}
-.orangeBorder a:visited {color:white;}
+.orangeBorder a:hover {color:#b85128;}
+.orangeBorder a:visited {color:#FFF;}
 
 .orangeBorder h1,a{
     text-transform: capitalize;
@@ -105,13 +134,12 @@ font-family: 'Shadows Into Light', cursive;*/
 
 /*Big Borderboss*/
 .orangeBorderB {
-    border: 1px solid rgb(207, 115, 9);
+    border: 1px solid #FF7C00;
     border-radius: 10px;
     border-top-width: 20px;
     border-bottom-width: 10px;
     padding: 10px 10px 10px 20px;
     color: white;
-    background-color: rgb(207, 115, 9);
     opacity: 1;
 }
 
@@ -178,7 +206,6 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 /*SWITCH MODE==============*/
 .switch {
-    position: relative;
     display: inline-block;
     width: 40px;
     height: 20px;
@@ -197,7 +224,6 @@ font-family: 'Shadows Into Light', cursive;*/
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:darkorange;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -249,66 +275,45 @@ input:checked+.slider:before {
 
 /* ANIMATIONS ================================================================*/
 .startupOn{
-    animation-name: screenOn;
     animation-duration:0.4s;
-    animation-delay: 0s;
+    animation-name: screenOn;
     animation-timing-function:ease-in;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;  
 }
 
 .startupOff{
-    animation-name:screenOff;
     animation-duration:0.4s;
-    animation-delay: 0s;
+    animation-name:screenOff;
     animation-timing-function:ease-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
 }
 
 .logout{
     animation-name: logout;
     animation-duration:0.8s;
-    animation-delay: 0s;
     animation-timing-function:ease-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1; 
 }
 
 .enter-right {
     animation-name: e-right;
     animation-duration:0.5s;
-    animation-delay: 0s;
     animation-timing-function:ease-in;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1; 
 }
 
 .exit-right {
-    animation-name: ex-right;
     animation-duration:0.4s;
-    animation-delay: 0s;
+    animation-name: ex-right;
     animation-timing-function:ease-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1; 
 }
 
 .menu-enter {
     animation-name: menuIn;
     animation-duration:0.3s;
-    animation-delay: 0s;
     animation-timing-function:ease-in;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1; 
 }
 
 .menu-exit {
     animation-name: menuOut;
     animation-duration:0.3s;
-    animation-delay: 0s;
     animation-timing-function:ease-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1; 
 }
 
 /* KEYFRAMES ================================================*/
@@ -374,15 +379,13 @@ input:checked+.slider:before {
     padding-right:2px;
 }
 
-#closebtnad{
-    position: relative;
+#closebtnad {
     top:0.5vh;
     left:54vw;
 }
 
 #loader .loadtxt p{
     font-size: 8vw !important;
-    position: relative;
     top:20vh;
     border:1px solid black;
     background:black;
@@ -390,7 +393,6 @@ input:checked+.slider:before {
 
 #loader .loadtxt h1{
     font-size: 15vw !important;
-    position: relative;
     top:20vh;
     border:1px solid black;
     background:black;
@@ -422,7 +424,6 @@ input:checked+.slider:before {
     width:85vw;
     box-shadow: 4px 4px 4px 4px black;
     opacity: 1;
-    background-color:rgb(255, 155, 155);
     padding: 4px 2px;
     z-index: 5;
     top: 30vw;
@@ -459,7 +460,6 @@ h4 {
     border: 1px solid green;
     padding: 10px 0 10px 0;
     text-align: center;
-    position: relative;
 }
 
 .container {
@@ -504,7 +504,6 @@ h4 {
 }
 
 #menu {
-    background-color: darkorange;
     width: 100.5vw;
 }
 
@@ -519,7 +518,7 @@ a {
 }
 
 topic {
-    background-color: pink;
+    background-color: #FF7C00;
     color: black;
     font-weight: bold;
     font-size: 18px;
@@ -546,7 +545,7 @@ green {
 }
 
 orange {
-    color: orange;
+    color: #FF7C00;
 }
 
 .code {
@@ -640,13 +639,12 @@ tr,th,td {
 }
 
 .dropdown {
-    position: relative;
     display: inline-block;
 }
 
 .dropdown-content {
     position: absolute;
-    background-image: linear-gradient(to top,red,darkorange);
+    background-image: linear-gradient(to top,red,#FF7C00);
     border-radius: 30px;
     min-width: 280px;
     box-shadow: 0 8px 16px 0 black;
@@ -687,22 +685,8 @@ pre code {
     padding-right: 5px;
 }
 
-
-
-
-
-
-
 #vlink5 .container {
     margin-bottom:0px;
-}
-
-body{
-    user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 .lead {
@@ -711,37 +695,10 @@ body{
     margin:2px 2px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*let the menu-nav aniate*/
 .menu-entry {
     right:18vw;
 }
-
-
 
 body{
     background:black;
