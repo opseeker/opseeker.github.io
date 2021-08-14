@@ -9,7 +9,7 @@ var hmc=document.getElementById('_manhwa-c');
 function manhwa() {
     s1.classList.add('hide');
     hm.classList.add('hide');
-    hmc.classList.remove('hide');
+    //hmc.classList.remove('hide');
 }
 
 function menuH(){
