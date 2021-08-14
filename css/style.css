@@ -707,3 +707,16 @@ body{
 #vlink5{
     display:none;
 }
+
+/*=================================================================
+    Hmanhwa section part
+======================================================================*/
+#_manhwa-c {
+    margin:0px !important;
+}
+
+#_manhwa-c img {
+    width:100%;
+    height:auto;
+    margin-top:-5px;
+}
