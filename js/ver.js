@@ -3,12 +3,13 @@ var target=document.getElementById('startup');
 var load=document.getElementById('loader');
 var ads=document.getElementById('ad001');
 var menu=document.getElementById('menu-content');
+
 //start
 window.onload=function() {
     if(!localStorage.getItem('startMesseges')){
         //load.classList.remove('hide');
         setTimeout(function(){load.classList.add('logout');},1000);
-        setTimeout(function(){target.classList.remove('hide');target.classList.add('startupOn')},1550);
+        //setTimeout(function(){target.classList.remove('hide');target.classList.add('startupOn')},1550);
        // setTimeout(function(){load.classList.add('hide');},2000);
         localStorage.setItem("startMesseges", "true");
     }
