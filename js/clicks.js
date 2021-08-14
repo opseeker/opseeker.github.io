@@ -2,7 +2,13 @@ var menu=document.getElementById('menu-content');
 var menubtn=document.getElementById('menu-nav');
 var i1=document.getElementById('ico1');
 var i2=document.getElementById('ico2');
+var s1=document.getElementById('vlink4');
+var hm=document.getElementById('_manhwa');
 
+function manhwa() {
+    s1.classList.add('hide');
+    hm.classList.add('hide');
+}
 
 function menuH(){
     i1.classList.remove('hide');
