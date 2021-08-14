@@ -4,10 +4,12 @@ var i1=document.getElementById('ico1');
 var i2=document.getElementById('ico2');
 var s1=document.getElementById('vlink4');
 var hm=document.getElementById('_manhwa');
+var hmc=document.getElementById('_manhwa-c');
 
 function manhwa() {
     s1.classList.add('hide');
     hm.classList.add('hide');
+    hmc.classList.remove('hide');
 }
 
 function menuH(){
