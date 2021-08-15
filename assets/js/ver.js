@@ -2,7 +2,6 @@ var num=document.getElementById('version');
 var target=document.getElementById('startup');
 var load=document.getElementById('loader');
 var ads=document.getElementById('ad001');
-var menu=document.getElementById('menu-content');
 
 //start
 window.onload=function() {
@@ -13,8 +12,7 @@ window.onload=function() {
        // setTimeout(function(){load.classList.add('hide');},2000);
         localStorage.setItem("startMesseges", "true");
     }
-        menu.classList.add('hide');
-        num.innerHTML=('081321'); 
+        num.innerHTML=('081521'); 
 
     //ads.classList.remove('hide');
     //setTimeout(function(){ads.classList.add('enter-right');},2000);
