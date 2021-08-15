@@ -13,7 +13,7 @@ window.onload=function() {
        // setTimeout(function(){load.classList.add('hide');},2000);
         localStorage.setItem("startMesseges", "true");
     }
-        menu.classList.add('hide');
+        //menu.classList.add('hide');
         num.innerHTML=('081321'); 
 
     //ads.classList.remove('hide');

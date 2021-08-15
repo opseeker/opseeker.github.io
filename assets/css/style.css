@@ -351,13 +351,13 @@ input:checked+.slider:before {
 }
 
 @keyframes menuIn {
-    from{right:18vw;}
-    to{right:-58vw;}
+    from{left:-101vw;}
+    to{left:0;}
 }
 
 @keyframes menuOut {
-    from{right:-58vw;}
-    to{right:18vw;}
+    from{left:0;}
+    to{left:-101vw;}
 }
 
 /* LAYOUTS DESIGN ================================================================*/
@@ -482,6 +482,10 @@ h4 {
     font-size: 16px;
 }
 
+#menu {
+    width: 100.5vw;
+}
+
 .imp {
     text-transform: uppercase;
 }
@@ -501,10 +505,6 @@ h4 {
 
 .footer-container {
     margin-top: 150px;
-}
-
-#menu {
-    width: 100.5vw;
 }
 
 a {
@@ -530,7 +530,6 @@ topic {
     margin-right: -10px;
     width: 101%;
     font-family: Arial, sans-serif !important;
-    top: -4px;
     z-index: 5;
 }
 
@@ -644,10 +643,16 @@ tr,th,td {
 
 .dropdown-content {
     position: absolute;
-    background: red;
-    min-width: 280px;
+    background-image: url(../media/img/bg/bg_menu.jpg);
+    background-size: cover;
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    width: 101vw;
+    height:100vh;
     box-shadow: 0 8px 16px 0 black;
     z-index: 5;
+    top:65px;
+    left:-101vw;
 }
 
 .dropdown-content a {
@@ -695,9 +700,6 @@ pre code {
 }
 
 /*let the menu-nav aniate*/
-.menu-entry {
-    right:18vw;
-}
 
 body{
     background:black;
@@ -722,4 +724,14 @@ body{
     width:100%;
     height:auto;
     margin-top:-5px;
+}
+
+#_menu-author-img {
+    position:relative;
+    left:22vw;
+    top: 10vh;
+    width:60vw;
+    height:auto;
+    border-radius: 50%;
+    margin-bottom: 20vh;
 }
