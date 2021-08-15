@@ -1,4 +1,3 @@
-// click javascript
 var menu=document.getElementById('menu-content');
 var menubtn=document.getElementById('menu-nav');
 var i1=document.getElementById('ico1');
