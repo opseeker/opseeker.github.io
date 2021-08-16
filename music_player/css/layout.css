@@ -1,0 +1,71 @@
+html {user-select: none;-ms-user-select: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;}
+
+/*======================================================================================================================
+    DO NOT EDIT ABOVE THIS
+=======================================================================================================================*/
+
+/*==================================    ROOT VAR    */
+:root {
+    --default-color: white;
+    --border-color:white;
+    --border-rad:5px;
+    --font-size: 16px;
+    --screen-width:100vw;
+    --bg-nav: linear-gradient(to bottom,black,rgb(31, 0, 0));
+    --nav-height:10vh;
+    --nav-bottom: var(--nav-height);
+    --quick-bar-width: 100%;
+    --quick-bar-height: 5vh;
+    --quick-bar-bg: grey;
+    --list-top-gap: 2vh;
+    --list-a-padding: 20px;
+}
+
+/*==================================    .dark-mode  */
+.dark-mode {
+    background-color: black;
+    color: var(--default-color);
+}
+
+.dark-mode .border {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-rad);
+}
+
+/*==================================    NAVIGATION  */
+#_navigation-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--screen-width);
+    height: var(--nav-height);
+    background-image: var(--bg-nav);
+}
+
+
+/*==============================     SCREEN */
+#_screen {
+    margin-top: var(--nav-bottom);
+}
+
+/*==============================     Quick-Bar  */
+#_quick-bar {
+    width: var(--quick-bar-width);
+    height: var(--quick-bar-height);
+    background-color: var(--quick-bar-bg);
+}
+
+/*==============================    List    */
+#_list {
+    position: relative;
+    top: var(--list-top-gap);
+    left:0;
+}
+
+.music-list {
+    padding: var(--list-a-padding);
+}
+
+.music-list a {
+    display: block;
+}
