@@ -13,22 +13,26 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-title" content="Ankit Saikia" />
-<meta name="apple-mobile-web-app-status-bar-style" content="default" />
-<meta name="application-name" content="Ankit Saikia">
+<meta name="apple-mobile-web-app-title" content="TEACHMINT GUIDE" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="application-name" content="TEACHMINT GUIDE">
+
 <!--links-->
 <link rel='canonical' href='https://opseeker.github.io/apps/' />
 <link rel='shortcut icon' href='img/teachmint/logo.png' />
 <link rel='apple-touch-icon' href='img/teachmint/logo.png' />
 
-<style>
+<style>/*=====================================   landscape and larger screen devices   */
 @media (min-width: 600px) {
 :root {
---app-banner-width: 100px;
+--app-banner-width: 12vw;
 --app-banner-height:auto;
 --app-banner-margin: 0 0 0 0;
---app-banner-top:-180px;
---app-banner-left:-5px;
+--app-banner-top:1vh;
+--app-banner-left:1vh;
+--box-top:2vh;
+--box-left:11vw;
+--box-margin:0 0 5vh 0;
 --app-playstore-width:400px;
 --app-playstore-height: auto;
 --app-playstore-top:10vh;
@@ -40,36 +44,47 @@
 --app-install-top:18vh;
 --app-install-left:-41vw;
 --app-install-margin:0 0 0 0;
+--footer-margin:0 0 0 0;
+--footer-bottom:0;
+--footer-left:45vw;
 }
 }
 </style>
 <style>
 @media  (max-width:599px) {
 :root {
---app-banner-width: 350px;
+--app-banner-width: 30vw;
 --app-banner-height:auto;
---app-banner-margin: 0 0 80% 0;
---app-banner-top:-70px;
---app-banner-left:5px;
+--app-banner-margin: 0 0 0 0;
+--app-banner-top:2px;
+--app-banner-left:2px;
 --app-playstore-width:98vw;
 --app-playstore-height: auto;
 --app-playstore-top:0;
---app-playstore-left:-2vw;
+--app-playstore-left:0.5vw;
 --app-playstore-margin:0 0 0 0;
---app-install-width:98vw;
+--app-install-width:70vw;
 --app-install-height:auto;
---app-install-top:0;
---app-install-left:1vw;
+--app-install-top:1vh;
+--app-install-left:14vw;
 --app-install-margin:0 0 0 0;
 --box-top:12vh;
 --box-left:0;
---box-margin:0 0 5vh 0;
+--box-margin:0 0 0 0;
+--footer-margin:0 0 0 0;
+--footer-bottom:0;
+--footer-left:30vw;
 }  
 }
 /*=================     footer  */
-.footer-display {
-    text-align: center;
+#_footer {
+    position:absolute;
+    bottom:var(--footer-bottom);
+    left:var(--footer-left);
+    margin: var(--footer-margin);
 }
+
+
 /*================      banner apk  */
 #_apk-banner {
     width:var(--app-banner-width);
