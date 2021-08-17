@@ -22,23 +22,49 @@
 <link rel='apple-touch-icon' href='img/teachmint/logo.png' />
 
 <style>
+@media (min-width: 600px) {
 :root {
-    --app-banner-width: 350px;
-    --app-banner-height:auto;
-    --app-banner-margin: 0 0 -80px 0;
-    --app-banner-top:-70px;
-    --app-banner-left:5px;
-    --app-playstore-width:98vw;
-    --app-playstore-height: auto;
-    --app-playstore-top:0;
-    --app-playstore-left:-2vw;
-    --app-playstore-margin:0 0 0 0;
-    --app-install-width:98vw;
-    --app-install-height:auto;
-    --app-install-z:2;
-    --app-install-top:0;
-    --app-install-left:-1vw;
-    --app-install-margin:0 0 0 0;
+--app-banner-width: 100px;
+--app-banner-height:auto;
+--app-banner-margin: 0 0 0 0;
+--app-banner-top:-180px;
+--app-banner-left:-5px;
+--app-playstore-width:400px;
+--app-playstore-height: auto;
+--app-playstore-top:10vh;
+--app-playstore-left:-10vw;
+--app-playstore-margin:0 0 0 0;
+--app-install-width:30vw;
+--app-install-height:auto;
+--app-install-z:2;
+--app-install-top:18vh;
+--app-install-left:-41vw;
+--app-install-margin:0 0 0 0;
+}
+}
+</style>
+<style>
+@media  (max-width:599px) {
+:root {
+--app-banner-width: 350px;
+--app-banner-height:auto;
+--app-banner-margin: 0 0 80% 0;
+--app-banner-top:-70px;
+--app-banner-left:5px;
+--app-playstore-width:98vw;
+--app-playstore-height: auto;
+--app-playstore-top:0;
+--app-playstore-left:-2vw;
+--app-playstore-margin:0 0 0 0;
+--app-install-width:98vw;
+--app-install-height:auto;
+--app-install-top:0;
+--app-install-left:1vw;
+--app-install-margin:0 0 0 0;
+--box-top:12vh;
+--box-left:0;
+--box-margin:0 0 5vh 0;
+}  
 }
 /*=================     footer  */
 .footer-display {
@@ -53,6 +79,14 @@
     top:var(--app-banner-top);
     left:var(--app-banner-left);
 }
+/*===============================       playstore box   */
+#_playstore-box {
+    position: absolute;
+    top:var(--box-top);
+    left: var(--box-left);
+    margin: var(--box-margin);
+}
+
 /*===============================      playstore img   */
 #_playstore {
     width:var(--app-playstore-width);
@@ -67,11 +101,11 @@
     width: var(--app-install-width);
     height: var(--app-install-height);
     position: relative;
-    z-index: var(--app-install-z);
     top:var(--app-install-top);
     left:var(--app-install-left);
     margin: var(--app-install-margin);
 }
+
 /*===============================================================*/
 html {
     user-select: none;
@@ -80,11 +114,15 @@ html {
     -ms-user-select: none;
     -khtml-user-select: none;
 }
+
+hidden {display: none}
 </style>
 </head>
 <img src='img/teachmint/banner.png' alt='teachmint' id='_apk-banner' />
+<div id='_playstore-box'>
 <img src='img/teachmint/playstore_banner.jpeg' alt='playstore' id='_playstore' />
 <a href='https://play.google.com/store/apps/details?id=com.teachmint.teachmint&referrer=utm_source%3Dwebsite%26utm_medium%3Dorganic'><img src='img/teachmint/install.jpeg' alt='install' id='_install' /></a>
+</div>
 <div id='_screen'>
 </div>
 
