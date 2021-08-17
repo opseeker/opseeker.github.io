@@ -7,7 +7,7 @@ function goBack(){
 };
 
 function mode(){
-    document.body.classList.toggle('dark-mode');
+    document.classList.toggle('dark-mode');
 };
 
 function menuH(){

@@ -701,7 +701,7 @@ pre code {
 
 /*let the menu-nav aniate*/
 
-body{
+html{
     background:black;
     overflow-x:hidden;
 }

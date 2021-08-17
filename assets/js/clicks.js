@@ -7,6 +7,7 @@ var s1=document.getElementById('vlink4');
 var hm=document.getElementById('_manhwa');
 var hmc=document.getElementById('_manhwa-c');
 var scr=document.getElementById('_mains');
+var y=document.getElementById('body');
 
 function manhwa() {
     s1.classList.add('hide');
@@ -33,7 +34,7 @@ function menut(){
     menu.classList.remove('menu-exit');
 };
 
-function mode(){document.body.classList.toggle('dark-mode');}
+function mode(){y.classList.toggle('dark-mode');}
 
 function goBack(){
     window.history.back();
