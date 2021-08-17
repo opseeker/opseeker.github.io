@@ -1,7 +1,9 @@
+/*==================================    PREVENT SELECTION OF TEXTS  */
 html {user-select: none;-ms-user-select: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;}
+.hide {display: none}
 
 /*======================================================================================================================
-    DO NOT EDIT ABOVE THIS
+    DO NOT EDIT ABOVE THIS  LINE
 =======================================================================================================================*/
 
 /*==================================    ROOT VAR    */
@@ -10,16 +12,58 @@ html {user-select: none;-ms-user-select: none;-webkit-user-select: none;-khtml-u
     --border-color:white;
     --border-rad:5px;
     --font-size: 16px;
+    
     --screen-width:100vw;
     --bg-nav: linear-gradient(to bottom,black,rgb(31, 0, 0));
     --nav-height:10vh;
     --nav-bottom: var(--nav-height);
+    
     --quick-bar-width: 100%;
     --quick-bar-height: 5vh;
     --quick-bar-bg: grey;
+    
     --list-top-gap: 2vh;
     --list-a-padding: 20px;
+    --list-a-text-padding: 5px 30px;
+    
+    --player-top: 10vh;
+    --player-left: 0;
+    --player-width: 100vw;
+    --player-height: 80vh;
+    
+    --player-bg-img: url(../images/);
+    --player-bg-img-top: 0;
+    --player-bg-img-left: 0;
+    --player-bg-img-height: 80vh;
+    --player-bg-img-width: 80vw;
+    
+    --player-controls-top: 0;
+    --player-controls-left: 0;
+    --player-controls-height: 0;
+    --player-controls-width:0;
+    --player-controls-bg: black;
+    
+    --mini-player-bottom: 3vh !important; 
+    --mini-player-left: 0 !important;
+    --mini-player-height: 4vh !important;
+    --mini-player-width: 100vw !important;
+    --mini-player-bg: black !important;
+
+
 }
+
+/*==================================    LINKS   */
+html a {
+    text-decoration: none;
+}
+
+a:link {color: var(--default-color)}
+
+a:visited {color:indigo}
+
+a:hover {color:red}
+
+a:empty {color:grey}
 
 /*==================================    .dark-mode  */
 .dark-mode {
@@ -68,4 +112,41 @@ html {user-select: none;-ms-user-select: none;-webkit-user-select: none;-khtml-u
 
 .music-list a {
     display: block;
+    padding: var(--list-a-text-padding);
+}
+
+/*=================================     PLAYER     */
+#_player {
+    position: absolute;
+    top: var(--player-top);
+    left: var(--player-left);
+    width: var(--player-width);
+    height: var(--player-height);
+}
+
+#_player-bg {
+    position: relative;
+    top: var(--player-bg-img-top);
+    left: var(--player-bg-img-left);
+    width: var(--player-bg-img-width);
+    height: var(--player-bg-img-height);
+    background-image: var(--player-bg-img);
+}
+
+#_player-controls {
+    position: relative;
+    top: var(--player-controls-top);
+    left: var(--player-controls-left);
+    width: var(--player-controls-width);
+    height: var(--player-controls-height);
+    background-color: var(--player-controls-bg);
+}
+
+.mini-player {
+    position: absolute;
+    bottom: var(--mini-player-bottom);
+    left:var(--mini-player-left);
+    width: var(--mini-player-width);
+    height: var(--mini-player-height);
+    background-color: var(--mini-player-bg);
 }
