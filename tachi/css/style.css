@@ -1,0 +1,51 @@
+
+/*=======================================
+html important !
+===========================================*/
+html {
+    user-select:none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+hidden {display: none} .hide{display: none}
+
+/*=======================================
+logo
+===========================================*/
+#_logo {
+    position: var(--logo-position);
+    top: var(--logo-top);
+    left: var(--logo-left);
+    width: var(--logo-width);
+}
+
+/*=========================================     images  */
+#_img-left {
+    position:var(--img1-position);
+}
+
+/*=====================================
+footer
+======================================*/
+.social-icons {
+    position: var(--social-icon-position);
+    top:var(--social-icon-top);
+    right:var(--social-icon-right);
+    bottom:var(--social-icon-bottom);
+    background: var(--social-icon-background);
+}
+
+.social-icons a {
+    display: var(--social-icon-display);
+    padding: var(--social-icon-padding-a);
+}
+
+.copyright {
+    text-align: center;
+    position:var(--copyright-position);
+    bottom:var(--copyright-bottom);
+    left:var(--copyright-left);
+}

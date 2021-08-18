@@ -1,0 +1,8 @@
+@media (max-width:599px) {
+:root {
+--social-icon-position: relative;
+--social-icon-top:none; 
+--social-icon-bottom:0;
+--social-icon-right:none;   
+}
+}

@@ -1,0 +1,18 @@
+@media (min-width: 1080px) {
+:root {
+    --logo-position:absolute;
+    --logo-top:0;
+    --logo-left:0;
+    --logo-width:80px;
+    --social-icon-position: absolute;
+    --social-icon-top:1rem; 
+    --social-icon-bottom:none;
+    --social-icon-right:1rem;   
+    --social-icon-background: rgb(150, 150, 150);
+    --social-icon-display:block;
+    --social-icon-padding-a:2px 2px 4px 2px;
+    --copyright-position:absolute;
+    --copyright-bottom:0;
+    --copyright-left:42vw;
+    }
+}
