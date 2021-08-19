@@ -12,6 +12,18 @@ html {
 
 hidden {display: none} .hide{display: none}
 
+/*============================colors */
+blue{color:blue}
+
+/*==================================================     TOPOLOGY    */
+.up {text-transform: uppercase}
+.center {text-align: center}
+.container {
+    padding:var(--container-padding);
+    margin:var(--container-margin);
+}
+.lead{font-size:1.25rem;font-weight:300}
+
 /*=======================================
 logo
 ===========================================*/
@@ -25,6 +37,9 @@ logo
 /*=========================================     images  */
 #_img-left {
     position:var(--img1-position);
+    top: var(--img1-top);
+    left: var(--img1-left);
+    width: var(--img1-width);
 }
 
 /*=====================================
@@ -49,3 +64,16 @@ footer
     bottom:var(--copyright-bottom);
     left:var(--copyright-left);
 }
+
+/*=================================================     writen  */
+#_writen {
+    position:var(--writen-position);
+    top:var(--writen-top);
+    right:var(--writen-right);
+    width:var(--writen-width);
+    height:var(--writen-height);
+    border:var(--writen-border);
+    border-radius:var(--writen-border-radius);
+    background-color:var(--writen-background-color);
+}
+
