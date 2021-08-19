@@ -6,7 +6,6 @@
     width: var(--menu-width);
     height: var(--menu-height);
     background-color: var(--menu-background-color);
-    box-shadow: var(--menu-box-shadow);
     z-index: 10;
 }
 
