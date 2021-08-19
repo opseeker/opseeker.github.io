@@ -1,0 +1,36 @@
+/*=====================================   landscape */
+@media (min-width: 600px) and (max-width:900px){
+    :root {
+    --app-banner-width: 12vw;
+    --app-banner-height:auto;
+    --app-banner-margin: 0 0 0 0;
+    --app-banner-top:1vh;
+    --app-banner-left:1vh;
+    --box-top:2vh;
+    --box-left:11vw;
+    --box-margin:0 0 5vh 0;
+    --app-playstore-width:400px;
+    --app-playstore-height: auto;
+    --app-playstore-top:10vh;
+    --app-playstore-left:-10vw;
+    --app-playstore-margin:0 0 0 0;
+    --app-install-width:30vw;
+    --app-install-height:auto;
+    --app-install-z:2;
+    --app-install-top:20vh;
+    --app-install-left:-50vw;
+    --app-install-margin:0 0 0 0;
+    --footer-margin:0 0 0 0;
+    --footer-bottom:0;
+    --footer-left:20rem;
+    --app-instructions-top:1vh;
+    --app-instructions-left:48vw;
+    --app-instructions-width:50vw;
+    --menu-icon-top:1vw;
+    --menu-icon-right:1vw;
+    --menu-icon-margin:0 0 0 0;
+    --yt-ico-top:1vw;
+    --yt-ico-right:6vw;
+    --yt-ico-margin:0 0 0 0;
+    }
+}
