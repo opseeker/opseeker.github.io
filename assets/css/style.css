@@ -643,7 +643,7 @@ tr,th,td {
 
 .dropdown-content {
     position: absolute;
-    background-image: url(../media/img/bg/bg_menu.jpg);
+    background-color: rgb(184, 184, 184);
     background-size: cover;
     background-attachment: absolute;
     background-repeat: no-repeat;
