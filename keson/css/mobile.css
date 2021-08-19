@@ -39,5 +39,6 @@
     --menu-animation-duration-exit: var(--menu-animation-duration-enter);
     --menu-left-keyframes-a:0;
     --menu-left-keyframes-b:-180px;
+    --menu-content-padding:8px 20px;
     }  
 }

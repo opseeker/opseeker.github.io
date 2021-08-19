@@ -9,6 +9,10 @@
     z-index: 10;
 }
 
+.menu-container {
+    padding:var(--menu-content-padding);
+}
+
 .menu-enter {
     left: var(--menu-left);
     animation-name:_menu-enter;
