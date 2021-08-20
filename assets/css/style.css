@@ -12,7 +12,7 @@ html {
     common occurences
 -==================================================*/
 #startup, .slider, .orangeBorderB, #menu {
-    background-color: #FF7C00;
+    background-color:var(--bg-color-1);
 }
 
 .startupOn, .startupOff, 
@@ -104,7 +104,6 @@ font-family: 'Shadows Into Light', cursive;*/
 
 #home h1 {
     font-size: 15vw !important;
-    ;
     letter-spacing: 1px;
 }
 
@@ -428,11 +427,6 @@ input:checked+.slider:before {
     z-index: 5;
     top: 30vw;
     left:8vw;
-    user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 /* Topography ================================================================*/
@@ -539,16 +533,9 @@ topic {
 .footer-bottom{
     margin-bottom: 5px;
 }
-green {
-    color: green;
-}
-
-orange {
-    color: #FF7C00;
-}
 
 .code {
-    margin: 18px 0 18px 0;
+    margin: var(--code-margin);
 }
 
 .top-banner {
@@ -591,6 +578,7 @@ small {
     border: 3px solid white;
 }
 
+/*=================================== table */
 #detailed {
     margin: 5rem 0 5rem 0;
     display: none;
@@ -617,8 +605,8 @@ small {
 }
 
 table {
-    width: 100%;
-    font-size: 12px;
+    width: var(--table-width);
+    font-size: var(--table-font-size);
     border-collapse: collapse;
 }
 
@@ -630,37 +618,34 @@ tr,th,td {
 
 /*Menu NAVIGATION DROPDOWN =================================================================*/
 .dropdown {
-    background-color: transparent;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    display: inline-block;
+    background-color: var(--dropdown-bg-color);
+    color: var(--dropdown-color);
+    padding: var(--dropdown-padding);
+    font-size: var(--dropdown-font-size);
+    border: var(--dropdown-border);
+    display: var(--dropdown-display);
 }
 
 .dropdown-content {
     position: absolute;
-    background-color: rgb(184, 184, 184);
-    background-size: cover;
-    background-attachment: absolute;
+    background-color: var(--dropdown-bg-color);
+    background-size: var(--dropdown-bg-size);
+    background-attachment: var(--dropdown-bg-attachment);
     background-repeat: no-repeat;
-    width: 101vw;
-    height:100vh;
-    box-shadow: 0 8px 16px 0 black;
+    width: var(--dropdown-width);
+    height:var(--dropdown-height);
+    box-shadow:var(--dropdown-box-shadow);
     z-index: 5;
-    top:65px;
-    left:-101vw;
+    top:var(--dropdown-top);
+    left:var(--dropdown-left);
 }
 
 .dropdown-content a {
-    color: black;
-    font-weight: bold;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    color:var(--dropdown-content-color);
+    font-weight:var(--dropdown-content-font-weight);
+    padding: var(--dropdown-content-padding);
+    text-decoration: var(--dropdown-content-text-decoration);
+    display:var(--dropdown-content-display);
 }
 
 /* IMAGE SETTINGS ================================================================*/
@@ -727,11 +712,11 @@ html{
 }
 
 #_menu-author-img {
-    position:relative;
-    left:22vw;
-    top: 10vh;
-    width:60vw;
-    height:auto;
-    border-radius: 50%;
-    margin-bottom: 20vh;
+    position:var(--mai-position);
+    left:var(--mai-left);
+    top: var(--mai-top);
+    width:var(--mai-width);
+    height:var(--mai-height);
+    border-radius:var(--mai-border-radius);
+    margin-bottom: var(--mai-margin);
 }

@@ -27,8 +27,9 @@
 <link rel="stylesheet" href="assets/css/songprmt.css" type="text/css" />
 <link rel='shortcut icon' href='assets/media/img/icon/img001.jpeg' type='image/jpeg'>
 <link rel='apple-touch-icon' href='assets/media/img/icon/img001.jpeg' type='image/jpeg'/>
+<link rel='stylesheet' href='assets/css/mobile.css'/>
 </head>
-<!--
+
 <body class='dark-mode'>
     <style>
         .up h2 {
@@ -53,156 +54,7 @@
         <h1>. thank you .</h1>
     </div>
 </body>
--->
 
-<div class="preloader">
-<div class="spinner">
-<span>LOADING</span>
-</div>
-</div>
-<div id='body' class='dark-mode'>
-<div id="navigation">
-    <div id="menu">
-    <div class="dropdown">
-    <div id="topbartext">
-        <a href="#menu-nav" onclick="menut()" id='ico1'><svg xmlns="http://www.w3.org/2000/svg" width="30"class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg></a>
-        <a href='#menu-nav-1' class='hide' onclick='menuH()' id='ico2'><svg xmlns="http://www.w3.org/2000/svg" width="29" fill="black" class="bi bi-x-lg" viewBox="0 0 16 16"><path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/></svg></a>
-    </div>
-    <div class="menu-entry dropdown-content hide" onclick='menuH()' style="text-transform: capitalize;"id="menu-content">
-        <div>
-            <img src='assets/media/img/profile/author.jpg' alt='author's face id='_menu-author-img' />
-        </div>
-        <a href="#content0"onclick="home();"class="imp" style='display:inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="white" class="bi bi-house" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/></svg></a> 
-        <a href="https://chat.whatsapp.com/KsWgfKDffIKDVWs3iMytkw" style="display: inline-block;"> <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></a>
-        <a href='#release' onclick="tablelink();" style='display: inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="white" class="bi bi-table" viewBox="0 0 16 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/></svg></a>
-        <a href='pages/yt.html' style='display: inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="35" fill="black" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg></a>
-        <a href='#extraa'style='display:inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="yellow" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
-        <a href="#musical"style='display: inline-block;'><svg xmlns="http://www.w3.org/2000/svg" width="30" fill="blue" class="bi bi-music-note-list" viewBox="0 0 16 16"><path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/><path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/><path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/><path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/></svg></a>
-    </div>
-    </div>
-    <div class="top-banner" onclick='menuH()'><red>W</red>ebDev<small id='version'></small></div>
-    <label class="switch" id="modech"><input type="checkbox" onclick="mode()"><span class="slider round"></span></label>
-    </div>
-    </div> <div class='clearfix1' onclick='menuH()'></div>
-    <section id='_mains'onclick='menuH()'>
-        <section id='vlink4'>
-            <!--div style=' background:black; padding-bottom:5vw;' id='_manhwa'>
-                <div class='orangeBorderB' style='background:red; border-color:red; padding: 5px 5px;'>
-                    <img src='https://drive.google.com/thumbnail?id=132089zrGWKpUkKhsxrMq5WgfrtX6pHVd'/>
-                </div>
-            </div-->
-            <div class='orangeBorder'>
-                <h1>Anime List</h1>
-                <a href='https://www.thewatchcartoononline.tv/anime/arifureta-shokugyou-de-sekai-saikyou-english-subbed'>arifureta</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/shingeki-no-kyojin-english-subbed'>Attack On Titan</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/black-clover-tv-english-subbed'>Black Clover</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/darling-in-the-franxx-english-subbed'>Darling In The Franxx</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/death-march-kara-hajimaru-isekai-kyousoukyoku-english-subbed'>Death March to the Parallel World Rhapsody</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/kimetsu-nno-yaiba-english-subbed'>Demon Slayer</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/cheat-kusushi-no-slow-life-isekai-ni-tsukurou-drugstore-english-subbed'>Drugstore In Another World</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/dr-stone-english-subbed'>Dr. Stone</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/fatestay-night-unlimited-blade-works-english-subbed'>Fate/stay night: Unlimited Blade Works</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/food-wars-shokugeki-no-soma-english-subbed'>Food Wars</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/fullmetal-alchemist-brotherhood-english-subbed'>Fullmetal Alchemist Brotherhood</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/haikyuu-english-subbed'>Haikyu !!</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/genjitsu-shugi-yuusha-no-oukoku-saikenki-english-subbed'>How A Realist Hero Re-built The Kingdom</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/isekai-maou-to-shoukan-shoujo-no-dorei-majutsu-english-subbed'>How Not To Summon A Demon Lord</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/jujutsu-kaisen-tv-english-subbed'>Jujutsu Kaisen</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/what-if'>Marvel- what if</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/meikyuu-black-company'>Meikuu Black Company</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/tsuki-ga-michibiku-isekai-douchuu-english-subbed'>Moonlight Fantasy</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/boku-no-hero-academia-english-subbed'>My Hero Academia</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/otome-game-no-hametsu-flag-shika-nai-akuyaku-reijou-ni-tensei-shiteshimatta-english-subbed'>My Next Life As A Villainess: All Routes Lead To Doom!</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/noblesse-english-subbed'>Noblesse Oblige</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/one-punch-man-english-subbed'>One Punch Man</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/overlord-english-subbed'>Overlord</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/shuumatsu-no-walkure-english-subbed'>Record Of Ragnarok</a>
-                <a href='https://www.thewatchcartoononline.tv/bokutachi-no-remake-episode-1-english-subbed'>Remake Our Life</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/tate-no-yuusha-no-nariagari-english-subbed'>Rising Of The Shield Hero</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/seirei-gensouki-english-subbed'>spirit chronicles</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/sword-art-online-english-subbed'>Sword Art Online</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/sword-art-online-ii-english-subbed'>Sword Art Online II</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/the-god-of-high-school'>the god of high school</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/seijo-no-maryoku-wa-bannou-desu-english-subbed'>The Saint's Magic Power is Omnipotent</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/tensei-shitara-slime-datta-ken-english-subbed'>The Time I Reincarnated As A Slime</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/tokyo-ghoul'>Tokyo Ghoul</a>
-                <a href='https://www.thewatchcartoononline.tv/anime/kenja-no-mago-english-subbed'>Wise man's grandchild</a>
-            </div>
-            <div id='mediaFire'>
-            <div class='orangeBorderB' onclick='menuH()'>
-                <a href='https://www.thewatchcartoononline.tv/anime/what-if'>Marvel- what if</a>
-                <a href='https://www.mediafire.com/file/9e5ydzo9127wdu6/ep1.mp4/file'>Moonlight Fantasy Episode-1</a>
-            </div>
-            </div>
-
-            <video autoplay muted loop>
-                <source src="assets/media/video/VID-20210810-WA0005.mp4" type="video/mp4" quality="low quality"/>
-            </video>
-        </section>
-    </section>
-
-    <div class='footer-top'></div>
-    
-    <footer onclick='menuH()'>
-        <div class='center'>
-            &copy; All Rights Reserved<br>
-           @ O P P A 21<br>
-           mellokits palace<br>
-           spring anime season 2021
-        </div>
-    </footer>
-    
-    <div class='footer-bottom' onclick='menuH()'></div>
-
-    <section id='startup' class='hide' onclick='startCl()'>
-        <div class='startBox'>
-            <div class='up'>
-                <p> Use a VPN if you are unable to acess the links provided.</p>
-                <p>Recommended vpn for this <blue>open</blue><red>VPN</red>.</p>
-                <p1 style='background-color:black;padding:2px 2px;' class='white'>click to <strong><red>CLOSE</red></strong>.</p1>
-            </div>
-        </div>
-    </section>
-
-    <section id='loader'class='hide'>
-        <div class='container'>
-            <div class='center loadtxt'>
-                <h1 class='up'>wait !</h1>
-                <p class='red'>Did you know that I created this site for just research ?</p>
-            </div>
-        </div>
-    </section>
-
-    <section id='promotional'>
-        <div class='up'>
-            <div class='ad-box hide' id='ad001' onclick='closeAd()'>
-                <svg xmlns="http://www.w3.org/2000/svg" id='closebtnad' width="20" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/> </svg>
-                <div class='adC center'>
-                    <h1>Use Open<red>Vpn</red> <br>for better comfort !</h1>                    
-                </div>
-            </div>
-        </div>
-    </section>
-<!--
-    <section id='songp'>
-        <div id='controlthebeat'>
-            <div class='center'>
-                <div class='contaud' onclick="splay()">
-                    <video muted autoplay loop id='prV'>
-                        <source src='assets/VN20210811_070422.mp4' type='video/mp4' />
-                    </video>
-                <p class='sonGcontent'>CLICK TO CLOSE</p>
-                </div>
-            </div>
-        </div>
-        <div id='songbody'>
-            <audio controls loop id='saud'>
-                <source src='assets/RUDE_-_Eternal_Youth(128k).mp3' type="audio/mpeg" />
-            </audio>
-        </div>
-    </section>
--->
-</div>
 
 <script type='text/javascript' src='assets/js/jquery.js'></script>
 <script type='text/javascript' src='assets/js/preloader.js'></script>

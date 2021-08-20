@@ -1,0 +1,38 @@
+/*mobile- 360 x 640 - 414 x 896*/
+
+@media (max-width: 599px) {
+    :root {
+        --bg-color-1:#FF7C00;
+        --code-margin:18px 0 18px 0;
+        --table-width:100%;
+        --table-font-size: 16px;
+        --dropdown-bg-color:transparent;
+        --dropdown-color: var(--bg-color-1);
+        --dropdown-padding: 16px;
+        --dropdown-font-size: 16px;
+        --dropdown-border:none;
+        --dropdown-display: inline-block;
+        --dropdown-bg-color:rgb(184, 184, 184);
+        --dropdown-bg-size:cover;
+        --dropdown-bg-attachment:absolute;
+        --dropdown-width:101vw;
+        --dropdown-height:100vh;
+        --dropdown-box-shadow: 0 8px 16px 0 black;
+        --dropdown-top:65px;
+        --dropdown-left:-101vw;
+        /*=============================DROPDOWN-CONENT-A>>--dropdown-content*/
+        --dropdown-content-color:black;
+        --dropdown-content-font-weight:bold;
+        --dropdown-content-padding:12px 16px;
+        --dropdown-content-text-decoration:none;
+        --dropdown-content-display:block;
+        /*=============================MENU-AUTHOR-IMG>>--mai*/
+        --mai-position:relative;
+        --mai-left:22vw;
+        --mai-top:10vh;
+        --mai-width:60vw;
+        --mai-height:auto;
+        --mai-border-radius:50%;
+        --mai-margin:0 0 20vh 0;
+    }
+}
