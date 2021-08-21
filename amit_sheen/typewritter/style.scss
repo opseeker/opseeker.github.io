@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IM Fell English', serif;
+  background-image: repeating-linear-gradient(60deg, #000 0px, #222 2px, #000 4px);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing {
+  font-size: 48px;
+
+  &::before {
+    content: '';
+    animation: text 15s step-end infinite;
+  }
+
+  @keyframes text {
+    0%  { content: ''; }
+    20% { content: 'T'; }
+    23% { content: 'Th'; }
+    26% { content: 'Thi'; }
+    28% { content: 'This'; }
+    30% { content: 'This '; }
+    32% { content: 'This i'; }
+    35% { content: 'This is'; }
+    37% { content: 'This is '; }
+    40% { content: 'This is y'; }
+    42% { content: 'This is yo'; }
+    44% { content: 'This is you'; }
+    50% { content: 'This is yo'; }
+    51% { content: 'This is y'; }
+    52% { content: 'This is '; }
+    54% { content: 'This is m'; }
+    57% { content: 'This is me'; }
+    59% { content: 'This is me.'; }
+    63% { content: 'This is me'; }
+    64% { content: 'This is m'; }
+    65% { content: 'This is '; }
+    67% { content: 'This is C'; }
+    69% { content: 'This is CO'; }
+    71% { content: 'This is COO'; }
+    73% { content: 'This is COOL'; }
+    75% { content: 'This is COOL!'; }
+    80% { content: 'This is COOL'; }
+    81% { content: 'This is COO'; }
+    82% { content: 'This is CO'; }
+    83% { content: 'This is C'; }
+    85% { content: 'This is '; }
+    86% { content: 'This is'; }
+    87% { content: 'This i'; }
+    89% { content: 'This '; }
+    91% { content: 'This'; }
+    92% { content: 'Thi'; }
+    93% { content: 'Th'; }
+    94% { content: 'T'; }
+    95% { content: ''; }
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 0.1em; height: 0.75em;
+    margin-left: 0.1em;
+    background-color: #fff;
+    animation: blink 0.75s ease-in-out infinite;
+
+    @keyframes blink {
+      0%, 25%, 100% { opacity: 1; }
+      50%, 75% { opacity: 0; }
+    }
+  }
+}
