@@ -12,7 +12,8 @@
         --dropdown-font-size: 16px;
         --dropdown-border:none;
         --dropdown-display: inline-block;
-        --dropdown-bg-color:rgb(184, 184, 184);
+        --dropdown-bg-color:var(--bg-color-1);
+        /*=============================DROPDOWN-CONENT-A && DROPDOWN-CONENT>>--dropdown-content*/
         --dropdown-bg-size:cover;
         --dropdown-bg-attachment:absolute;
         --dropdown-width:101vw;
@@ -20,8 +21,8 @@
         --dropdown-box-shadow: 0 8px 16px 0 black;
         --dropdown-top:65px;
         --dropdown-left:-101vw;
-        /*=============================DROPDOWN-CONENT-A>>--dropdown-content*/
         --dropdown-content-color:black;
+        --dropdown-content-bg-color:rgb(37, 37, 37);
         --dropdown-content-font-weight:bold;
         --dropdown-content-padding:12px 16px;
         --dropdown-content-text-decoration:none;
@@ -34,5 +35,11 @@
         --mai-height:auto;
         --mai-border-radius:50%;
         --mai-margin:0 0 20vh 0;
+        --topic-bg-color:var(--bg-color-1);
+        --topic-color:black;
+        --topic-font-size:18px;
+        /*=============================MENU-ANIMATION-DURATION*/
+        --menu-enter-duration:0.5s;
+        --menu-exit-duration:var(--menu-enter-duration);
     }
 }

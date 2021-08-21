@@ -1,0 +1,20 @@
+body {
+  background: #0a0a0a;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+canvas {
+  width: 80vmin;
+  height: 80vmin;
+}
+/*# sourceMappingURL=style.css.map */

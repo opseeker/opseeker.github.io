@@ -305,13 +305,13 @@ input:checked+.slider:before {
 
 .menu-enter {
     animation-name: menuIn;
-    animation-duration:0.3s;
+    animation-duration:var(--menu-enter-duration);
     animation-timing-function:ease-in;
 }
 
 .menu-exit {
     animation-name: menuOut;
-    animation-duration:0.3s;
+    animation-duration:var(--menu-exit-duration);
     animation-timing-function:ease-out;
 }
 
@@ -512,10 +512,10 @@ a {
 }
 
 topic {
-    background-color: #FF7C00;
-    color: black;
+    background-color:var(--topic-bg-color);
+    color:var(--topic-color);
     font-weight: bold;
-    font-size: 18px;
+    font-size:var(--topic-font-size);
 }
 
 #navigation {
@@ -628,7 +628,7 @@ tr,th,td {
 
 .dropdown-content {
     position: absolute;
-    background-color: var(--dropdown-bg-color);
+    background-color: var(--dropdown-content-bg-color);
     background-size: var(--dropdown-bg-size);
     background-attachment: var(--dropdown-bg-attachment);
     background-repeat: no-repeat;
