@@ -1,0 +1,176 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+$size: 50px;
+$speed: 12s;
+
+$clr1: #0ff;
+$clr2: #f0f;
+$clr3: #ff0;
+
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: $size * 15;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  transform-style: preserve-3d;
+  // transform: rotateY(0deg);
+  animation: rotate $speed * 2.7 infinite linear;
+
+  @keyframes rotate {
+    from { transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg); }
+    to { transform: rotatex(360deg) rotateY(720deg) rotateZ(360deg); }
+  }
+
+}
+
+.pole {
+  position: absolute;
+  transform-style: preserve-3d;
+
+  @for $p from 0 to 6 {
+    &:nth-child(#{$p + 1}) {
+      transform: rotate($p * 60deg) translateX($size * 3);
+      & > div::before {
+        animation-delay: $speed / -6 * ($p + 0.5);
+      }
+    }
+  }
+
+  & > div {
+    position: absolute;
+    background-color: #111;
+    box-shadow: 0 0 $size * 0.5 #000 inset;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 100%; height: $size * 2;
+      opacity: 0.25;
+      animation:
+        poleBack $speed/3 infinite linear,
+        poleColor $speed infinite step-end reverse;
+    }
+
+    @keyframes poleBack {
+      0%   { transform: translate(-50%, calc(-50% + (var(--pb1) * #{$size * 1}))) skewY(calc(var(--pb2) *  1)); }
+      100% { transform: translate(-50%, calc(-50% - (var(--pb1) * #{$size * 1}))) skewY(calc(var(--pb2) * -1)); }
+    }
+    @keyframes poleColor {
+      0%      { background-image: linear-gradient(#{$clr1}0, $clr1, #{$clr1}0); }
+      33.333% { background-image: linear-gradient(#{$clr2}0, $clr2, #{$clr2}0); }
+      66.666% { background-image: linear-gradient(#{$clr3}0, $clr3, #{$clr3}0); }
+    }
+  }
+
+  & > div:nth-child(1) {
+    width: $size; height: 4.05 * $size;
+    transform: translate(-50%, -50%) translateZ($size * 0.5);
+    clip-path: polygon(100% 0, 100% 100%, 0 $size * 3.47, 0 $size * 0.58);
+    --pb1: 3.47; --pb2: 55deg;
+  }
+  & > div:nth-child(2) {
+    width: $size; height: 4.05 * $size;
+    transform: translate(-50%, -50%) rotateY(90deg) translateZ($size * 0.5);
+    --pb1: 4.05; --pb2: 0deg;
+  }
+  & > div:nth-child(3) {
+    width: $size; height: 4.05 * $size;
+    transform: translate(-50%, -50%) rotateY(180deg) translateZ($size * 0.5);
+    clip-path: polygon(0 0, 0 100%, 100% $size * 3.47, 100% $size * 0.58);
+    --pb1: 3.47; --pb2: -55deg;
+  }
+  & > div:nth-child(4) {
+    width: $size; height: 2.89 * $size;
+    transform: translate(-50%, -50%) rotateY(270deg) translateZ($size * 0.5);
+    --pb1:2.89; --pb2: 0deg;
+  }
+}
+
+.neon {
+  position: absolute;
+  top: $size * 1.7; left: $size * -3;
+  width: $size * 2; height: $size * 2;
+  border: 2px solid var(--clr);
+  transform: translate(-50%, -50%) rotateY(90deg) rotateX(120deg);
+  transform-style: preserve-3d;
+  animation: neonRotate $speed infinite linear;
+  box-shadow:
+    0 0 $size*0.2 var(--clr) inset,
+    0 0 $size*0.2 var(--clr);
+
+  &_a { --clr: #{$clr1}; }
+  &_b { --clr: #{$clr2}; animation-delay: $speed / -3;}
+  &_c { --clr: #{$clr3}; animation-delay: $speed / -1.5;}
+
+  & > div {
+    position: absolute;
+    background-color: var(--clr);
+    box-shadow: 0 0 $size*0.2 var(--clr);
+
+    &:nth-child(1) {
+      top: -1px; left: -1px;
+      width: calc(100% + 2px); height: 2px;
+      transform: translateY(-50%) rotateX(90deg);
+    }
+    &:nth-child(2) {
+      top: -1px; left: -2px;
+      width: 2px; height: calc(100% + 2px);
+      transform: rotateY(90deg);
+    }
+    &:nth-child(3) {
+      bottom: -1px; left: -1px;
+      width: calc(100% + 2px); height: 2px;
+      transform: translateY(50%) rotateX(90deg);
+    }
+    &:nth-child(4) {
+      top: -1px; right: -2px;
+      width: 2px; height: calc(100% + 2px);
+      transform: rotateY(90deg);
+    }
+  }
+
+  @keyframes neonRotate {
+    0% {
+      top: $size * -3.4; left: 0;
+      transform: translate(-50%, -50%) rotateY(90deg) rotateX(0);
+    }
+    16.666% {
+      top: $size * -1.7; left: $size * -3;
+      transform: translate(-50%, -50%) rotateY(90deg) rotateX(60deg);
+    }
+    33.333% {
+      top: $size * 1.7; left: $size * -3;
+      transform: translate(-50%, -50%) rotateY(90deg) rotateX(120deg);
+    }
+    50% {
+      top: $size * 3.4; left: 0;
+      transform: translate(-50%, -50%) rotateY(90deg) rotateX(180deg);
+    }
+    66.666% {
+      top: $size * 1.7; left: $size * 3;
+      transform: translate(-50%, -50%) rotateY(90deg) rotateX(240deg);
+    }
+    83.333% {
+      top: $size * -1.7; left: $size * 3;
+      transform: translate(-50%, -50%) rotateY(90deg) rotateX(300deg);
+    }
+    100% {
+      top: $size * -3.4; left: 0;
+      transform: translate(-50%, -50%) rotateY(90deg) rotateX(360deg);
+    }
+  }
+}
