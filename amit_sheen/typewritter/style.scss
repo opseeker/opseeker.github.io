@@ -26,44 +26,33 @@ body {
 
   @keyframes text {
     0%  { content: ''; }
-    20% { content: 'T'; }
-    23% { content: 'Th'; }
-    26% { content: 'Thi'; }
-    28% { content: 'This'; }
-    30% { content: 'This '; }
-    32% { content: 'This i'; }
-    35% { content: 'This is'; }
-    37% { content: 'This is '; }
-    40% { content: 'This is y'; }
-    42% { content: 'This is yo'; }
-    44% { content: 'This is you'; }
-    50% { content: 'This is yo'; }
-    51% { content: 'This is y'; }
-    52% { content: 'This is '; }
-    54% { content: 'This is m'; }
-    57% { content: 'This is me'; }
-    59% { content: 'This is me.'; }
-    63% { content: 'This is me'; }
-    64% { content: 'This is m'; }
-    65% { content: 'This is '; }
-    67% { content: 'This is C'; }
-    69% { content: 'This is CO'; }
-    71% { content: 'This is COO'; }
-    73% { content: 'This is COOL'; }
-    75% { content: 'This is COOL!'; }
-    80% { content: 'This is COOL'; }
-    81% { content: 'This is COO'; }
-    82% { content: 'This is CO'; }
-    83% { content: 'This is C'; }
-    85% { content: 'This is '; }
-    86% { content: 'This is'; }
-    87% { content: 'This i'; }
-    89% { content: 'This '; }
-    91% { content: 'This'; }
-    92% { content: 'Thi'; }
-    93% { content: 'Th'; }
-    94% { content: 'T'; }
-    95% { content: ''; }
+    3% {content: ' Y'; }
+    6% {content: ' YO'; }
+    9% {content: ' YOU'; }
+    12% {content: ' YOU '; }
+    15% {content: ' YOU A'; }
+    18% {content: ' YOU AR'; }
+    21% {content: ' YOU ARE'; }
+    24% {content: ' YOU ARE '; }
+    27% {content: ' YOU ARE V'; }
+    30% {content: ' YOU ARE VE'; }
+    33% {content: ' YOU ARE VER'; }
+    36% {content: ' YOU ARE VERY'; }
+    39% {content: ' YOU ARE VERY '; }
+    42% {content: ' YOU ARE VERY B'; }
+    45% {content: ' YOU ARE VERY BU'; }
+    48% {content: ' YOU ARE VERY BUS'; }
+    51% {content: ' YOU ARE VERY BUSY'; }
+    54% {content: ' YOU ARE VERY BUSY '; }
+    57% {content: ' YOU ARE VERY BUSY P'; }
+    60% {content: ' YOU ARE VERY BUSY PE'; }
+    63% {content: ' YOU ARE VERY BUSY PER'; }
+    66% {content: ' YOU ARE VERY BUSY PERS'; }
+    69% {content: ' YOU ARE VERY BUSY PERSO'; }
+    72% {content: ' YOU ARE VERY BUSY PERSON'; }
+    75% {content: ' YOU ARE VERY BUSY PERSON.'; }
+    78% {content: ' YOU ARE VERY BUSY PERSON..'; }
+    81% {content: ' YOU ARE VERY BUSY PERSON...'; }
   }
 
   &::after {
