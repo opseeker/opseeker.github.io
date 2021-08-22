@@ -29,17 +29,21 @@
         --dropdown-content-display:block;
         /*=============================MENU-AUTHOR-IMG>>--mai*/
         --mai-position:relative;
-        --mai-left:22vw;
+        --mai-left: calc(var(--mai-width) - 10vw);
         --mai-top:10vh;
-        --mai-width:60vw;
+        --mai-width:40vw;
         --mai-height:auto;
         --mai-border-radius:50%;
         --mai-margin:0 0 20vh 0;
         --topic-bg-color:var(--bg-color-1);
         --topic-color:black;
         --topic-font-size:18px;
+        --menu-ls-top: calc(var(--mai-top) + 5vh);
         /*=============================MENU-ANIMATION-DURATION*/
         --menu-enter-duration:0.5s;
         --menu-exit-duration:var(--menu-enter-duration);
+        /*=============================FOOTER-FOR-INDEX*/
+        --footer-bottom:0;
+        --footer-left:28%;
     }
 }

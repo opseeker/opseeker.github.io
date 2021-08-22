@@ -1,3 +1,7 @@
+/*-------------------------------------------------------------------------------------
+    ONLY DEFAULT VALUES AND CODES FOR LAYOUTS ARE TO BE WRITTEN IN HERE...
+---------------------------------------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 html {
@@ -628,7 +632,9 @@ tr,th,td {
 
 .dropdown-content {
     position: absolute;
-    background-color: var(--dropdown-content-bg-color);
+    background-image: repeating-linear-gradient(60deg, #111 0px, #222 2px, #111 4px);
+    
+    /*background-color: var(--dropdown-content-bg-color);*/
     background-size: var(--dropdown-bg-size);
     background-attachment: var(--dropdown-bg-attachment);
     background-repeat: no-repeat;
@@ -646,6 +652,11 @@ tr,th,td {
     padding: var(--dropdown-content-padding);
     text-decoration: var(--dropdown-content-text-decoration);
     display:var(--dropdown-content-display);
+}
+
+.menu-ls {
+    position: relative;
+    top: var(--menu-ls-top);
 }
 
 /* IMAGE SETTINGS ================================================================*/
@@ -719,4 +730,11 @@ html{
     height:var(--mai-height);
     border-radius:var(--mai-border-radius);
     margin-bottom: var(--mai-margin);
+}
+
+/*==================================================footer*/
+footer {
+    position: absolute;
+    bottom:var(--footer-bottom);
+    left:var(--footer-left);
 }
