@@ -15,6 +15,7 @@ function manhwa() {
     //hmc.classList.remove('hide');
 }
 
+/*------------------------------------------------------MENU-EXIT*/
 function menuH(){
     i1.classList.remove('hide');
     i2.classList.add('hide');
@@ -22,8 +23,9 @@ function menuH(){
     menu.classList.add('menu-exit');
     y.classList.remove('hide');
     y.classList.remove('startupOff');
-    setTimeout(function(){menu.classList.add('hide');},300);
+    setTimeout(function(){menu.classList.add('hide');},500);
 };
+/*----------------------------------------------------MENU-TOGGLE */
 function menut(){
     i1.classList.add('hide');
     i2.classList.remove('hide');
@@ -34,8 +36,10 @@ function menut(){
     menu.classList.remove('menu-exit');
 };
 
+/*-----------------------------------------------DARK-MODE-TOGGLE */
 function mode(){y.classList.toggle('dark-mode');}
 
+/*-----------------------BROESER-HISTORY-GO-BACK-TO-PREVIOUS-PAGE */
 function goBack(){
     window.history.back();
 };
