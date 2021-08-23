@@ -481,7 +481,8 @@ h4 {
 }
 
 #menu {
-    width: 100.5vw;
+    width: var(--menu-width);
+    height: var(--menu-height);
 }
 
 .imp {
@@ -523,11 +524,10 @@ topic {
 }
 
 #navigation {
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
-    width: 101%;
-    font-family: Arial, sans-serif !important;
+    position: relative;
+    top: var(--nav-top);
+    margin: var(--nav-margin);
+    width: var(--nav-width);
     z-index: 5;
 }
 
@@ -544,16 +544,12 @@ topic {
 
 .top-banner {
     display: inline-block;
-    font-size: 2em;
-    font-weight: bold;
-    letter-spacing: 4px;
+    font-size: var(--top-banner-font-size);
+    font-weight: var(--top-banner-font-weight);
+    letter-spacing: var(--top-banner-letter-spacing);
     position: absolute;
-    top: 4vw;
-    left: 24vw;
-}
-
-.clearfix {
-    margin: 10%;
+    top: var(--top-banner-top);
+    left: var(--top-banner-left);
 }
 
 #source-char tr,
@@ -577,10 +573,6 @@ small {
     background-color: black;
 }
 
-small {
-    background-color: white;
-    border: 3px solid white;
-}
 
 /*=================================== table */
 #detailed {
@@ -632,7 +624,7 @@ tr,th,td {
 
 .dropdown-content {
     position: absolute;
-    background-image: repeating-linear-gradient(60deg, #111 0px, #222 2px, #111 4px);
+    background-image: var(--dropdown-bg-img); 
     
     /*background-color: var(--dropdown-content-bg-color);*/
     background-size: var(--dropdown-bg-size);
@@ -658,6 +650,7 @@ tr,th,td {
     position: relative;
     top: var(--menu-ls-top);
 }
+
 
 /* IMAGE SETTINGS ================================================================*/
 .clearfix::after {
@@ -734,7 +727,15 @@ html{
 
 /*==================================================footer*/
 footer {
-    position: absolute;
+    position: relative;
     bottom:var(--footer-bottom);
     left:var(--footer-left);
 }
+
+/*===================================================DROPDOWN-MENU-ICON-FILLS*/
+.bi-house {fill: var(--home-icon-fill)}
+.bi-whatsapp {fill: var(--whatsapp-icon-fill)}
+.bi-table {fill: var(--table-icon-fill)}
+.bi-youtube {fill: var(--youtube-icon-fill)}
+.bi-exclamation-triangle-fill {fill: var(--caution-icon-fill)}
+.bi-music-note-list {fill: var(--music-icon-fill)}
