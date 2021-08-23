@@ -12,6 +12,77 @@ html {
     -ms-user-select: none;
 }
 
+/*mobile- 360 x 640 - 414 x 896*/
+
+@media (max-width: 599px) {
+    :root {
+        /*===========================================ICON-FILLS*/
+        --home-icon-fill: white;
+        --whatsapp-icon-fill: lightgreen;
+        --table-icon-fill: yellow;
+        --youtube-icon-fill: red;
+        --caution-icon-fill: yellow;
+        --music-icon-fill: red;
+        /*============================================NAVIGATION*/
+        --nav-width: 101%;
+        --nav-margin: -10px -10px 0 -10px;
+        --nav-top: -2vh;
+
+        --menu-width: 100.5vw;
+        --menu-height: 7.7vh;
+        /*=============================================TOP-BANNER*/
+        --top-banner-top: 2.5vh;
+        --top-banner-left: 35vw;
+        --top-banner-font-size: 20px;
+        --top-banner-letter-spacing: 2px;
+        /*==========================================================*/
+        --bg-color-1:#FF7C00;
+        --code-margin: 18px 0 18px 0;
+        --table-width: 100%;
+        --table-font-size: 16px;
+        --dropdown-bg-color: transparent;
+        --dropdown-color: var(--bg-color-1);
+        --dropdown-padding: 16px;
+        --dropdown-font-size: 16px;
+        --dropdown-border: none;
+        --dropdown-display: inline-block;
+        --dropdown-bg-color: var(--bg-color-1);
+        /*=============================DROPDOWN-CONENT-A && DROPDOWN-CONENT>>--dropdown-content*/
+        --dropdown-bg-size: cover;
+        --dropdown-bg-img: repeating-linear-gradient(120deg, #111 0px, #222 4px, #111 6px);
+        --dropdown-bg-attachment: absolute;
+        --dropdown-width: 101vw;
+        --dropdown-height: calc(100vh - var(--menu-height));
+        --dropdown-box-shadow: 0 8px 16px 0 black;
+        --dropdown-top: 65px;
+        --dropdown-left: -101vw;
+        --dropdown-content-color: #fff;
+        --dropdown-content-bg-color:rgb(134, 120, 120);
+        --dropdown-content-font-weight: bold;
+        --dropdown-content-padding: 0 8px 14px 8px;
+        --dropdown-content-text-decoration: none;
+        --dropdown-content-display: inline-block;
+        /*=============================MENU-AUTHOR-IMG>>--mai*/
+        --mai-position: relative;
+        --mai-left: calc(var(--mai-width) - 10vw);
+        --mai-top: 10vh;
+        --mai-width: 40vw;
+        --mai-height: auto;
+        --mai-border-radius: 50%;
+        --mai-margin: 0 0 20vh 0;
+        --topic-bg-color: var(--bg-color-1);
+        --topic-color:black;
+        --topic-font-size: 18px;
+        --menu-ls-top: calc(var(--mai-top) + 5vh);
+        /*=============================MENU-ANIMATION-DURATION*/
+        --menu-enter-duration: 0.5s;
+        --menu-exit-duration: var(--menu-enter-duration);
+        /*=============================FOOTER-FOR-INDEX*/
+        --footer-bottom: 0;
+        --footer-left: 28%;
+    }
+}
+
 /*=================================================
     common occurences
 -==================================================*/
