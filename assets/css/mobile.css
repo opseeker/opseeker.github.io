@@ -16,6 +16,9 @@
 
         --menu-width: 100.5vw;
         --menu-height: 7.7vh;
+
+        --list-M-align: center;
+        --list-M-display: block;
         /*=============================================TOP-BANNER*/
         --top-banner-top: 2.5vh;
         --top-banner-left: 35vw;

@@ -1,0 +1,32 @@
+
+@media (max-width: 599px) {
+    :root {
+        --navbar-top: 0;
+        --navbar-left: 0;
+        --navbar-width: 100vw;
+        --navbar-height: 6vh;
+        --navbar-dist: 0 0 calc(var(--navbar-height) + 1vh) 0;
+        --navbar-margin: 0 0 0 0;
+        --navbar-bg-img: repeating-linear-gradient(180deg, #000 0px, #222 2px, #000 4px);
+        --navlink-top: calc(6.5vh - var(--navbar-height));
+        --navlink-left: 2vw;
+        --navlink-width: auto;
+        --navlink-height: auto;
+        --navlink-margin: 0 0 0 0;
+        --navlink-padding: 0 0 0 0;
+        --navlink-display: inline-block;
+        --navlink-fill: white;
+
+        --footer-bottom: 0vh;
+        --footer-left: 0vw;
+        --footer-margin: 20vh 0 0 0;
+
+        --item-margin: 0 0 0 0;
+        --item-padding: 0 0 0 0;
+
+        --item-img-width: 45vw;
+        --item-distance-edge: 1vw;
+
+        --item-break: 2vh 0 0 0;
+    }
+}

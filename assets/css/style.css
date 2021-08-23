@@ -740,3 +740,8 @@ footer {
 .bi-youtube {fill: var(--youtube-icon-fill)}
 .bi-exclamation-triangle-fill {fill: var(--caution-icon-fill)}
 .bi-music-note-list {fill: var(--music-icon-fill)}
+
+.list-M {
+    text-align: var(--list-M-align);
+    display: var(--list-M-display);
+}
