@@ -42,15 +42,15 @@
         --logo-position:absolute;
         --logo-top:0;
         --logo-left:0;
-        --logo-width:80px;
+        --logo-width:40px;
         --img1-position:absolute;
         --img1-top:8rem;
         --img1-left:4px;
         --img1-width:400px;
         --social-icon-position: absolute;
-        --social-icon-top:1rem; 
+        --social-icon-top:0; 
         --social-icon-bottom:none;
-        --social-icon-right:1rem;   
+        --social-icon-right:0;   
         --social-icon-background: rgb(150, 150, 150);
         --social-icon-display:block;
         --social-icon-padding-a:2px 2px 4px 2px;

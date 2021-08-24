@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 /*=======================================
 html important !
 ===========================================*/
@@ -8,6 +8,7 @@ html {
     -webkit-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none;
+    font-family: 'Comic Neue', cursive;
 }
 
 hidden {display: none} .hide{display: none}
