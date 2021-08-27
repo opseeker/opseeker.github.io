@@ -620,11 +620,14 @@ tr,th,td {
     padding: var(--dropdown-content-padding);
     text-decoration: var(--dropdown-content-text-decoration);
     display:var(--dropdown-content-display);
+    margin: var(--dropdown-content-margin)
 }
 
 .menu-ls {
     position: relative;
     top: var(--menu-ls-top);
+    overflow-Y: scroll;
+    height: 70px;
 }
 
 
@@ -714,4 +717,30 @@ footer {
 .list-M {
     text-align: var(--list-M-align);
     display: var(--list-M-display);
+}
+
+#topbartext {
+    position: relative;
+    top: -2px;
+    height: 10px;
+    width: 10px
+}
+
+::-webkit-scrollbar {
+    width:0px;
+    background: transparent;
+}
+
+.top-banner img {
+    position: absolute;
+    width: var(--icoimg-width);
+    top: var(--ic-top);
+    left: var(--ic-left);
+    height: auto;
+}
+
+#_l7 img {
+    position: relative;
+    left: -16px;
+    width: 50px;
 }

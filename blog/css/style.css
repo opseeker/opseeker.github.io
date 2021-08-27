@@ -1,0 +1,45 @@
+/* STYLE.CSS
+    DOCUMENT FOR STYLE IN INDEX OF BLOG PAGE BY ANKIT SAIKIA- we CODE */
+html {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent
+}
+
+#_navigation {
+    position: fixed;
+}
+.nav-bar {
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    background-color: #111;
+    height: 2em;
+    width: 100vw;
+    margin-bottom: 1em;
+    z-index: -5;
+}
+div.scroll-menu {
+    /* top: -1.7em; */
+    /* position: relative; */
+    overflow: auto;
+    white-space: nowrap;
+}
+div.scroll-menu a:hover {
+    background-color: #777;
+}
+div.scroll-menu a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    /* padding: 0 4px 0 4px; */
+    text-align: center;
+    display: inline-block;
+}

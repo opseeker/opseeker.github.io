@@ -1,0 +1,71 @@
+@media (min-width: 900px) {
+    :root {
+         /*===========================================ICON-FILLS*/
+         --home-icon-fill: white;
+         --whatsapp-icon-fill: lightgreen;
+         --table-icon-fill: yellow;
+         --youtube-icon-fill: red;
+         --caution-icon-fill: yellow;
+         --music-icon-fill: red;
+         /*============================================NAVIGATION*/
+         --nav-width: 50vw;
+         --nav-margin: 0 0 0 0;
+         --nav-top: -9vh;
+ 
+         --menu-width: 100.5vw;
+         --menu-height: 14vh;
+ 
+         --list-M-align: right;
+         --list-M-display: block;
+         /*=============================================TOP-BANNER*/
+         --top-banner-top: 4vh;
+         --top-banner-left: 1vw;
+         --top-banner-font-size: 20px;
+         --top-banner-letter-spacing: 2px;
+         /*==========================================================*/
+         --bg-color-1:#FF7C00;
+         --code-margin: 18px 0 18px 0;
+         --table-width: 100%;
+         --table-font-size: 16px;
+         --dropdown-bg-color: transparent;
+         --dropdown-color: var(--bg-color-1);
+         --dropdown-padding: 16px;
+         --dropdown-font-size: 16px;
+         --dropdown-border: none;
+         --dropdown-display: inline;
+         --dropdown-bg-color: var(--bg-color-1);
+         /*=============================DROPDOWN-CONENT-A && DROPDOWN-CONENT>>--dropdown-content*/
+         --dropdown-bg-size: none;
+         --dropdown-bg-img: none;
+         --dropdown-bg-attachment: none;
+         --dropdown-width: auto;
+         --dropdown-height: calc(100vh - var(--menu-height));
+         --dropdown-box-shadow: none;
+         --dropdown-top: 0;
+         --dropdown-left: 0;
+         --dropdown-content-color: #fff;
+         --dropdown-content-bg-color:rgb(134, 120, 120);
+         --dropdown-content-font-weight: bold;
+         --dropdown-content-padding: 0 0px 0px 0px;
+         --dropdown-content-text-decoration: none;
+         --dropdown-content-display: inline;
+         /*=============================MENU-AUTHOR-IMG>>--mai*/
+         --mai-position: relative;
+         --mai-left: calc(var(--mai-width) - 10vw);
+         --mai-top: 10vh;
+         --mai-width: 40vw;
+         --mai-height: auto;
+         --mai-border-radius: 50%;
+         --mai-margin: 0 0 20vh 0;
+         --topic-bg-color: var(--bg-color-1);
+         --topic-color:black;
+         --topic-font-size: 18px;
+         --menu-ls-top: calc(var(--mai-top) + 5vh);
+         /*=============================MENU-ANIMATION-DURATION*/
+         --menu-enter-duration: 0.5s;
+         --menu-exit-duration: var(--menu-enter-duration);
+         /*=============================FOOTER-FOR-INDEX*/
+         --footer-bottom: 0;
+         --footer-left: 0;
+    }
+}
