@@ -66,7 +66,10 @@
         --topic-bg-color: var(--bg-color-1);
         --topic-color:black;
         --topic-font-size: 18px;
-        --menu-ls-top: calc(var(--mai-top) + 5vh);
+        --menu-ls-top: 2vh;
+        --menu-ls-width: 2em;
+        --menu-ls-height: 4em;
+        --menu-ls-right: 20vw;
         /*=============================MENU-ANIMATION-DURATION*/
         --menu-enter-duration: 0.5s;
         --menu-exit-duration: var(--menu-enter-duration);
@@ -191,8 +194,9 @@
     }
 
     #_l1, #_l2, #_l3, #_l4, #_l5, #_l6, #_l7 {
-        position: absoolute;
-        top:-6.5vh;
+        position: absolute;
+        top:0;
+        padding: 12px;
     }
 
     #_l1 {left:0}
@@ -202,6 +206,7 @@
     #_l5 {left:24vw}
     #_l6 {left:30vw}
     #_l7 {left:36vw}
+    #_l7 img {width: 20px}
 
     #menu .hide {display: block}
 

@@ -1,13 +1,13 @@
 
 html {
-    background-image: repeating-conic-gradient(from 45deg, #111 0deg 90deg, #222 90deg 180deg);
+    /* background-image: repeating-conic-gradient(from 45deg, #111 0deg 90deg, #222 90deg 180deg); */
     background-size: 10px 10px;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;
-    color: white;
+    color: black;
 }
 /*====================================NAV-BAR*/
 navbar {
@@ -48,7 +48,7 @@ footer {
     position: relative;
     bottom: var(--footer-bottom);
     left: var(--footer-left);
-    color: rgb(145, 142, 142);
+    color: rgb(48, 48, 48);
     margin: var(--footer-margin);
     font-size: 1em;
     font-weight: normal;
@@ -87,4 +87,31 @@ footer {
 
 .item-break {
     margin: var(--item-break);
+}
+
+.lead {
+    font-weight: 300;
+}
+
+.up {
+    text-transform: uppercase;
+}
+
+.List ul li {
+    padding-top: .5em;
+    color: blue
+}
+
+#_author {
+    position: absolute;
+    top: 0vh;
+    right:1vh
+}
+
+#_navI {
+    position: absolute;
+    width: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: -10
 }

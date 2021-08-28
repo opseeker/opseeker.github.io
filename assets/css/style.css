@@ -624,10 +624,15 @@ tr,th,td {
 }
 
 .menu-ls {
-    position: relative;
+    position: absolute;
     top: var(--menu-ls-top);
-    overflow-Y: scroll;
-    height: 70px;
+    overflow-X: scroll;
+    height: var(--menu-ls-height);
+    width: var(--menu-ls-width);
+    right: var(--menu-ls-right)
+}
+.menu-ls a {
+    display: inline !important;
 }
 
 
@@ -741,6 +746,6 @@ footer {
 
 #_l7 img {
     position: relative;
-    left: -16px;
-    width: 50px;
+    left: -3px;
+    width: 30px;
 }
