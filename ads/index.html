@@ -19,12 +19,64 @@
             padding: var(--table-th-pad);
             
         }
+
+        h1 {text-shadow: -2px -2px 0px #8400ff, 2px 2px 0px #ff005a;}
+
+        .top-banner {
+            position: fixed;
+            z-index: 10;
+        }
+        .top-banner-bg {
+            width: 101vw;
+            height: 32px;
+            top: -8px;
+            left: -7.5px;
+            position: relative;
+            background-color: black;
+        }
+        .top-banner-text {
+            position: absolute;
+            top: 1px;
+            right: 30px;
+            color: white;
+        }
+        .container {
+            padding-top: 30px
+        }
+
+        .footer {
+            margin-top: 60px;
+            margin-bottom: 10px;
+            background-color: black;
+            color: white;
+            padding: 4px;
+            width: 98vw;
+            position: relative;
+            left: -8px;
+        }
+        .footer a {
+            color: green;
+        }
+
+        #_se-txt {
+            color: white;
+            font-size:1rem;
+            background-color: black;
+            width: 160px;
+            border: none;
+            border-radius: 8px;
+            padding: 4px;
+        }
+
+        .pse, .p6, .p11 {
+            margin-bottom: 60px;
+        } 
     </style>
 </head>
 
 <div class='top-banner'>
     <div class='top-banner-bg'></div>
-    <div class='top-banner-text'></div>
+    <div class='top-banner-text'>sold @ TSK</div>
 </div>
 
 <div class='navigation'>
@@ -33,7 +85,7 @@
 </div>
 
 <div class='container'>
-    <div class='se'>
+    <div class='pse'>
         <h2>i-phone SE</h2>
         <p>
             Iphone SE sold by the seller, all the conditions are brand new and has no signs of use even if it is.
@@ -72,6 +124,9 @@
             </table>
             <div class='photos'>
                 <h2 onclick='imse()'>Images:</h2>
+                <p id='_se-txt' onclick='imse()'>
+                    click to view images...
+                </p>
                 <div id='_image-se'>
                 <img src='img/front se.png' style='transform: rotate(-90deg); position: relative; left: -24%; top: 80px'/>
                 <img src='img/back se.png' style='transform: rotate(-90deg); position: relative; right: -36%; top: -80px'/>
@@ -83,15 +138,81 @@
         </div>
     </div>
 
-    <div class='6'></div>
+    <div class='p6'>
+        <h1>I-phone 6</h1>
+        <h2>
+            Lowest price ongoing sales. OFFER
+        </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Iphone-6 specs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Model</th>
+                    <td>iphone 6</td>
+                </tr>
+                <tr>
+                    <th scope="row">Price</th>
+                    <td>10,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <div class='11'></div>
+    <div class='p11'>
+        <h1>I-phone 11</h1>
+        <h2>
+            Lowest price ongoing sales. OFFER
+        </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Iphone-11 specs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Model</th>
+                    <td>iphone 11</td>
+                </tr>
+                <tr>
+                    <th scope="row">Price</th>
+                    <td>45,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
-<div class='bottom-banner'></div>
+<div class='bottom-banner'>
+    <div class='footer'>
+        <a href='tel: +91 8812 935 294'>Give A Call</a>
+        <p>
+            Seller-Name: Bipon Dutta<br>
+            Address: Tinsukia, Assam<br>
+            contact No. : +91 8812935294 <a href='tel: +91 8812 935 294'>Call</a>
+            <br>
+        </p>
+        <p>
+            Contact for querries related to the above deals.
+        </p>
+        <p>
+            All the data could not be provided as it isn't available.
+        </p>
+        <div class='author'>
+            <p>
+                Author- Ankit Saikia
+            </p>
+        </div>
+    </div>
+</div>
 
 <script>
     var im_se = document.getElementById('_image-se');
+    var txt_se = document.getElementById('_se-txt');
 
     onload = function() {
         im_se.style.display = 'none';
@@ -99,6 +220,7 @@
 
     // for SE-images
     function imse(){
+        txt_se.style.display = 'none'
         im_se.style.display = 'block';
     }
 </script>
