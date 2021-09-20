@@ -63,7 +63,7 @@
             <li>The Dark Magician Transmigrates after 66666 years</li>
             <li>The Heavenly Demon Can't Live a Normal Life</li>
             <li>The Return of the Crazy Demon</li>
-            <li>Worn and Torn Newbie</li>
+            <li onclick='play()'>Worn and Torn Newbie</li>
         </ul>
     </div>
 </section>
@@ -79,3 +79,19 @@
         Ankit Saikia
     </h3>
 </div>
+
+<section id='_video' style='display: block'>
+    <!-- <iframe id="_video1" width="375" height="280" src="https://www.youtube.com/embed/yuvirehky04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <video autoplay muted controls loop>
+        <source src="https://youtu.be/yuvirehky04" type='video/mp4'/>
+    </video>
+</section>
+
+<script>
+    var vid=document.getElementById('_video1');
+
+    function play() {
+        vid.play();
+
+    }
+</script>

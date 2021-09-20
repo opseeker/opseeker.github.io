@@ -1,0 +1,21 @@
+:root {
+    --html-bg: black;
+    --html-color: white;
+    --tt-color: darkorange;
+}
+
+html {
+    background-color: var(--html-bg);
+    color: var(--html-color)
+}
+#_profiles {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.tt {
+    font-size: 2em;
+    font-weight: bold;
+    background-color: var(--tt-color);
+    text-shadow: -2px -2px 0px #8400ff, 2px 2px 0px #ff005a;
+}
