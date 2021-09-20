@@ -49,13 +49,17 @@
             margin-bottom: 10px;
             background-color: black;
             color: white;
-            padding: 4px;
-            width: 98vw;
+            width: 99.4vw;
             position: relative;
             left: -8px;
+            border: 1px solid red;
         }
         .footer a {
             color: green;
+        }
+
+        .footer p {
+            padding: 14px
         }
 
         #_se-txt {
@@ -71,12 +75,21 @@
         .pse, .p6, .p11 {
             margin-bottom: 60px;
         } 
+
+        .scrollto {
+            position: absolute;
+            color: green;
+            font-size: 1rem;
+            font-weight: bold;
+            top: 1px;
+        }
     </style>
 </head>
 
 <div class='top-banner'>
     <div class='top-banner-bg'></div>
     <div class='top-banner-text'>sold @ TSK</div>
+    <div class='scrollto' onclick='scrl()'>Contact</div>
 </div>
 
 <div class='navigation'>
@@ -222,5 +235,13 @@
     function imse(){
         txt_se.style.display = 'none'
         im_se.style.display = 'block';
+    }
+
+    // scrollto
+    function scrl(){
+        im_se.style.display = 'none';
+
+        window.scrollTo(0,600);
+        behaviour: 'smooth';
     }
 </script>
