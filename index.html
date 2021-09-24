@@ -75,6 +75,69 @@
 
             }
         }
+
+        @media (max-width: 599px) {
+            :root {
+                --menubar-width: 100vw;
+                --menubar-height: 4rem;
+                --menubar-top: -2px;
+                --menubar-left: 1px;
+                --menubar-background: black;
+
+                --menulist-width: 200px;
+                --menulist-position: fixed;
+                --menulist-top: 0;
+                --menulist-height: 100vh;
+                --menulist-left: 0;
+                --menulist-padding: 1rem 0 0 0 ;
+
+                --menuR-top: 4rem;
+                --menuR-right: 0;
+                --menuR-width: 100px;
+                --menuR-height: 100vh;
+                --menuR-bg: grey;
+                --menuR-display: none;
+
+                --bottom-banner-left: 200px;
+                --bottom-banner-width: calc(100vw - 200px - 200px + 30px);
+
+                --img1-width: 200px;
+                --img1-top: 40px;
+                --img1-left: 240px;
+                --img1-opacity: 1;
+                --img1-z: -5;
+                --img1-disp: none;
+
+                --sec1-top: -16rem;
+                --sec1-left: 470px;
+                --sec1-border-radius: 12px;
+                --sec1-font-size: 16px;
+                --sec1-font-weight: 300;
+                --sec1-bg: grey;
+                --sec1-border: none;
+                --sec1-color: black;
+                --sec1-width: 600px;
+                --sec1-pad: 16px 16px 16px 16px;
+
+                --box-w: calc(100vw - var(--menulist-width) - var(--menuR-width));
+                --box-h: 634px;
+                --box-bg: black;
+                --box-t: var(--menubar-height);
+                --box-l: 200px;
+                --box-op: 1;
+
+                --pbox-h: 400px;
+                --pbox-w: 800px;
+                --pbox-t: 0rem;
+                --pbox-l: 15rem;
+                --pbox-bg: none;
+                /* --pbox-dis: none; */
+                /* pbox-display is done in  js- main.js */
+
+                --b1-color: white;
+
+            }
+        }
     </style>
 
     <link rel="stylesheet" href="infile/css/style.css"/>

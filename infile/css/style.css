@@ -78,6 +78,7 @@
     left: var(--img1-left);
     z-index: var(--img1-z);
     top: var(--img1-top);
+    display: var(--img1-disp);
 }
 
 .section-1 {

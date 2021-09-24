@@ -1,5 +1,4 @@
 // click js
-
 // global variables
 var ho = document.getElementById('_home');
 var pb = document.getElementById('_postbox');
