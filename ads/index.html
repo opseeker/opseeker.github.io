@@ -18,6 +18,24 @@
         @media (max-width:599px){
             :root{
                 --table-th-pad: 10px 30px 10px 0px;
+
+                --notice-bg-width: calc(100vw - 20vw - 20vw);
+                --notice-bg-height: 200px;
+                --notice-bg-color: black;
+                --notice-bg-border: 2px solid red;
+                --notice-bg-border-radius: 8px;
+
+                --notice-bg-top: 30vh;
+                --notice-bg-left: 20vw;
+                --notice-bg-z: 5;
+
+                --not-txt-top: calc(var(--notice-bg-top) + 1vh);
+                --not-txt-left: calc(var(--notice-bg-left) + 1vw);
+                --not-txt-height: calc(var(--notice-bg-height) - 2vh);
+                --not-txt-width: calc(var(--notice-bg-width) - 1vw);
+
+                --in-dur: 2s;
+                --ex-dur: 2s;
             }
         }
 
@@ -90,6 +108,85 @@
             font-weight: bold;
             top: 1px;
         }
+
+        .notice-bg {
+            width: var(--notice-bg-width);
+            height: var(--notice-bg-height);
+            background-color: var(--notice-bg-color);
+            border: var(--notice-bg-border);
+            border-radius: var(--notice-bg-border-radius);
+
+            position: fixed;
+            top: var(--notice-bg-top);
+            left: var(--notice-bg-left);
+            z-index: var(--notice-bg-z);
+        }
+
+        .close-btn span {
+            width: 16px;
+            height: 2px;
+            transform: rotate(45deg);
+            background-color: red;
+
+            position: fixed;
+            top: calc( var(--notice-bg-top) + 1.4vh);
+            left: calc(var(--notice-bg-left) + 55vw);
+            z-index: var(--notice-bg-z);
+        }
+
+        .close-btn span1 {
+            width: 16px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background-color: red;
+
+            position: fixed;
+            top: calc( var(--notice-bg-top) + 1.4vh);
+            left: calc(var(--notice-bg-left) + 55vw);
+            z-index: var(--notice-bg-z);
+        }
+
+        .notice-txt p {
+            position: fixed;
+            top: var(--not-txt-top);
+            left: var(--not-txt-left);
+            z-index: 5;
+            color: #fff;
+            padding: 8px;
+            height: var(--not-txt-height);
+            width: var(--not-txt-width);
+
+        }
+
+        blue {color: blue}
+
+        /* keyframes for notice */
+    .not-in {
+        animation-name: in-note;
+        animation-duration: var(--in-dur);
+        animation-delay: 0.2s;
+    }
+
+    @keyframes in-note {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+    .not-ex {
+        animation-name: ex-note;
+        animation-duration: var(--ex-dur);
+        animation-delay: 0.2s;
+    }
+
+    @keyframes ex-note {
+        0%{opacity: 1;}
+        100%{opacity: 1;}
+    }
+
+    #_notice {
+        display: none;
+    }
+
     </style>
 </head>
 
@@ -234,12 +331,35 @@
     </div>
 </div>
 
+<div class='notice' id='_notice' onclick='notice_exit()'>
+    <div class='notice-bg'></div>
+    <div class='close-btn' onclick='notice_exit()'>
+        <span></span>
+        <span1></span1>
+    </div>
+    <div class='notice-txt'>
+        <p>
+            Contact the <blue>SELLER</blue> for more information related to the products.
+            <br><br>
+            Don't DM Ankit Saikia on whatsapp.
+        </p>
+    </div>
+</div>
+
 <script>
     var im_se = document.getElementById('_image-se');
     var txt_se = document.getElementById('_se-txt');
+    var nx = document.getElementById('_notice');
 
     onload = function() {
         im_se.style.display = 'none';
+        setTimeout(function () {nx.style.display = 'block';nx.classList.add('not-in');},2000);
+    }
+
+    function notice_exit() {
+        nx.classList.remove('not-in');
+        nx.classList.add('not-ex');
+        setTimeout(function () {nx.style.display = 'none';},2000)
     }
 
     // for SE-images
