@@ -1,0 +1,8 @@
+
+.house-designs img {
+    width: var(--image-width);
+    height: auto;
+    position: relative;
+    left: var(--image-left);
+    padding: 2vh 0vh 2vh 0vh;
+}
