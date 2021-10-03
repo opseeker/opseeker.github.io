@@ -59,7 +59,7 @@
         --mai-position: relative;
         --mai-left: calc(var(--mai-width) - 10vw);
         --mai-top: 10vh;
-        --mai-width: 40vw;
+        --mai-width: 20vw;
         --mai-height: auto;
         --mai-border-radius: 50%;
         --mai-margin: 0 0 20vh 0;
@@ -136,7 +136,7 @@
         --mai-position: relative;
         --mai-left: calc(var(--mai-width) - 10vw);
         --mai-top: 10vh;
-        --mai-width: 40vw;
+        --mai-width: 10vw;
         --mai-height: auto;
         --mai-border-radius: 50%;
         --mai-margin: 0 0 20vh 0;

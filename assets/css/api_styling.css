@@ -1,0 +1,86 @@
+/* api build for general purpose usage */
+
+@media (max-width: 599px) {
+    :root {
+        --author-img-position: relative;
+        --author-img-borderradius: none;
+        --author-img-top: 0px;
+        --author-img-left: 0px;
+        --author-img-width: 0px;
+        --author-img-height: 0px;
+        --author-img-zindex: 1;
+        --author-img-border: none;
+        --author-img-borderradius: none;
+        --author-img-opacity: 1;
+    }
+
+    html {
+        user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+    }
+}
+
+/* colors */
+.red{color: red}
+.blue{color: blue}
+.orange{color: darkorange}
+.white{color: white}
+.black{color: black}
+
+.author img {
+    position: var(--author-img-position);
+    top: var(--author-img-top);
+    left: var(--author-img-left);
+    width: var(--author-img-width);
+    height: var(--author-img-height);
+    z-index: var(--author-img-zindex);
+    border: var(--author-img-border);
+    border-radius: var(--author-img-borderradius);
+    opacity: var(--author-img-opacity);
+}
+
+.container {
+    padding: var(--container-padding);
+    margin: var(--container-margin);
+    position: var(--container-position);
+    top: var(--container-top);
+    left: var(--container-left);
+    z-index: var(--container-z);
+    border: var(--container-border);
+    border-radius: var(--container-border-radius);
+}
+
+.scroll-content {
+    overflow-Y: scroll;
+    position: var(--scroll-position);
+    top: var(--scroll-top);
+    left: var(--scroll-left);
+    z-index: var(--scroll-z);
+    height: var(--scroll-height);
+    width: var(--scroll-width);
+    border-radius: var(--scroll-border-radius);
+    border: var(--scroll-border);
+}
+
+.icon .fb {
+    width: 2vw;
+    height: auto;
+    z-index: 10;
+    position: absolute;
+    top: var(--icon-fb-top);
+    left: var(--icon-fb-left);
+    bottom: var(--icon-fb-bottom);
+}
+
+/* audio processor css styling  */
+.audio-container {
+    position: var(--audio-position);
+    top: var(--audio-top);
+    left: var(--audio-left);
+    padding: var(--audio-padding);
+    margin: var(--audio-margin);
+    border: var(--audio-border);
+}
