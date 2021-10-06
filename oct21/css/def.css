@@ -1,0 +1,8 @@
+.top-banner img {
+    width: 8vw;
+    height: auto;
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    z-index: 10;
+}
