@@ -754,3 +754,30 @@ footer {
     width: 40px;
 }
 
+#_recent-release {
+    position: var(--recent-position);
+    top: var(--recent-top);
+    left: var(--recent-left);
+    width: var(--recent-width);
+    height: var(--recent-height);
+}
+
+.sidebar-all {
+    overflow-Y: scroll;
+}
+
+#_recent-release ul {
+    list-style: none;
+}
+
+#_recent-release ul li {
+    margin: 12px 0px 12px 0px;
+}
+
+#_recent-release .sidebar-header {
+    position: relative;
+    left: 30px;
+    font-size: 1.4em;
+    font-weight: bold;
+    
+}

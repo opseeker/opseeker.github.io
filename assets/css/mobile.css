@@ -76,6 +76,12 @@
         /*=============================FOOTER-FOR-INDEX*/
         --footer-bottom: 0;
         --footer-left: 0;
+        /*==============================RECENT RELEASE*/
+        --recent-position: relative;
+        --recent-top: 4vh;
+        --recent-left: -20px;
+        --recent-width: 98vw;
+        --recent-height: 400px;
     }
 
 }

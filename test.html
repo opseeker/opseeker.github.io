@@ -1,0 +1,2785 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="shortcut icon" href="https://www.wcofun.com/favicon.ico" type="image/x-icon" />
+    <style>
+        @media only screen and (max-width: 599px) {
+            #ac-lre-wrapper {
+                max-width: 300px;
+            }
+
+            #sidebar_r1 {
+                display: inline-block;
+                width: 100%;
+                max-width: 313px;
+                height: 280px;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            #sidebar_r1 {
+                float: right;
+                display: inline-block;
+                width: 100%;
+                max-width: 313px;
+                height: 280px;
+            }
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        body {
+            color: #333;
+            font-size: 13px;
+            font-family: Verdana, Geneva, sans-serif;
+            background: #3F474E;
+            margin-top: -2px
+        }
+
+        .logo {
+            float: left
+        }
+
+        .header-top {
+            height: 40px;
+            background: #FF7C00;
+            color: #FFF;
+            line-height: 35px;
+            padding-left: 20px;
+            margin-top: 20px
+        }
+
+        .header-top a {
+            color: #FFF;
+            font-weight: 400
+        }
+
+        .header-top a:hover {
+            color: #b85128
+        }
+
+        .header-top a:visited {
+            color: #FFF
+        }
+
+        .catara {
+            width: 250px;
+            height: 20px
+        }
+
+        .searching {
+            float: right;
+            margin-top: 70px
+        }
+
+        .searching-bar {
+            max-width: 250px;
+            height: 25px;
+            border-radius: 3px
+        }
+
+        .button1 {
+            background-color: #F87101;
+            color: white;
+            border: 1px solid #DF5006
+        }
+
+        .button1:hover {
+            background-color: #DF5006;
+            color: white
+        }
+
+        .aramabutonu {
+            border-radius: 2px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            width: 60px;
+            height: 25px;
+            -webkit-transition-duration: 1.4s;
+            transition-duration: 0.4s;
+            cursor: pointer
+        }
+
+        .sidebar-all {
+            border-style: solid;
+            border-color: #FF7C00;
+            border-width: 2px;
+            background: #1E262D;
+            border-radius: 8px 8px 8px 8px
+        }
+
+        .sidebar-header {
+            background: #FF7C00;
+            height: 35px;
+            border-radius: 4px 4px 0 0;
+            color: #FFF;
+            font-size: 15px;
+            text-align: left;
+            font-weight: 700;
+            padding-top: 9px;
+            padding-left: 7px
+        }
+
+        .sidebar-titles {
+            padding-left: 2px;
+            padding-right: 10px;
+            color: #FFF;
+            margin-top: -4px
+        }
+
+        .recent-release {
+            background: #FF7C00;
+            height: 37px;
+            border-radius: 8px 8px 0 0;
+            color: #FFF;
+            font-size: 15px;
+            text-align: left;
+            font-weight: 700;
+            padding-top: 9px;
+            padding-left: 10px;
+            clear: left;
+            clear: right
+        }
+
+        .recent-release a {
+            color: #FFF
+        }
+
+        .recent-release2 {
+            color: #FFF;
+            font-size: 15px;
+            text-align: left;
+            font-weight: 700;
+            clear: left;
+            clear: right
+        }
+
+        .recent-release2 a {
+            color: #FFF
+        }
+
+        .category {
+            border: #FF7C00 solid 2px;
+            border-radius: 8px 8px 8px 8px
+        }
+
+        .kategory-desc {
+            padding: 8px
+        }
+
+        .today-buton {
+            background: #FF7C00;
+            padding: 4px 8px 4px 8px;
+            border-radius: 4px
+        }
+
+        .today-buton:hover {
+            background: #f9af6f
+        }
+
+        .genre-buton {
+            background: #FF7C00;
+            padding: 2px 8px 2px 8px;
+            border-radius: 4px;
+            line-height: 25px
+        }
+
+        .genre-buton:hover {
+            background: #f9af6f
+        }
+
+        .genre-buton2 a {
+            background: #FFF;
+            padding: 10px 8px 10px 8px;
+            margin-left: 2px;
+            border-radius: 4px;
+            line-height: 40px
+        }
+
+        .genre-buton2 a:hover {
+            background: #f9af6f
+        }
+
+        .video-title2 {
+            clear: right;
+            background: #FF7C00;
+            height: 37px;
+            color: #FFF;
+            font-size: 15px;
+            margin-bottom: 5px;
+            text-align: left;
+            border-radius: 4px;
+            font-weight: 700;
+            padding-top: 10px;
+            padding-left: 5px;
+            clear: left;
+            clear: right
+        }
+
+        .episode-descp {
+            color: #FFF;
+            font-size: 13px
+        }
+
+        .episode-descp a {
+            color: #EC8304;
+            font-size: 15px;
+            font-weight: 700
+        }
+
+        .header-tag {
+            color: #FFF
+        }
+
+        .header-tag a {
+            color: #EC8304
+        }
+
+        .header-tag h2 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #EC8304;
+            margin: 30px 0 0 0;
+            padding: 0;
+            display: inline
+        }
+
+        .h1-tag {
+            padding: 10px 0 0 10px
+        }
+
+        .video-title {
+            background: #FF7C00;
+            min-height: 37px;
+            color: #FFF;
+            border-radius: 8px 8px 0 0
+        }
+
+        .video-title h1 {
+            font-size: 15px;
+            display: inline;
+            padding: 5px 0 10px 0
+        }
+
+        .video-title a {
+            color: #FFF;
+            font-size: 15px
+        }
+
+        .video-title h2 {
+            font-size: 15px;
+            display: inline;
+            padding: 5px 0 10px 0
+        }
+
+        #sidebar_right {
+            background-color: #1E262D;
+            padding: 8px;
+            padding-bottom: 20px;
+            position: relative;
+            border-right: solid;
+            border-left: solid;
+            border-bottom: solid;
+            border-radius: 0 0 8px 8px;
+            border-color: #FF7C00;
+            border-width: 2px;
+            color: aliceblue;
+            margin-bottom: 10px;
+            overflow: auto
+        }
+
+        #sidebar_today {
+            background-color: #1E262D;
+            padding: 8px;
+            padding-bottom: 20px;
+            position: relative;
+            border-right: solid;
+            border-left: solid;
+            border-bottom: solid;
+            border-radius: 0 0 8px 8px;
+            border-color: #FF7C00;
+            border-width: 2px;
+            color: aliceblue;
+            margin-bottom: 10px;
+            overflow: auto
+        }
+
+        #sidebar_cat {
+            background-color: #1E262D;
+            padding: 8px;
+            padding-bottom: 20px;
+            position: relative;
+            border-right: solid;
+            border-left: solid;
+            border-bottom: solid;
+            border-radius: 0 0 8px 8px;
+            border-color: #FF7C00;
+            border-width: 2px;
+            color: aliceblue;
+            margin-bottom: 10px;
+            overflow: auto
+        }
+
+        #sidebar_cat a {
+            color: #FFF;
+            font-weight: 700;
+            font-size: 14px
+        }
+
+        #sidebar_today a {
+            color: #FFF;
+            font-weight: 700;
+            font-size: 14px
+        }
+
+        #sidebar_right2 {
+            background-color: #1E262D;
+            padding: 8px 8px 0 8px;
+            position: relative;
+            border-right: solid;
+            border-left: solid;
+            border-bottom: solid;
+            border-radius: 0 0 8px 8px;
+            border-color: #FF7C00;
+            border-width: 2px;
+            color: aliceblue;
+            margin-bottom: 10px;
+            overflow: auto
+        }
+
+        #sidebar_right3 {
+            background-color: #1E262D;
+            padding: 8px 8px 15px 8px;
+            position: relative;
+            border-right: solid;
+            border-left: solid;
+            border- bottom: solid;
+            border-radius: 0 0 8px 8px;
+            border-color: #FF7C00;
+            border-width: 2px;
+            color: aliceblue;
+            overflow: auto;
+            margin-bottom: 20px
+        }
+
+        #sidebar_right3 a:visited {
+            color: #f5a383
+        }
+
+        #sidebar_right4 {
+            padding: 8px 8px 0 8px;
+            position: relative;
+            border-right: solid;
+            border-left: solid;
+            border-bottom: solid;
+            border-radius: 0 0 8px 8px;
+            border-color: #FF7C00;
+            border-width: 2px;
+            margin-bottom: 10px;
+            overflow: auto
+        }
+
+        .img2 {
+            padding-right: 10px;
+            padding-bottom: 10px
+        }
+
+        .recent-release-main {
+            clear: both;
+            padding-top: 10px
+        }
+
+        .recent-releases {
+            clear: both
+        }
+
+        .video-page-main {
+            clear: both
+        }
+
+        .todays-text {
+            max-width: 200px;
+            float: left
+        }
+
+        .left {
+            float: left
+        }
+
+        .div1 {
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73AD21;
+            float: left
+        }
+
+        .div2 {
+            float: right
+        }
+
+        .cat-eps {
+            max-width: 768px;
+            border-bottom: 1px dashed #FF7C00;
+            padding: 5px 0 5px 0
+        }
+
+        .cat-eps a {
+            color: #FFF;
+            font-size: 17px
+        }
+
+        .cat-eps:hover {
+            background: #FF7C00
+        }
+
+        .ad300 {
+            width: 300px;
+            height: 250px;
+            border: 1px solid black;
+            margin-bottom: 15px
+        }
+
+        .right {
+            float: right
+        }
+
+        .left {
+            margin-bottom: 20px
+        }
+
+        .footer-kismi {
+            border-top: #FF7C00 solid 2px;
+            margin-top: 20px;
+            min-height: 50px;
+            color: aliceblue;
+            text-align: center;
+            line-height: 40px
+        }
+
+        .cerceve {
+            min-width: 220px;
+            height: 20px;
+            background: #1E262D;
+            float: left;
+            text-align: center
+        }
+
+        .cerceve:hover {
+            background-color: #635b6b
+        }
+
+        .cerceve2 {
+            min-width: 153px;
+            min-height: 280px;
+            max-width: 168px;
+            max-height: 330px;
+            background: #1E262D;
+            margin: 2px 2px 2px 2px;
+            float: left;
+            text-align: center
+        }
+
+        .cerceve2:hover {
+            background-color: #635b6b
+        }
+
+        .cerceve2 a {
+            color: #FF7C00;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 0 0 0 0
+        }
+
+        .cerceve2 a:visited {
+            color: #AE5400;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 0 0 0 0
+        }
+
+        .cerceve2 a:hover {
+            color: #d74207;
+            font-size: 12px;
+            text-decoration: none
+        }
+
+        .iccerceve {
+            margin: 2px 2px 4px 2px;
+            text-align: center
+        }
+
+        .iccerceve2 {
+            margin: 2px 2px 4px 2px;
+            text-align: center
+        }
+
+        .cerceve-tur-ve-genre {
+            margin-left: 10px;
+            margin-bottom: 10px
+        }
+
+        .cerceve a {
+            color: #FF7C00;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 0 0 0 0
+        }
+
+        .cerceve a:visited {
+            color: #AE5400;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 0 0 0 0
+        }
+
+        .cerceve a:hover {
+            color: #d74207;
+            font-size: 12px;
+            text-decoration: none
+        }
+
+        .todays-anime-main {
+            min-width: 300px;
+            border: #FF7C00 solid 2px;
+            width: 100%;
+            height: 300px;
+            float: left;
+            border-radius: 8px 8px 8px 8px;
+            background: #1E262D;
+            color: #FFF
+        }
+
+        .video-top {
+            min-width: 300px;
+            border: #FF7C00 solid 2px;
+            width: 57%;
+            height: 250px;
+            float: left;
+            border-radius: 8px 8px 8px 8px;
+            background: #1E262D;
+            color: #FFF
+        }
+
+        .todays-anime {
+            background: #FF7C00;
+            height: 37px;
+            border-radius: 4px 4px 0 0;
+            color: #FFF;
+            font-size: 15px;
+            text-align: left;
+            font-weight: 700;
+            padding-top: 7px;
+            padding-left: 5px;
+            width: 100%
+        }
+
+        .clearfix {
+            overflow: auto
+        }
+
+        .img2 {
+            float: left;
+            padding-top: 30px
+        }
+
+        .img3 {
+            float: left;
+            margin: 10px;
+            max-width: 200px;
+            height: 200px
+        }
+
+        .img5 {
+            float: left;
+            margin: 10px;
+            max-width: 240px;
+            max-height: 340px
+        }
+
+        .img4 {
+            max-width: 150px
+        }
+
+        #map_canvas embed {
+            max-width: none
+        }
+
+        .sidebar-titles li {
+            margin-left: -22px;
+            padding: 5px 0 5px 0;
+            min-height: 18px;
+            border-bottom: 1px dashed #FF7C00
+        }
+
+        .sidebar-titles a,
+        .sidebar-titles a:visited {
+            color: #FFF;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 0 0 0 0
+        }
+
+        .sidebar-titles a:hover {
+            color: #d74207;
+            font-size: 12px;
+            text-decoration: none
+        }
+
+        .episode-titles {
+            margin-top: -8px
+        }
+
+        .episode-titles li {
+            margin-left: -23px;
+            padding: 10px 10px 5px;
+            min-height: 40px
+        }
+
+        .episode-titles a,
+        .episode-titles a:visited {
+            color: #FFF;
+            font-size: 15px;
+            text-decoration: none;
+            margin: 0 0 0 0
+        }
+
+        .episode-titles a:hover {
+            color: #d74207;
+            font-size: 15px;
+            text-decoration: none
+        }
+
+        ul.sidebar {
+            list-style-image: url(tabs.jpg)
+        }
+
+        ul.episode-titles {
+            list-style-image: url(tabs.jpg)
+        }
+
+        ul.episode-titles li {
+            border-bottom: solid #FF7C00 1px
+        }
+
+        .episode-titles li:hover {
+            background-color: #F3E2A9
+        }
+
+        #map_canvas img {
+            max-width: none
+        }
+
+        #map_canvas object {
+            max-width: none
+        }
+
+        h1 {
+            font-size: 44px
+        }
+
+        h2 {
+            font-size: 37px
+        }
+
+        h3 {
+            font-size: 27px
+        }
+
+        h5 {
+            font-size: 17px
+        }
+
+        h6 {
+            font-size: 14px
+        }
+
+        .row {
+            width: 980px;
+            max-width: 100%;
+            min-width: 768px;
+            margin: 0 auto;
+            background: #1E262D;
+            border-right: solid #202020 2px;
+            border-left: solid #202020 2px
+        }
+
+        .row .row {
+            width: auto;
+            max-width: none;
+            min-width: 0;
+            margin: 0 -6px
+        }
+
+        .row.collapse .column,
+        .row.collapse .columns {
+            padding: 0
+        }
+
+        .row .row {
+            width: auto;
+            max-width: none;
+            min-width: 0;
+            margin: 0 -6px
+        }
+
+        .row .row.collapse {
+            margin: 0
+        }
+
+        .column,
+        .columns {
+            float: left;
+            min-height: 1px;
+            padding: 0 4px;
+            position: relative
+        }
+
+        .column.centered,
+        .columns.centered {
+            float: none;
+            margin: 0 auto
+        }
+
+        [class*="column"]+[class*="column"]:last-child {
+            float: right
+        }
+
+        [class*="column"]+[class*="column"].end {
+            float: left
+        }
+
+        .row .one {
+            width: 8.333%
+        }
+
+        .row .two {
+            width: 16.667%
+        }
+
+        .row .three {
+            width: 25%
+        }
+
+        .row .four {
+            width: 24.333%
+        }
+
+        .row .fifteen {
+            width: 17.35%
+        }
+
+        .row .five {
+            width: 41.667%
+        }
+
+        .row .six {
+            width: 50%
+        }
+
+        .row .seven {
+            width: 58.333%
+        }
+
+        .row .eight {
+            width: 75.65%
+        }
+
+        .row .fourteen {
+            width: 82.65%
+        }
+
+        .row .nine {
+            width: 75%
+        }
+
+        .row .ten {
+            width: 83.333%
+        }
+
+        .row .eleven {
+            width: 91.667%
+        }
+
+        .row .twelve {
+            width: 100%
+        }
+
+        .row .offset-by-one {
+            margin-left: 8.333%
+        }
+
+        .row .offset-by-two {
+            margin-left: 16.667%
+        }
+
+        .row .offset-by-three {
+            margin-left: 25%
+        }
+
+        .row .offset-by-four {
+            margin-left: 25.333%
+        }
+
+        .row .offset-by-five {
+            margin-left: 41.667%
+        }
+
+        .row .offset-by-six {
+            margin-left: 50%
+        }
+
+        .row .offset-by-seven {
+            margin-left: 58.333%
+        }
+
+        .row .offset-by-eight {
+            margin-left: 74.65%
+        }
+
+        .row .offset-by-nine {
+            margin-left: 75%
+        }
+
+        .row .offset-by-ten {
+            margin-left: 83.333%
+        }
+
+        .push-two {
+            left: 16.667%
+        }
+
+        .pull-two {
+            right: 16.667%
+        }
+
+        .push-three {
+            left: 25%
+        }
+
+        .pull-three {
+            right: 25%
+        }
+
+        .push-four {
+            left: 33.333%
+        }
+
+        .pull-four {
+            right: 33.333%
+        }
+
+        .push-five {
+            left: 41.667%
+        }
+
+        .pull-five {
+            right: 41.667%
+        }
+
+        .push-six {
+            left: 50%
+        }
+
+        .pull-six {
+            right: 50%
+        }
+
+        .push-seven {
+            left: 58.333%
+        }
+
+        .pull-seven {
+            right: 58.333%
+        }
+
+        .push-eight {
+            left: 66.667%
+        }
+
+        .pull-eight {
+            right: 66.667%
+        }
+
+        .push-nine {
+            left: 75%
+        }
+
+        .pull-nine {
+            right: 75%
+        }
+
+        .push-ten {
+            left: 83.333%
+        }
+
+        .pull-ten {
+            right: 83.333%
+        }
+
+        img,
+        object,
+        embed {
+            max-width: 100%;
+            height: auto
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic
+        }
+
+        #map_canvas img,
+        .map_canvas img {
+            max-width: none !important
+        }
+
+        .row {
+            *zoom: 1
+        }
+
+        .row:before,
+        .row:after {
+            content: "";
+            display: table
+        }
+
+        .row:after {
+            clear: both
+        }
+
+        @media only screen and (max-width :768px) {
+            body {
+                -webkit-text-size-adjust: none;
+                -ms-text-size-adjust: none;
+                width: 100%;
+                min-width: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 0;
+                padding-right: 0
+            }
+
+            .row {
+                width: auto;
+                min-width: 0;
+                margin-left: 0;
+                margin-right: 0
+            }
+
+            .column,
+            .columns {
+                width: auto !important;
+                float: none
+            }
+
+            .column:last-child,
+            .columns:last-child {
+                float: none
+            }
+
+            [class*="column"]+[class*="column"]:last-child {
+                float: none
+            }
+
+            .column:before,
+            .columns:before,
+            .column:after,
+            .columns:after {
+                content: "";
+                display: table
+            }
+
+            .column:after,
+            .columns:after {
+                clear: both
+            }
+
+            .no-left-margin,
+            .offset-by-one,
+            .offset-by-two,
+            .offset-by-three,
+            .offset-by-four,
+            .offset-by-five,
+            .offset-by-six,
+            .offset-by-seven,
+            .offset-by-eight,
+            .offset-by-nine,
+            .offset-by-ten {
+                margin-left: 0 !important
+            }
+
+            .left-auto,
+            .push-two,
+            .push-three,
+            .push-four,
+            .push-five,
+            .push-six,
+            .push-seven,
+            .push-eight,
+            .push-nine,
+            .push-ten {
+                left: auto
+            }
+
+            .right-auto,
+            .pull-two,
+            .pull-three,
+            .pull-four,
+            .pull-five,
+            .pull-six,
+            .pull-seven,
+            .pull-eight,
+            .pull-nine,
+            .pull-ten {
+                right: auto
+            }
+
+            .row .mobile-one {
+                width: 25% !important;
+                float: left;
+                padding: 0 5px
+            }
+
+            .row .mobile-one:last-child {
+                float: right
+            }
+
+            .row.collapse .mobile-one {
+                padding: 0
+            }
+
+            .row .mobile-two {
+                width: 50% !important;
+                float: left;
+                padding: 0 5px
+            }
+
+            .row .mobile-two:last-child {
+                float: right
+            }
+
+            .row.collapse .mobile-two {
+                padding: 0
+            }
+
+            .row .mobile-three {
+                width: 75% !important;
+                float: left;
+                padding: 0 5px
+            }
+
+            .row .mobile-three:last-child {
+                float: right
+            }
+
+            .row.collapse .mobile-three {
+                padding: 0
+            }
+
+            .row .mobile-four {
+                width: 100% !important;
+                float: left;
+                padding: 0 5px
+            }
+
+            .row .mobile-four:last-child {
+                float: right
+            }
+
+            .row.collapse .mobile-four {
+                padding: 0
+            }
+
+            .push-one-mobile {
+                left: 25%
+            }
+
+            .pull-one-mobile {
+                right: 25%
+            }
+
+            .push-two-mobile {
+                left: 50%
+            }
+
+            .pull-two-mobile {
+                right: 50%
+            }
+
+            .push-three-mobile {
+                left: 75%
+            }
+
+            .pull-three-mobile {
+                right: 75%
+            }
+        }
+
+        .block-grid {
+            display: block;
+            overflow: hidden;
+            padding: 0
+        }
+
+        .block-grid>li {
+            display: block;
+            height: auto;
+            float: left
+        }
+
+        .block-grid.two-up {
+            margin: 0 -15px
+        }
+
+        .block-grid.two-up>li {
+            width: 50%;
+            padding: 0 15px 15px
+        }
+
+        .block-grid.three-up {
+            margin: 0 -12px
+        }
+
+        .block-grid.three-up>li {
+            width: 33.33%;
+            padding: 0 12px 12px
+        }
+
+        .block-grid.four-up {
+            margin: 0 -10px
+        }
+
+        .block-grid.four-up>li {
+            width: 25%;
+            padding: 0 10px 10px
+        }
+
+        .block-grid.five-up {
+            margin: 0 -8px
+        }
+
+        .block-grid.five-up>li {
+            width: 20%;
+            padding: 0 8px 8px
+        }
+
+        @media only screen and (max-width :768px) {
+            .block-grid.mobile {
+                margin-left: 0
+            }
+
+            .block-grid.mobile>li {
+                float: none;
+                width: 100%;
+                margin-left: 0
+            }
+        }
+
+        .nav-bar {
+            height: 40px;
+            background: #FF7C00;
+            margin-top: 5px;
+            padding: 0;
+            border-radius: 8px 8px 8px 8px;
+            padding-left: 8px
+        }
+
+        .nav-bar>li {
+            max-width: 200px;
+            float: left;
+            display: block;
+            position: relative;
+            padding: 0;
+            line-height: 40px
+        }
+
+        .nav-bar>li.active {
+            background: #AE5400;
+            border-color: #FF7C00
+        }
+
+        .nav-bar>li.active>a {
+            color:
+                white;
+            cursor: default
+        }
+
+        .nav-bar>li.active:hover {
+            background: #AE5400;
+            cursor: default
+        }
+
+        .nav-bar>li:hover {
+            background: #AE5400
+        }
+
+        .nav-bar>li a {
+            color: #e6e6e6
+        }
+
+        .nav-bar>li ul {
+            margin-bottom: 0
+        }
+
+        .nav-bar>li .flyout {
+            display: none
+        }
+
+        .nav-bar>li.has-flyout>a:first-child {
+            padding-right: 36px;
+            position: relative
+        }
+
+        .nav-bar>li.has-flyout>a:first-child:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border: solid 4px;
+            border-color: #e6e6e6 transparent transparent transparent;
+            position: absolute;
+            right: 20px;
+            top: 17px
+        }
+
+        .nav-bar>li.has-flyout>a.flyout-toggle {
+            border-left: 0 !important;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 22px;
+            z-index: 2;
+            display: block
+        }
+
+        .nav-bar>li.has-flyout.is-touch>a:first-child {
+            padding-right: 55px
+        }
+
+        .nav-bar>li.has-flyout.is-touch>a.flyout-toggle {
+            border-left: 1px dashed #FF7C00
+        }
+
+        .nav-bar>li>a:first-child {
+            position: relative;
+            padding: 0 15px;
+            display: block;
+            text-decoration: none;
+            font-size: 14px
+        }
+
+        .nav-bar>li>input {
+            margin: 0 10px
+        }
+
+        .nav-bar.vertical {
+            height: auto;
+            margin-top: 0
+        }
+
+        .nav-bar.vertical>li {
+            float: none;
+            border-bottom: none
+        }
+
+        .nav-bar.vertical>li.has-flyout>a:first-child:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border: solid 4px;
+            border-color: transparent transparent transparent #e6e6e6
+        }
+
+        .nav-bar.vertical>li .flyout {
+            left: 100%;
+            top: -1px
+        }
+
+        .nav-bar.vertical>li .flyout.right {
+            left: auto;
+            right: 100%
+        }
+
+        @media only screen and (max-device-width:1280px) {
+            .touch .nav-bar li.has-flyout>a {
+                padding-right: 36px !important
+            }
+        }
+
+        @media only screen and (max-width:1279px) and (min-width:768px) {
+            .touch .nav-bar li a {
+                font-size: 13px;
+                font-size: 1.3rem
+            }
+
+            .touch .nav-bar li.has-flyout>a.flyout-toggle {
+                padding: 20px !important
+            }
+
+            .touch .nav-bar li.has-flyout>a {
+                padding-right: 36px !important
+            }
+        }
+
+        @media only screen and (max-width :768px) {
+            .nav-bar {
+                height: auto
+            }
+
+            .nav-bar>li {
+                float: none;
+                display: block;
+                border-right: none
+            }
+
+            .nav-bar>li>a.main {
+                text-align: left;
+                border-top: 1px solid #ddd;
+                border-right: none
+            }
+
+            .nav-bar>li:first-child>a.main {
+                border-top: none
+            }
+
+            .nav-bar>li.has-flyout>a.flyout-toggle {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 22px;
+                z-index: 2;
+                display: block
+            }
+
+            .nav-bar>li.has-flyout.is-touch>a.flyout-toggle span {
+                content: "";
+                width: 0;
+                height: 0;
+                display: block
+            }
+
+            .nav-bar>li.has-flyout>a.flyout-toggle:hover span {
+                border-top-color: #141414
+            }
+
+            .nav-bar.vertical>li.has-flyout>.flyout {
+                left: 0
+            }
+
+            .flyout {
+                position: relative;
+                width: 100% !important;
+                top: auto;
+                margin-right: -2px;
+                border-width: 1px 1px 0 1px
+            }
+
+            .flyout.right {
+                float: none;
+                right: auto;
+                left: -1px
+            }
+
+            .flyout.small,
+            .flyout.large {
+                width: 100% !important
+            }
+
+            .flyout p:last-child {
+                margin-bottom: 18px
+            }
+        }
+
+        form {
+            margin: 0 0 19.416px
+        }
+
+        .row form .row {
+            margin: 0 -6px
+        }
+
+        .row form .row .column,
+        .row form .row .columns {
+            padding: 0 6px
+        }
+
+        .row form .row.collapse {
+            margin: 0
+        }
+
+        .row form .row.collapse .column,
+        .row form .row.collapse .columns {
+            padding: 0
+        }
+
+        label {
+            font-size: 14px;
+            color: #4d4d4d;
+            cursor: pointer;
+            display: block;
+            font-weight: 500;
+            margin-bottom: 3px
+        }
+
+        label.right {
+            float: none;
+            text-align: right
+        }
+
+        label.inline {
+            line-height: 32px;
+            margin: 0 0 12px 0
+        }
+
+        @media only screen and (max-width :768px) {
+            label.right {
+                text-align: left
+            }
+        }
+
+        .prefix,
+        .postfix {
+            display: block;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 32px;
+            line-height: 31px
+        }
+
+        a.button.prefix,
+        a.button.postfix {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center
+        }
+
+        span.prefix,
+        span.postfix {
+            background: #f2f2f2;
+            border: 1px solid #ccc
+        }
+
+        .prefix {
+            left: 2px;
+            -moz-border-radius-topleft: 2px;
+            -webkit-border-top-left-radius: 2px;
+            border-top-left-radius: 2px;
+            -moz-border-radius-bottomleft: 2px;
+            -webkit-border-bottom-left-radius: 2px;
+            border-bottom-left-radius: 2px
+        }
+
+        .postfix {
+            right: 2px;
+            -moz-border-radius-topright: 2px;
+            -webkit-border-top-right-radius: 2px;
+            border-top-right-radius: 2px;
+            -moz-border-radius-bottomright: 2px;
+            -webkit-border-bottom-right-radius: 2px;
+            border-bottom-right-radius: 2px
+        }
+
+        textarea {
+            height: auto
+        }
+
+        select {
+            width: 100%
+        }
+
+        @media only screen and (max-width :768px) {
+            .reveal-modal-bg {
+                position: absolute
+            }
+
+            .reveal-modal,
+            .reveal-modal.small,
+            .reveal-modal.medium,
+            .reveal-modal.large,
+            .reveal-modal.xlarge {
+                width: 80%;
+                top: 15px;
+                left: 50%;
+                margin-left: -40%;
+                padding: 20px;
+                height: auto
+            }
+        }
+
+        .items {
+            margin-left: -40px
+        }
+
+        ul.items {
+            margin-top: 20px
+        }
+
+        ul.items li {
+            float: left;
+            position: relative;
+            margin-left: 1.867%;
+            width: 23.5849%;
+            text-align: center;
+            list-style: none;
+            margin- bottom: 20px;
+            vertical-align: top
+        }
+
+        ul.items li .img {
+            overflow: hidden;
+            position: relative
+        }
+
+        ul.items li .img:before {
+            content: "";
+            display: block;
+            padding-top: 125%
+        }
+
+        ul.items li .img img {
+            width: 100%;
+            max-width: 100%;
+            height: auto
+        }
+
+        ul.items li .img a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden
+        }
+
+        ul.items li:nth-child(4n+1) {
+            margin-left: 0
+        }
+
+        ul.items li p.name {
+            line-height: 16px;
+            height: 34px;
+            overflow: hidden
+        }
+
+        ul.items li p.name a {
+            color: #ffc119;
+            font-size: 13px;
+            font-family: mySecondFont
+        }
+
+        ul.items li p.name a:hover {
+            color: #FFF
+        }
+
+        .recent-release-episodes {
+            height: 50px;
+            padding-top: 2px
+        }
+
+        .recent-release-episodes a {
+            color: #FFF;
+            font-weight: 700;
+            font-size: 11px
+        }
+
+        .recent-release-episodes a:hover {
+            color: #FF7C00
+        }
+
+        .recent-release-episodes a:visited {
+            color: #f5a383
+        }
+
+        @media only screen and (max-width:449px) {
+            ul.items li {
+                margin-left: 3%;
+                width: 48.5%
+            }
+
+            ul.items li:nth-child(2n+1) {
+                margin-left: 0
+            }
+
+            .recent-release-episodes {
+                height: 20px
+            }
+        }
+
+        @media only screen and (min-width:450px) and (max-width:650px) {
+            ul.items li {
+                margin-left: 2%;
+                width: 32%
+            }
+
+            ul.items li:nth-child(4n+1) {
+                margin-left: 2%
+            }
+
+            ul.items li:nth-child(3n+1) {
+                margin-left: 0
+            }
+
+            .recent-release-episodes {
+                height: 50px
+            }
+        }
+
+        @media only screen and (max-width:650px) {
+            .img5 {
+                height: 200px;
+                max-width: 200px
+            }
+        }
+
+        @media only screen and (max-width:970px) {
+            .sidebar-header {
+                font-size: 13px
+            }
+        }
+
+        @media only screen and (min-width:767px) and (max-width:970px) {
+            .cat-eps a {
+                font-size: 15px
+            }
+        }
+
+        @media only screen and (min-width:100px) and (max-width:650px) {
+            .cat-eps a {
+                font-size: 13px
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .saklasanabunu {
+                display: none
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            .addthis_sharing_toolbox_i7jo {
+                display: none
+            }
+        }
+
+        .slider-titles {
+            height: 52px
+        }
+
+        .prev-fln {
+            padding-top: 10px;
+            max-width: 100%;
+            min-height: 60px;
+            color: #FFF;
+            font-size: 13px;
+            text-align: left;
+            font-weight: 300
+        }
+
+        .prev-next {
+            min-height: 30px;
+            max-width: 390px;
+            margin-bottom: 10px;
+            background: #d45928;
+            padding: 2px 8px 2px 8px;
+            border-radius: 4px
+        }
+
+        .prev-fln a {
+            color: #FFF
+        }
+
+        .prev-next:hover {
+            background: #f9af6f
+        }
+
+        .slider-titles a {
+            color: #FFF
+        }
+
+        .addthis_sharing_toolbox_i7jo {
+            margin-top: 3px
+        }
+
+        .anti-ad {
+            clear: both;
+            max-width: 800px;
+            height: 30px;
+            line-height: 25px;
+            border: dashed 1px;
+            border-color: #d45928;
+            text-align: center;
+            vertical-align: middle;
+            margin-bottom: 10px
+        }
+
+        .anti-ad a {
+            color: #d45928;
+            font-weight: 700
+        }
+
+        .jcarousel-wrapper {
+            position: relative
+        }
+
+        .jcarousel {
+            position: relative;
+            overflow: hidden;
+            width: 100%
+        }
+
+        .jcarousel ul {
+            width: 20000em;
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        .jcarousel li {
+            width: 200px;
+            float: left;
+            border: 3px solid #1e262d;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        .jcarousel img {
+            display: block;
+            max-width: 100%;
+            height: auto !important
+        }
+
+        .jcarousel-control-prev,
+        .jcarousel-control-next {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            background: #4E443C;
+            color: #fff;
+            text-decoration: none;
+            text-shadow: 0 0 1px #000;
+            font: 24px/27px Arial, sans-serif;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            -webkit-box-shadow: 0 0 4px #F0EFE7;
+            -moz-box-shadow: 0 0 4px #F0EFE7;
+            box-shadow: 0 0 4px #F0EFE7
+        }
+
+        .jcarousel-control-prev {
+            left: 15px
+        }
+
+        .jcarousel-control-next {
+            right: 15px
+        }
+
+        .jcarousel-pagination {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            margin: 0
+        }
+
+        .jcarousel-pagination a {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 11px;
+            height: 10px;
+            width: 10px;
+            line-height: 10px;
+            background: #fff;
+            color: #4E443C;
+            border-radius: 10px;
+            text-indent: -9999px;
+            margin-right: 7px;
+            -webkit-box-shadow: 0 0 2px #4E443C;
+            -moz-box-shadow: 0 0 2px #4E443C;
+            box-shadow: 0 0 2px #4E443C
+        }
+
+        .jcarousel-pagination a.active {
+            background: #4E443C;
+            color: #fff;
+            opacity: 1;
+            -webkit-box-shadow: 0 0 2px #F0EFE7;
+            -moz-box-shadow: 0 0 2px #F0EFE7;
+            box-shadow: 0 0 2px #F0EFE7
+        }
+
+        a.reklam_kapat {
+            float: right;
+            cursor: pointer;
+            color: #fff;
+            border: 1px solid #AEAEAE;
+            border-radius: 20px;
+            background: #605F61;
+            font-size: 15px;
+            font-weight: 700;
+            display: inline-block;
+            line-height: 0;
+            padding: 9px 3px
+        }
+
+        .reklam_kapat:before {
+            content: "x"
+        }
+
+        .wco-footer {
+            color: #d45928;
+            font-weight: 700
+        }
+
+        .wco-footer a {
+            color: #d45928;
+            font-weight: 700
+        }
+
+        #btnTopPage {
+            display: none;
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            width: 130px;
+        }
+
+        #btnTopPage:hover {
+            background-color: #555;
+        }
+
+        .share-button {
+            clear: both;
+        }
+
+        .share-button a {
+            color: unset;
+            text-decoration: none;
+        }
+
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+        }
+
+        .alert.info {
+            background-color: #2196F3;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .img:hover {
+            background: url("/theme/Icon_3-512.png") no-repeat center !important;
+        }
+
+        .buton-hover:hover {
+            /* 
+  border: 4px solid orange;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  */
+            opacity: 0.3;
+            transition: .5s ease;
+        }
+
+        div.cat-subscribe {
+            width: 100%;
+            min-height: 105px;
+            background: #F2DAD8;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        img.img-subscribe {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        span.btn-s-b {
+            margin: 15px;
+        }
+
+        div.cat-h-t {
+            flex-grow: 2;
+            max-width: 670px;
+        }
+
+        div.cat-subscribers {
+            font-size: 12px;
+        }
+
+        div.cat-header-tag a {
+            font-weight: normal;
+            color: black;
+            text-decoration: none
+        }
+
+        div.cat-header-tag h2 {
+            font-weight: normal;
+            font-size: 18px;
+            color: black;
+            padding: 0px;
+            display: inline;
+        }
+
+        div.cat-header-tag {}
+
+        .user-update-header {
+            background: #FF7C00;
+            height: 30px;
+            border-radius: 4px 4px 0px 0px;
+            color: #FFFFFF;
+            font-size: 13px;
+            text-align: left;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+
+        .user-update-header a {
+            color: #FFFFFF
+        }
+
+        .user-update-header a:hover {
+            color: #AD471F
+        }
+
+        .user-update-titles {
+            overflow-y: auto;
+            max-height: 300px;
+            background: #FCFCF9;
+            border-bottom: solid 1px #dbdbd6;
+            border-right: solid 1px #dbdbd6;
+            border-left: solid 1px #dbdbd6;
+            padding-left: 2px;
+            color: #1E262F;
+        }
+
+        .user-update-titles li {
+            margin-left: -22px;
+            border-bottom: 1px dashed #FF7C00;
+            line-height: 22px
+        }
+
+        .user-update-titles a,
+        .user-update-titles a:visited {
+            color: #1E262F;
+            font-weight: 400;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .user-update-titles a:hover {
+            color: #d74207;
+            font-size: 12px;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            max-width: 300px;
+            min-width: 83px;
+            margin: 10px 10px 0px 10px;
+        }
+
+        .subscribe-button {
+            line-height: 1.8;
+            vertical-align: top;
+            padding: 8px 12px;
+            margin-left: 10px;
+            color: white;
+            background: #238C00;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .subscribe-button:hover {
+            background-color: #AE5400
+        }
+
+        .subscribe-button:active {
+            background: #FF7C00;
+        }
+
+        .subscribe-button.subbed {
+            background: #FF7C00;
+        }
+
+        .subscribe-button.subbed svg {
+            width: 16px;
+        }
+
+        .subscribe-button.subbed svg .plus__line1 {
+            -webkit-transform: translate(14px, 0) rotate(45deg) translate(-5px, 0) scaleY(1.16667);
+            transform: translate(14px, 0) rotate(45deg) translate(-5px, 0) scaleY(1.16667);
+        }
+
+        .subscribe-button.subbed svg .plus__line2 {
+            -webkit-transform: translate(2px, 5px) rotate(45deg) scaleX(0.5) translate(0px, -5px);
+            transform: translate(2px, 5px) rotate(45deg) scaleX(0.5) translate(0px, -5px);
+        }
+
+        .subscribe-button svg {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            fill: white;
+            -webkit-transition: width 0.25s;
+            transition: width 0.25s;
+        }
+
+        .subscribe-button svg .plus__line1,
+        .subscribe-button svg .plus__line2 {
+            -webkit-transition: -webkit-transform 0.25s;
+            transition: -webkit-transform 0.25s;
+            transition: transform 0.25s;
+            transition: transform 0.25s, -webkit-transform 0.25s;
+        }
+
+        .subscribe-button svg .plus__line1 {
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+
+        .subscribe-button svg .plus__line2 {
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+
+        .subscribe-button * {
+            vertical-align: middle;
+        }
+
+        #box_whats_new {
+            width: 300px;
+            height: 277px;
+            position: fixed;
+            bottom: 0px;
+            right: 10px;
+            z-index: 999;
+        }
+
+        #box_whats_new_small {
+            width: 80px;
+            height: 25px;
+            position: fixed;
+            bottom: 0px;
+            right: 10px;
+            z-index: 999;
+        }
+
+        #box_wn_top {
+            background: #238c01;
+            min-height: 25px;
+            color: #FFFFFF;
+            border-radius: 8px 8px 0px 0px;
+            -moz-border-radius: 8px 8px 0px 0px;
+            -webkit-border-radius: 8px 8px 0px 0px;
+            padding-top: 3px;
+        }
+
+        #bwn_top_left {
+            float: left;
+            padding-left: 5px;
+        }
+
+        #bwn_top_right {
+            float: right;
+            padding-right: 6px;
+        }
+
+        #bwn_top_right a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #box_wn_bottom {
+            height: 225px;
+            border: 2px solid #238c01;
+            background: #FCFCF9;
+            overflow-y: auto;
+        }
+
+        #box_wn_bottom ul {
+            /*display: flex; 
+  flex-direction: column;  
+  list-style: inside disc;
+  list-style-position: inside;
+  padding-left: 0px;
+  */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #box_wn_bottom li {
+            border-bottom: 2px dashed #FF7C00;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* min-height: 56px; */
+        }
+
+        #box_wn_bottom li::before {
+            content: "\2022";
+            padding-right: 5px;
+            color: black;
+        }
+
+        #box_wn_bottom ul li:last-child {
+            border-bottom: none
+        }
+
+        .li_cat {
+            background-color: lightyellow;
+        }
+
+        #box_wn_bottom ul>li:nth-of-type(odd) {
+            /* background-color: #F2DAD8; */
+        }
+
+        #box_wn_bottom a {
+            color: #000;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        #box_wn_bottom a:hover {
+            color: #000;
+            font-weight: normal;
+        }
+
+        #box_wn_bottom a:visited {
+            color: #000;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        #box_watch_later {
+            border: 2px solid #999999;
+            width: 300px;
+            height: 250px;
+            position: fixed;
+            bottom: 0px;
+            right: 10px;
+            background-color: #ffffff;
+            overflow-y: scroll;
+            z-index: 999;
+            border: 2px solid #999999;
+            /*
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  */
+        }
+
+        #box_watch_later_small {
+            width: 300px;
+            height: 50px;
+            position: fixed;
+            bottom: 0px;
+            right: 10px;
+            z-index: 998;
+            background-color: #ffffff;
+            border: 2px solid #999999;
+            -moz-border-radius: 10px 10px 0px 0px;
+            -webkit-border-radius: 10px 10px 0px 0px;
+            border-radius: 10px 10px 0px 0px;
+            /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+        }
+
+        .li-btn-delete {
+            padding: 0;
+            border: 0;
+            background: transparent;
+        }
+
+        #div-logout {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 999;
+        }
+
+        .header-top-right {
+            display: inline-block;
+            float: right;
+        }
+
+        .header-top-right a {
+            color: #E6E6E6;
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .header-top-right span {
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .download-player {
+            clear: both;
+            height: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 1px solid #F1DADA;
+            border-radius: 3px;
+            background: #F1DADA;
+            padding-left: 20px;
+        }
+
+        .download-player a {
+            color: black;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border-left: 2px solid #238c01;
+            border-right: 2px solid #238c01;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: 0.3s;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            -webkit-animation: fadeEffect 1s;
+            animation: fadeEffect 1s;
+        }
+
+        /* Fade in tabs */
+        @-webkit-keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .switch-watched {
+            position: relative;
+            display: inline-block;
+            width: 56px;
+            height: 30px;
+        }
+
+        .switch-watched input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider-watched {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider-watched:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider-watched {
+            background-color: #FF7C00;
+        }
+
+        input:focus+.slider-watched {
+            box-shadow: 0 0 1px #FF7C00;
+        }
+
+        input:checked+.slider-watched:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider-watched.round {
+            border-radius: 34px;
+        }
+
+        .slider-watched.round:before {
+            border-radius: 50%;
+        }
+
+        .div-watched {
+            line-height: 34px;
+            font-size: 18px;
+        }
+    </style>
+    <title>Watch Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei Online - Shinka no Mi: Shiranai Uchi ni Kachigumi
+        Jinsei</title>
+    <meta name="description"
+        content="&#8220;Seiichi Hiiragi is an ugly, revolting, dirty, smelly fatass&#8221;—these are the insults hurled at him one after another about his appearance. Suc.." />
+    <link rel="canonical" href="https://www.wcofun.com/anime/shinka-no-mi-shiranai-uchi-ni-kachigumi-jinsei" />
+    <meta property="og:title"
+        content="Watch Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei Online - Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.wcofun.com/anime/shinka-no-mi-shiranai-uchi-ni-kachigumi-jinsei" />
+    <meta property="og:image" content="https://www.wcofun.com/wp-content/catimg/911005.jpg" />
+    <meta property="og:description"
+        content="Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei online for Free in HD/High Quality. Watch Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei full episodes." />
+</head>
+
+<body>
+    <div class="row">
+        <div class="header-top">
+            <a href="https://www.wcofun.com">Home</a> |
+            <a href="https://www.wcofun.com/contact">Contact</a> |
+            <span><a href="/wp-login.php">Log-In</a> | </span><span><a
+                    href="https://user.wco.tv/wp-login.php?action=register">Register</a></span>
+            <div class="addthis_sharing_toolbox_i7jo" style="float:right;"></div>
+        </div>
+
+        <div class="twelve columns">
+            <a href="https://www.wcofun.com"><img class="img2" src="https://www.wcofun.com/logo.gif"></a>
+            <br>
+            <div class="searching">
+                <form action="https://www.wcofun.com/search" method="post" id="konuara">
+                    <input type="search" name="catara" maxlength="40" id="searchbox"
+                        placeholder="What are you looking for?" class="searching-bar">
+                    <input type="submit" value="Search" class="aramabutonu button1">
+                    <div class="searchboxtop">
+                        <select name="konuara" form="konuara">
+                            <option value="series">Anime Search</option>
+                            <option value="episodes">Episode Search</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="twelve columns">
+            <ul class="nav-bar" style="font-weight:bold">
+                <li class="active"><a href="https://www.wcofun.com/">Home</a></li>
+                <li><a href="https://www.wcofun.com/dubbed-anime-list">Dubbed Anime</a></li>
+                <li><a href="https://www.wcofun.com/cartoon-list">Cartoons</a></li>
+                <li><a href="https://www.wcofun.com/subbed-anime-list">Subbed Anime</a></li>
+                <li><a href="https://www.wcofun.com/movie-list">Movies</a></li>
+                <li><a href="https://www.wcofun.com/ova-list">Ova Series</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="twelve columns">
+            <div class="row">
+
+                <div class="alert" style="max-width:980px">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <strong style="color:white">Important!:</strong> Dear visitors we were forced to change our domain
+                    name. Our new domain name is <strong style="color:white">WcoFun.Tv</strong>. Please bookmark us!
+                </div>
+                <div class="eight columns">
+                    <div class="video-title">
+                        <h1>
+                            <div class="h1-tag"><a
+                                    href="https://www.wcofun.com/anime/shinka-no-mi-shiranai-uchi-ni-kachigumi-jinsei">Shinka
+                                    no Mi: Shiranai Uchi ni Kachigumi Jinsei</a></div>
+                        </h1>
+                    </div>
+                    <div id="sidebar_cat">
+
+                        <div id="sidebar_r1">
+                            <SCRIPT language="Javascript">
+                                var cpmstar_rnd = Math.round(Math.random() * 999999);
+                                var cpmstar_pid = 16201;
+                                document.writeln("<SCR" +
+                                    "IPT language='Javascript' src='//server.cpmstar.com/view.aspx?poolid=" +
+                                    cpmstar_pid + "&script=1&rnd=" + cpmstar_rnd + "'></SCR" + "IPT>");
+                            </SCRIPT>
+                        </div>
+
+                        <img class="img5" src="//cdn.animationexplore.com/catimg/911005.jpg" alt="" />
+                        <h3>Info:</h3>
+
+                        <p>&#8220;Seiichi Hiiragi is an ugly, revolting, dirty, smelly fatass&#8221;—these are the
+                            insults hurled at him one after another about his appearance. Such was Seiichi&#8217;s
+                            miserable school life.</p>
+                        <p>One day, a voice claiming to be a God announced over the public address system to prepare to
+                            be transported to another world. The entire school, including Seiichi, were sent to a
+                            fantasy world featuring game-like elements such as levels, stats, and skills. However, the
+                            God still had preparations to complete for the transfer, and would send them over as soon as
+                            the hero summoning ritual was ready. The classes all formed groups to wait for the transfer,
+                            but Seiichi alone was excluded, and as such was summoned to a different area. After being
+                            transported, the first thing Seiichi ate was the &#8220;Fruit of Evolution,&#8221; which
+                            would come to greatly change his life&#8230;</p>
+                        <p>This story follows Seiichi from being bullied by his classmates, neglected as a companion, to
+                            his hard work, positive attitude, and surviving in this new world. As a result, he becomes
+                            one of the champions before he knows it.</p>
+                        <b>Genres:</b>
+                        <a href="https://www.wcofun.com/search-by-genre/page/4" class="genre-buton">Adventure</a> <a
+                            href="https://www.wcofun.com/search-by-genre/page/8" class="genre-buton">Fantasy</a> <a
+                            href="https://www.wcofun.com/search-by-genre/page/22" class="genre-buton">Romance</a>
+                    </div>
+                    <div class="recent-release-main">
+                        <div class="video-title">
+                            <h2>
+                                <div class="h1-tag">Episode List</div>
+                            </h2>
+                        </div>
+                        <div id="sidebar_right3">
+                            <div class="cat-eps">
+                                <a href="https://www.wcofun.com/shinka-no-mi-shiranai-uchi-ni-kachigumi-jinsei-episode-1-english-subbed"
+                                    rel="bookmark"
+                                    title="Watch Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei Episode 1 English Subbed"
+                                    class="sonra">Shinka no Mi: Shiranai Uchi ni Kachigumi Jinsei Episode 1 English
+                                    Subbed</a></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="sidebar-all">
+                        <div class="sidebar-header">
+                            Recent Releases
+                        </div>
+                        <div class="sidebar-titles">
+                            <ul>
+                                <li><a href="https://www.wcofun.com/muteking-the-dancing-hero-episode-2-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Muteking the Dancing Hero Episode 2 English Subbed online for free. You are going to watch Muteking the Dancing Hero Episode 2 English Subbed...">Muteking
+                                        the Dancing Hero Episode 2 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/jahy-sama-wa-kujikenai-episode-10-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Jahy-sama wa Kujikenai! Episode 10 English Subbed online for free. You are going to watch Jahy-sama wa Kujikenai! Episode 10 English Subbed...">Jahy-sama
+                                        wa Kujikenai! Episode 10 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/world-trigger-season-3-episode-1-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch World Trigger Season 3 Episode 1 English Subbed online for free. You are going to watch World Trigger Season 3 Episode 1 English Subbed...">World
+                                        Trigger Season 3 Episode 1 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/saihate-no-paladin-episode-1-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Saihate no Paladin Episode 1 English Subbed online for free. You are going to watch Saihate no Paladin Episode 1 English Subbed...">Saihate
+                                        no Paladin Episode 1 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/build-divide-code-black-episode-1-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Build Divide: Code Black Episode 1 English Subbed online for free. You are going to watch Build Divide: Code Black Episode 1 English Subbed...">Build
+                                        Divide: Code Black Episode 1 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/senpai-ga-uzai-kouhai-no-hanashi-episode-1-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Senpai ga Uzai Kouhai no Hanashi Episode 1 English Subbed online for free. You are going to watch Senpai ga Uzai Kouhai no Hanashi Episode 1 English Subbed...">Senpai
+                                        ga Uzai Kouhai no Hanashi Episode 1 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/86-season-2-episode-2-english-subbed" rel="bookmark"
+                                        title="Watch 86 Season 2 Episode 2 English Subbed online for free. You are going to watch 86 Season 2 Episode 2 English Subbed...">86
+                                        Season 2 Episode 2 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/violet-evergarden-movie-english-dubbed"
+                                        rel="bookmark"
+                                        title="Watch Violet Evergarden Movie English Dubbed online for free. You are going to watch Violet Evergarden Movie English Dubbed...">Violet
+                                        Evergarden Movie English Dubbed</a></li>
+                                <li><a href="https://www.wcofun.com/pokemon-evolutions-episode-3-english-dubbed"
+                                        rel="bookmark"
+                                        title="Watch Pokemon Evolutions Episode 3 English Dubbed online for free. You are going to watch Pokemon Evolutions Episode 3 English Dubbed...">Pokemon
+                                        Evolutions Episode 3 English Dubbed</a></li>
+                                <li><a href="https://www.wcofun.com/pokemon-2019-episode-83-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Pokemon (2019) Episode 83 English Subbed online for free. You are going to watch Pokemon (2019) Episode 83 English Subbed...">Pokemon
+                                        (2019) Episode 83 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/a3-season-autumn-winter-episode-12-english-dubbed"
+                                        rel="bookmark"
+                                        title="Watch A3! Season Autumn &#038; Winter Episode 12 English Dubbed online for free. You are going to watch A3! Season Autumn &#038; Winter Episode 12 English Dubbed...">A3!
+                                        Season Autumn &#038; Winter Episode 12 English Dubbed</a></li>
+                                <li><a href="https://www.wcofun.com/bottom-tier-character-tomozaki-specials-episode-2-english-dubbed"
+                                        rel="bookmark"
+                                        title="Watch Bottom-Tier Character Tomozaki Specials Episode 2 English Dubbed online for free. You are going to watch Bottom-Tier Character Tomozaki Specials Episode 2 English Dubbed...">Bottom-Tier
+                                        Character Tomozaki Specials Episode 2 English Dubbed</a></li>
+                                <li><a href="https://www.wcofun.com/dragon-quest-dai-no-daibouken-2020-episode-52-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Dragon Quest: Dai No Daibouken (2020) Episode 52 English Subbed online for free. You are going to watch Dragon Quest: Dai No Daibouken (2020) Episode 52 English Subbed...">Dragon
+                                        Quest: Dai No Daibouken (2020) Episode 52 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/my-next-life-as-a-villainess-all-routes-lead-to-doom-x-season-2-episode-7-english-dubbed"
+                                        rel="bookmark"
+                                        title="Watch My Next Life as a Villainess: All Routes Lead to Doom! X Season 2 Episode 7 English Dubbed online for free. You are going to watch My Next Life as a Villainess: All Routes Lead to Doom! X Season 2 Episode 7 English Dubbed...">My
+                                        Next Life as a Villainess: All Routes Lead to Doom! X Season 2 Episode 7 English
+                                        Dubbed</a></li>
+                                <li><a href="https://www.wcofun.com/world-witches-take-off-episode-9-english-dubbed"
+                                        rel="bookmark"
+                                        title="Watch World Witches Take Off! Episode 9 English Dubbed online for free. You are going to watch World Witches Take Off! Episode 9 English Dubbed...">World
+                                        Witches Take Off! Episode 9 English Dubbed</a></li>
+                                <li><a href="https://www.wcofun.com/yakunara-mug-cup-mo-season-2-episode-2-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Yakunara Mug Cup mo Season 2 Episode 2 English Subbed online for free. You are going to watch Yakunara Mug Cup mo Season 2 Episode 2 English Subbed...">Yakunara
+                                        Mug Cup mo Season 2 Episode 2 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/isekai-shokudou-season-2-episode-2-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Isekai Shokudou Season 2 Episode 2 English Subbed online for free. You are going to watch Isekai Shokudou Season 2 Episode 2 English Subbed...">Isekai
+                                        Shokudou Season 2 Episode 2 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/yuuki-yuuna-wa-yuusha-de-aru-dai-mankai-no-shou-episode-2-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Yuuki Yuuna wa Yuusha de Aru: Dai Mankai no Shou Episode 2 English Subbed online for free. You are going to watch Yuuki Yuuna wa Yuusha de Aru: Dai Mankai no Shou Episode 2 English Subbed...">Yuuki
+                                        Yuuna wa Yuusha de Aru: Dai Mankai no Shou Episode 2 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/taishou-otome-otogibanashi-episode-1-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Taishou Otome Otogibanashi Episode 1 English Subbed online for free. You are going to watch Taishou Otome Otogibanashi Episode 1 English Subbed...">Taishou
+                                        Otome Otogibanashi Episode 1 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/im-standing-on-a-million-lives-season-2-episode-7-english-dubbed"
+                                        rel="bookmark"
+                                        title="Watch I'm Standing on a Million Lives Season 2 Episode 7 English Dubbed online for free. You are going to watch I'm Standing on a Million Lives Season 2 Episode 7 English Dubbed...">I'm
+                                        Standing on a Million Lives Season 2 Episode 7 English Dubbed</a></li>
+                                <li><a href="https://www.wcofun.com/visual-prison-episode-1-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Visual Prison Episode 1 English Subbed online for free. You are going to watch Visual Prison Episode 1 English Subbed...">Visual
+                                        Prison Episode 1 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/ssss-dynazenon-episode-10-english-dubbed"
+                                        rel="bookmark"
+                                        title="Watch SSSS.Dynazenon Episode 10 English Dubbed online for free. You are going to watch SSSS.Dynazenon Episode 10 English Dubbed...">SSSS.Dynazenon
+                                        Episode 10 English Dubbed</a></li>
+                                <li><a href="https://www.wcofun.com/selection-project-episode-2-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Selection Project Episode 2 English Subbed online for free. You are going to watch Selection Project Episode 2 English Subbed...">Selection
+                                        Project Episode 2 English Subbed</a></li>
+                                <li><a href="https://www.wcofun.com/neon-konbini-episode-8-its-closing-time"
+                                        rel="bookmark"
+                                        title="Watch Neon Konbini Episode 8 - It's Closing Time online for free. You are going to watch Neon Konbini Episode 8 - It's Closing Time...">Neon
+                                        Konbini Episode 8 - It's Closing Time</a></li>
+                                <li><a href="https://www.wcofun.com/beyblade-burst-dynamite-battle-episode-28-english-subbed"
+                                        rel="bookmark"
+                                        title="Watch Beyblade Burst Dynamite Battle Episode 28 English Subbed online for free. You are going to watch Beyblade Burst Dynamite Battle Episode 28 English Subbed...">Beyblade
+                                        Burst Dynamite Battle Episode 28 English Subbed</a></li>
+                            </ul>
+                        </div>
+                        <p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div
+            style="height:30px; background:#FF7C00; color: #1E262F; margin-top:20px; margin-bottom:20px; line-height:30px">
+            <style>
+                .ftr_p a {
+                    color: #FFFF;
+                }
+
+                .ftr_p a:visited {
+                    color: #FFFF;
+                }
+            </style>
+            <p style="color:#FFF; font-size:13px;" align="center" class="ftr_p">
+                <a href="/legal-disclaimer">Disclaimer</a> - <a href="/privacy-policy-and-terms">Privacy Policy</a> - <a
+                    href="/terms-and-conditions">Terms</a> ©2021. Designed for WcoFun.Com - Watch Anime Online
+            </p>
+
+        </div>
+    </div>
+    <button onclick="topFunction()" id="btnTopPage" title="Go to top">Scroll to Top</button>
+
+    <!-- Siteskin Code -->
+    <script>
+        (function (w, t, d, s) {
+            d = w.document;
+            w.ggv2id = t;
+            s = d.createElement('script');
+            s.async = true;
+            s.src = 'https://js.gumgum.com/services.js';
+            d.getElementsByTagName('head')[0].appendChild(s);
+        }(top, '2tsnnhff'));
+    </script><!-- ZONETAG - PLACE INTO HEAD SECTION OR RUN CODE AT STARTUP -->
+    <script>
+        (function (zonefile) {
+            var y = "cpmstarx";
+            var drutObj = window[y] = window[y] || {};
+
+            function failCpmstarAPI() {
+                var failFn = function (o) {
+                    o && typeof (o) === "object" && o.fail && o.fail();
+                };
+                drutObj && Array.isArray(drutObj.cmd) && drutObj.cmd.forEach(failFn) && (drutObj.cmd.length = 0);
+                window.cpmstarAPI = window["_" + zonefile] = failFn;
+            }
+            var rnd = Math.round(Math.random() * 999999);
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.onerror = failCpmstarAPI;
+            var proto = document.location.protocol;
+            var host = (proto == "https:" || proto == "file:") ? "https://server" : "//cdn";
+            if (window.location.hash == "#cpmstarDev") host = "//dev.server";
+            if (window.location.hash == "#cpmstarStaging") host = "//staging.server";
+            s.src = host + ".cpmstar.com/cached/zonefiles/" + zonefile + ".js?rnd=" + rnd;
+            var s2 = document.getElementsByTagName('script')[0];
+            s2.parentNode.insertBefore(s, s2);
+            window.cpmstarAPI = function (o) {
+                (drutObj.cmd = drutObj.cmd || []).push(o);
+            }
+        }('186_7996_'));
+    </script>
+
+    <!-- END SITESKIN CODE -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130953766-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130953766-1');
+
+        // When the user scrolls down 40px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                document.getElementById("btnTopPage").style.display = "block";
+                setTimeout(
+                    function () {
+                        document.getElementById("btnTopPage").style.display = "none";
+                    }, 10000);
+            } else {
+                document.getElementById("btnTopPage").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script type="text/javascript">
+        if (top.location != window.location) {
+            window.location = 'https://www.wcofun.com/error_iframe.html';
+        }
+    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=cyberalone"></script>
+    <SCRIPT>
+        cpmstarAPI({
+            kind: "go",
+            module: "skin",
+            config: {
+                options: {
+                    centerWidth: "970px",
+                    top: "0px",
+                    fixed: 0
+                }
+            }
+        });
+    </SCRIPT>
+</body>
+
+</html>
