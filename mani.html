@@ -5,6 +5,10 @@
     <link rel='shortcut icon' href='mani\1635590914754.png'/>
 
     <style>
+        html {
+            background-color:black;
+        }
+
         .front img {
             width: 100%;
             height: auto;
@@ -24,6 +28,17 @@
             top: 0px;
             z-index: 1;
         }
+
+        .vid {
+            position: relative;
+            top: 30%;
+            left: 0px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
     </style>
 
 </head>
@@ -35,6 +50,26 @@
     <div class='bg'>
     <img src='mani/f2a1dd0f88fe2de4e88332fd7d1b59f6.jpg' alt='bg'/>
     </div>
+    <div class='vid'>
+        <video controls autoplay muted loop id='_vid1'>
+            <source src='mani\vid1.mp4'/>
+        </video>
+        <video controls autoplay muted loop id='_vid2'>
+            <source src='mani\vid2.mp4'/>
+        </video>
+        <video controls autoplay muted loop id='_vid3'>
+            <source src='mani\vid3.mp4'/>
+        </video>
+    </div>
 </div>
 
 <!-- main direct -->
+<!-- <script>
+    var vid1= document.getElementById('_vid1');
+    var vid2= document.getElementById('_vid2');
+    var vid3= document.getElementById('_vid3');
+
+    function click(){
+
+    }
+</script> -->
