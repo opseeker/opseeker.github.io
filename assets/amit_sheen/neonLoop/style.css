@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-body {
+.animate .container {
   background-color: #000;
   color: #fff;
   min-height: 100vh;
@@ -23,7 +23,7 @@ body {
   overflow: hidden;
 }
 
-.container {
+.animate .container {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -396,3 +396,9 @@ body {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.animate {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}

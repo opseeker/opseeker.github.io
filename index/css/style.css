@@ -1,0 +1,38 @@
+:root {
+    --mbtn-width: 8vw;
+}
+
+html {
+    background-color: #000;
+}
+
+.navigation {
+    z-index: 10;
+}
+
+.navigation .menu-btn img {
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    width: var(--mbtn-width);
+    z-index: 5;
+}
+
+.navigation .menu-nav {
+    position: absolute;
+    top: calc(2vh + var(--mbtn-width) + 6vh);
+    left: 2vw;
+    z-index: 5;
+    background-image: radial-gradient(circle, black 5%, rgb(29, 32, 9), black);
+    min-width: 20vw;
+    padding: 1vh 2.5vw 2vh 1vw;
+    border-radius: 10px;
+}
+
+footer .contain {
+    z-index: 10;
+    position: absolute;
+    bottom: 5vh;
+    left: 2vw;
+    color: rgb(128, 120, 120);
+}
