@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+
 <head>
     <title>Aero021</title>
+    <meta name='author' content="ankit saikia ie- opseeker" />
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
     <meta name='description' content='Heartbroken souls find their way to this site just cuz they are alone and lonely.'/>
     
@@ -9,6 +11,7 @@
     <!-- css below -->
     <link rel='stylesheet' href='index/css/animate.css'/>
     <link rel='stylesheet' href='index/css/style.css'/>
+    <link rel='stylesheet' href='index/css/preloader.css'/>
 
     <style>
         .hide {display: none;}
@@ -20,51 +23,52 @@
             -webkit-user-select: none;
             -khtml-user-select: none;
         }
-
-        li a {
-            color: red;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .navigation .menu-nav ul li {
-            margin-top: 2vh;
-            text-transform: uppercase;
-        }
-
     </style>
+
 </head>
 
+<div class="preloader"><div class="spinner"><span>LOADING</span></div></div>
+
 <div class='navigation'>
-    <div class='menu-btn btn' onclick='click1()'><img src='index/icons/doraemon sit.png' id='_menu-btn1' /></div>
-    <div class='menu-btn btn' onclick='click2()'><img src='index/icons/doraemon stand.png' id='_menu-btn2' /></div>
+    <div class='menu-btn btn' onclick='click1()'><a href='#s1'><img src='index/icons/doraemon sit.png' id='_menu-btn1' /></a></div>
+    <div class='menu-btn btn' onclick='click2()'><a href='#s2'><img src='index/icons/doraemon stand.png' id='_menu-btn2' /></a></div>
+    <div class='menu-btn btn-1' onclick='click5()'><a href='#home'><img src='index/icons/home ico.png' /></a></div>
+    <div class='menu-btn btn-2' onclick='click6()'><a href='#gallery'><img src='index/icons/camera.png' /></a></div>
     <div class='bg-nav'></div>
     <div class='menu-nav' id='_menuL'>
         <ul>
-            <li><a href='#contents_page'>content page</a></li>
+            <li><a href='#animepage' onclick='anime()'>Anime list</a></li>
             <li><a href='#content1'>2</a></li>
         </ul>
     </div>
 </div>
 
-<div class='author'>
-    <div class='container'>
+
+<!-- <div class='author'>
+    <div class='contain'>
         <div class='img'></div>
-        <div class='lights'></div>
+        <div class='lights'>
+            <p>
+                "This is the first open source project that is free of cost and no other assets have been used during the development stages."
+            </p>
+            <p>
+                This site has a long way to go. Be a partner with its development and help build up a community together.
+            </p>
+        </div>
     </div>
-</div>
+</div> -->
 
-<div class='movies'></div>
-
-<div class='music'></div>
-
-<div class='anime'></div>
-
-<div class='manga'></div>
-
-<div class='pics'></div>
-
-<div class='videos'></div>
+<!-- <div class='pk-hostel'>
+    <div class='text contain'>
+        <p>Kakoty Boys Hostel<br></p>
+        <p>All currently residing students list:</p>
+        <table>
+            <thead>
+                <th colspan='7'>Student Details</th>
+            </thead>
+        </table>
+    </div>
+</div> -->
 
 <footer>
     <div class='contain'>
@@ -74,7 +78,6 @@
             <p>Report issues on the whatsapp channel.</p>
         </div>
     </div>
-    <div class='bg'></div>
 </footer>
 
 <div class='animate'>
@@ -91,5 +94,55 @@
       </div>
 </div>
 
+<!-- audio @ startup when clicked through the click3 works -->
+<div class='music-box hide'>
+    <audio controls loop type="audio/mpeg" id='_startup_audio'>
+        <source src='index/audio/eternal youth.mp3' />
+    </audio>
+</div>
+
+<!-- audio controler -->
+<div class='audio-prompt' id='_audio_prompt'>
+    <div class='bg'></div>
+    <div class='audio-btn'>
+        <img src='index/icons/music ico.png' onclick="click3()" id='_musicBtn1' />
+        <img src='index/icons/music ico2.png' onclick="click4()" id='_musicBtn2' />
+    </div>
+</div>
+
+<!-- anime list view -->
+<section id='_anime'>
+    <div class='contain'>
+        <div class='list'>
+            <div class='new'>
+                <ul>
+                    <li><a href=''>the world's finest assasin gets reincarnated in another world</a></li>
+                    <li><a href=''>fruit of evolution</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- gallery section ----stores images that need to be shown... all internal gallery functions must be here -->
+<section id='_gallery'>
+    <div class='contain'>
+        <div class='function-box'>
+            <a href='#delete'><img src='index/icons/bin.png' alt='delete' id='_delG' /></a>
+            <a href='#close'><img src='index/icons/close.png' ></a>
+        </div>
+        <div class='img-col'>
+            <div class='img-row'>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <!-- script below -->
+<script type='text/javascript' src='index/js/jquery.js'></script>
+<script type='text/javascript' src='index/js/preloader.js'></script>
 <script src='index/js/btn.js'></script>
+
