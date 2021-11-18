@@ -63,7 +63,7 @@ li a {
     position: absolute;
     z-index: var(--z1);
     bottom: 0;
-    width: 18vw;
+    width: 4vw;
     right: 0;
 }
 
@@ -84,10 +84,11 @@ footer .contain {
 
 #_anime .contain .list .new ul li a {
     letter-spacing: 1px;
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: 300;
     text-transform: capitalize;
     /* padding: 4vh 0vh 4vh 0vh;  */
+    margin: 6vh 0vh 6vh 0vh;
 }
 
 #_gallery .function-box {
@@ -100,4 +101,22 @@ footer .contain {
 #_gallery .function-box img {
     width: 40px;
     margin-right: 1vw;
+}
+
+footer green {
+    color: green;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+red {color:red}
+
+#_img01 {
+    z-index: -10000;
+    position: absolute;
+    width: 10vw;
+    top: 40%;
+    left:45%;
 }
