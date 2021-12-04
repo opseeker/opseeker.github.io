@@ -116,7 +116,8 @@ red {color:red}
 #_img01 {
     z-index: -10000;
     position: absolute;
-    width: 10vw;
-    top: 40%;
-    left:45%;
+    width: 200px;
+    top: 35%;
+    left:43%;
+    border-radius: 50%;
 }
