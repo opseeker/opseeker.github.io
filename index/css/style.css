@@ -7,6 +7,23 @@
     --gallery-top: calc( var(--home-top) + 20vh);
 }
 
+@media (max-width: 599px){
+
+    :root{
+        --mbtn-width: 20%;
+    }
+    .animate {
+        left: 2px;
+        top: 50px;
+        min-height: 90%;
+        min-width: 99%;
+    }
+
+    .navigation .menu-btn img{
+
+    }
+}
+
 html {
     background-color: #000;
 }
