@@ -1,6 +1,11 @@
-.profile-img img{
+.profile-1 .profile-img img{
     width: 280px;
-    box-shadow: 8px 8px 1px red;
+    box-shadow: 8px 8px 1px rgb(0, 140, 255);
+}
+
+.profile-2 .profile-img img{
+    width: 280px;
+    box-shadow: 8px 8px 1px rgb(179, 47, 69);
 }
 
 div.rotate_right {
