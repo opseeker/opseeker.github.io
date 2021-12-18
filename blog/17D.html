@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title></title>
+    <style>
+        iframe {
+            width: 640px;
+            height: 360px;
+        }
+
+        .rotate_right {
+            -ms-transform: rotate(90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(90deg);
+            /* Safari */
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+<div class="video">
+    <div class='18-12-2021'>
+        <div id='_if'>
+            <iframe src="https://drive.google.com/file/d/1PKtLfIKSTyEkZqqROhz3tAySnNO2Fcwf/preview" allowfullscreen
+                frameborder='0'
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <img src="rot.png" onclick='rotate()' />
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var vid = document.getElementsById('_if');
+
+    function rotate() {
+        vid.classList.add('rotate_right');
+    }
+</script>
