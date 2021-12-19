@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0">
+    <title>Help center</title>
+    <link href="base.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <style>
+        .dropload-down {
+            width: 100%;
+            padding-top: 50px;
+            margin: 0 auto;
+            line-height: 1.6em;
+            font-size: 14px;
+            text-align: center;
+            color: #968b8b;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 1.8rem;"></div>
+    <header class="header">
+        <div class="header-return">
+            <a href="/index/index/index.html"></a>
+        </div>
+        <div class="logo">Help center</div>
+    </header>
+    <div class="home-news">
+        <ul>
+        </ul>
+    </div>
+    <div style="height: 2rem;">
+    </div>
+    <script src="dropload.min.js"></script>
+    <script>
+        var paging = 1;
+        $(".home-news").dropload({
+            scrollArea: window,
+            loadDownFn: function (me) {
+                $.ajax({
+                    type: 'GET',
+                    url: "gethelp.html",
+                    data: {
+                        'page': paging
+                    },
+                    dataType: 'json',
+                    async: false,
+                    success: function (data) {
+                        var html = '';
+
+                        for (var i = 0; i < data.data.length; i++) {
+
+
+                            html += '<li style="width:100%;">';
+                            html += '	<a href="' + data.data[i].url + '">';
+                            //html+='		<div class="homenewsimg">';	
+                            //html+='			<img src="'+data.data[i].image+'" />';	
+                            //html+='		</div>';	
+                            html +=
+                            '		<div class="homenewshps" style="width:100%;float:left;">';
+                            html += '			<h2>' + data.data[i].name + '</h2>';
+                            html += '			<p>' + data.data[i].keywords + '</p>';
+                            html += '			<span>' + data.data[i].created + '</span>';
+                            html += '		</div>';
+                            html += '	 </a>';
+                            html += ' </li>';
+
+
+                        }
+
+                        if (data.data.length < 10) {
+
+                            me.lock();
+
+                            me.noData();
+                        }
+                        paging = paging + 1;
+
+                        setTimeout(function () {
+
+                            $(".home-news ul").append(html);
+
+
+                            me.resetload();
+                        }, 500);
+
+
+                    },
+
+                    error: function (xhr, type) {
+                        me.resetload();
+                    }
+                });
+            },
+            threshold: 50
+        });
+    </script>
+</body>
+
+</html>

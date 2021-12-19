@@ -1,0 +1,57 @@
+@media (min-width: 599px) {
+    .logo img {
+        width: 80px !important;
+        position: absolute;
+        top: 1vw !important;
+        left: 1vw !important;
+    }
+}
+
+
+
+html {
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+}
+
+body {
+    background: #eff4fa;
+}
+
+.user-info h3 {
+    background: none;
+}
+
+.logo img {
+    width: 50px;
+    position: absolute;
+    top: 0.3%;
+    left: 0.1%;
+}
+
+.cls {
+    margin: 8px 0px 8px 0px;
+}
+
+.index-menu span {
+    text-transform: capitalize;
+}
+
+/* .user-info h3 i {
+    background: url(https://www.kncchain.com/static/images/vip.png) 14px -4px no-repeat;
+    font-size: 12px;
+    height: 43px;
+    line-height: 20px;
+    position: absolute;
+    top: 4.5rem;
+    color: #fff;
+    right: 39px;
+    width: 86px;
+    padding-left: 24px;
+    right: 2rem;
+} */
+
+.hide {display: none}
