@@ -34,3 +34,33 @@ div.rotate_right {
       position: absolute;
       left: 20px;
   }
+
+  div.top {
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(32, 23, 23);
+    text-align: center;
+    padding-bottom: 4px;
+  }
+
+  div.top-po {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: 10;
+  }
+
+  div.clearfix {
+    margin-bottom: 40px;
+  }
+
+  .bottom {
+    position: absolute;
+    margin-top: 130vh;
+  }
+
+  .r1,.r2,.r3,.r4,.r5,.r6,.r7,.r8 {
+    padding-top: 4px;
+    padding-bottom:4px;
+  }

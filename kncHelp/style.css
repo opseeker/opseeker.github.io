@@ -55,3 +55,26 @@ body {
 } */
 
 .hide {display: none}
+
+.gets {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 1%;
+    padding-bottom: 25%;
+}
+.gets h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #6b7179 !important;
+}
+.gets li {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.gets li a {
+    text-decoration: none;
+    color: black;
+}

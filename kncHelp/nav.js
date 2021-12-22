@@ -7,6 +7,9 @@ window.onload = function () {
 function gettingstarted () {
     // var console=document.getElementById("_console");
     // console.innerHTML='<p>alsa</p>';
+    var get1=document.getElementById('_console.gettingstarted');
+
+        get1.classList.remove('hide')
 }
 
 
