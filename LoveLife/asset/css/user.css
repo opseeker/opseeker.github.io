@@ -1,11 +1,13 @@
 .profile-1 .profile-img img{
     width: 280px;
     box-shadow: 8px 8px 1px rgb(0, 140, 255);
+    border-radius: 50%;
 }
 
 .profile-2 .profile-img img{
     width: 280px;
     box-shadow: 8px 8px 1px rgb(179, 47, 69);
+    border-radius: 50%;
 }
 
 div.rotate_right {
@@ -31,7 +33,7 @@ div.rotate_right {
   }
 
   div.profile-1 {
-      position: absolute;
+      position: relative;
       left: 20px;
   }
 
@@ -45,9 +47,9 @@ div.rotate_right {
   }
 
   div.top-po {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 25%;
+    left: 2%;
     z-index: 10;
   }
 
@@ -56,7 +58,7 @@ div.rotate_right {
   }
 
   .bottom {
-    position: absolute;
+    position: relative;
     margin-top: 130vh;
   }
 
@@ -64,3 +66,78 @@ div.rotate_right {
     padding-top: 4px;
     padding-bottom:4px;
   }
+
+  .tm {
+    text-align: right;
+  }
+
+  .tn{
+    text-align: center;
+  }
+
+  i {
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.6rem auto;
+    content: '';
+  }
+
+/*diamond icon <i> for menu list*/
+  #_i1 i{
+      width: 1.8rem;
+      height: 1.8rem;
+      right: 1.2%;
+      top: 50%;
+      background-image: url(../icon/diamond.png);
+  }
+
+  #_i1.on i{
+    background-image: url(../icon/diamond\ on.png);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+    outline: none
+}
+
+a:hover,
+a:link,
+a:active {
+    text-decoration: none;
+    outline: none
+}
+
+ul,
+li {
+    list-style: none
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none
+}
+
+/* gallery */
+#_gallery {
+  position: absolute;
+  top:2px;
+  left: 4px;
+  z-index: 10;
+  width: 100vw;
+  height: 900px;
+  background-image: url(../media/img/date1/1640377956117.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

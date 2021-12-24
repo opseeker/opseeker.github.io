@@ -1,75 +1,61 @@
 <head>
+    <!-- <link rel="stylesheet" href="asset/css/user.css"/> -->
     <style>
-        /* table thead {
-            font-size: 2em;
-            font-weight: 300;
-            border-collapse: collapse;
-        }
-        tr,th {text-align: center} */
-        table {
-    width: 100%;
-    font-size: 12px;
-    border-collapse: collapse;
+        a:hover,
+a:link,
+a:active {
+    text-decoration: none;
+    outline: none
 }
 
-tr,th,td {
-    border: solid 1px !important;
-    padding: 4px 0 4px 0 !important;
+ul,
+li {
+    list-style: none
 }
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none
+}
+    li.on span {
+    color: #3f75a9
+}
+        li.on i {
+    background: url(asset/icon/diamond1.png) no-repeat center;
+    background-size: 1.1rem auto
+}
+i{
+    width: 1.8rem;
+      height: 1.8rem;
+      right: 1.2%;
+      top: 50%;
+      /* background-image: url(../icon/diamond.png); */
+}
+i {
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.6rem auto;
+    content: '';
+    background-image:url(asset/icon/diamond.png)
+  }
     </style>
+    <script src="asset/js/control.js"></script>
 </head>
 
-<div class='detail-date'>
-    <table>
-        <thead>
-            <tr>
-              <th scope="col"> </th>
-              <th scope="col">First</th>
-              <th scope="col">Date</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Call</td>
-                  <td>09-Oct-2021</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Messege</td>
-                    <td>09-Oct-2021</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Meeting</td>
-                    <td>14-Oct-2021</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Meal</td>
-                    <td>17-Oct-2021</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Travel</td>
-                    <td>23-Oct-2021</td>
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <td>Date (surprise)</td>
-                    <td>23-Nov-2021</td>
-                </tr>
-                <tr>
-                    <th scope="row">7</th>
-                    <td>Date</td>
-                    <td>05-Dec-2021</td>
-                </tr>
-                <tr>
-                    <th scope="row">8</th>
-                    <td>Kiss</td>
-                    <td>05-Dec-2021</td>
-                </tr>
-
-            </tbody>
-    </table>
+<div class=" main">
+    <div class="black"></div>
+    <div class="menu-open">
+        <p>MENU</p>
+        <ul>
+            <li>
+                <a href="javascript:menuOpen()">
+                    <i></i>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
