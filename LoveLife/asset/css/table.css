@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+    font-size: 1em;
+    border-collapse: collapse;
+}
+
+tr,th,td {
+    border: solid 1px !important;
+    padding: 4px 0 4px 0 !important;
+}
+
+.detail-date {
+    padding-top: 290%;
+}
