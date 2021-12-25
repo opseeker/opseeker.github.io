@@ -11,6 +11,13 @@ tr,th,td {
 
 .detail-date {
     position: relative;
-    top: 45px;
+    top: 110vh;
     padding-bottom: 20px;
+    padding-right: 4px;
+    padding-left: 4px
 }
+
+/* 
+    39133832496
+    SBIN0017220
+*/

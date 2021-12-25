@@ -1,13 +1,13 @@
 .profile-1 .profile-img img{
-    width: 280px;
+    width: 260px;
     box-shadow: 8px 8px 1px rgb(0, 140, 255);
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .profile-2 .profile-img img{
-    width: 280px;
+    width: 260px;
     box-shadow: 8px 8px 1px rgb(179, 47, 69);
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 div.rotate_right {
@@ -33,7 +33,7 @@ div.rotate_right {
   }
 
   div.profile-1 {
-      position: relative;
+      position: absolute;
       left: 20px;
   }
 
@@ -49,12 +49,12 @@ div.rotate_right {
   div.top-po {
     position: relative;
     top: 0;
-    left: 2%;
+    /* left: 2%; */
     z-index: 10;
   }
 
   div.clearfix {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
   .bottom {
@@ -85,8 +85,11 @@ div.rotate_right {
     content: '';
   }
 
+  /* #_i1.on span {background-image: url(../icon/lightning.png);display: block;margin: 0 auto;position: fixed;background-position: center;background-repeat: no-repeat;background-size: 1.6rem auto;content: '';z-index: 13;width: 4rem;height: 4rem;top: 50%;right: 2px;} */
+
 /*diamond icon <i> for menu list*/
   #_i1 i{
+      z-index: 15;
       width: 1.8rem;
       height: 1.8rem;
       right: 1.2%;
@@ -124,20 +127,39 @@ li {
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
-  display: none
+  display: none;
+  overflow-y: hidden
 }
 
 /* gallery */
 #_gallery {
   position: absolute;
-  top:2px;
-  left: 4px;
+  top:0px;
+  /* left: 2px; */
   z-index: 10;
   width: 100vw;
-  height: 900px;
+  height: auto;
   background-image: url(../media/img/date1/1640377956117.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+div.hide {display: none}
+
+#i1,#i6,#i9,#i8,
+div.gallery img {
+  width: 260px;
+  height: auto;
+  position: relative;
+  left: 17%;
+}
+
+div.polaroid-img {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  /* box-shadow: 10px 10px 5px #aaaaaa; */
 }
