@@ -138,7 +138,7 @@ li {
   /* left: 2px; */
   z-index: 10;
   width: 100vw;
-  height: auto;
+  height: 180vh;
   background-image: url(../media/img/date1/1640377956117.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,13 +148,13 @@ li {
 
 div.hide {display: none}
 
-#i1,#i6,#i9,#i8,
+/* #i1,#i6,#i9,#i8,
 div.gallery img {
   width: 260px;
   height: auto;
   position: relative;
   left: 17%;
-}
+} */
 
 div.polaroid-img {
   width: 284px;
