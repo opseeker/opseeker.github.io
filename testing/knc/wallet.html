@@ -8,6 +8,7 @@
 <link href="https://www.kncchain.com/static/css/base.css?1" rel="stylesheet">
 <!-- <script src="/static/js/jquery.min.js" type="text/javascript"></script> -->
 <link href="https://www.kncchain.com/static/css/user.css" rel="stylesheet">
+<script src="pay.js"></script>
 <style type="text/css">
 	body{background: #eef3f9;}
 	.header{background: none;}
@@ -25,11 +26,11 @@
 <ul>
 <li>
 <span class="walleft">Recharge Wallet</span>
-<h3>6605</h3>
+<h3 id="rechargeWallet"></h3>
 </li>
 <li>
 <span class="walright">Balance Wallet</span>
-<h3>4213.98</h3>
+<h3 id="balanceWallet"></h3>
 </li>
 </ul>
 </div>
@@ -55,13 +56,13 @@
 <li class="totalbane">
 <a href="javascript:void(0);">
 <span>recharge total</span>
-<h3>57290</h3>
+<h3 id="rechargeTotal"></h3><!--recharge Total must be current recharge amt + new amt-->
 </a>
 </li>
 <li class="pernone">
 <a href="javascript:void(0);">
 <span>Withdraw total</span>
-<h3>48655</h3>
+<h3 id="withdrawTotal"></h3>
 </a>
 </li>
 </ul>
