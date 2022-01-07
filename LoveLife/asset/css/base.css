@@ -1,3 +1,121 @@
+@media (min-width: 600px) {
+    html {
+        background-image: url(../media/img/mitsuha-miyamizu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    div.profile-1 {
+        position: relative;
+        margin-left: 20%;
+    }
+  
+    div.profile-2 {
+      position: absolute;
+      right: 0;
+      margin-right: 20%;
+  }
+    div.rotate_left {
+        transform: none;
+        -ms-transform: none;
+        -webkit-transform: none;
+    }
+    div.rotate_right {
+        transform: none;
+        -ms-transform: none;
+        -webkit-transform: none;
+    }
+    table {
+        width: 40%;
+        position: absolute;
+        left: 30%;
+        top: 60rem;
+        padding-bottom: 2rem;
+        background-color: #aaaaaa;
+        border: 2px solid black;
+    }
+    
+    /* .detail-date {
+        position: relative;
+        top: 110vh;
+        padding-bottom: 20px;
+        padding-right: 4px;
+        padding-left: 4px
+    } */
+
+    .tm {
+        text-align: center;
+      }
+    
+      .tn{
+        text-align: center;
+      }
+      div.top {
+        text-transform: capitalize;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding-bottom: 4px;
+      }
+    
+      div.top-po {
+        position: fixed;
+        top: 1%;
+        left: 45%;
+        z-index: 10;
+      }
+
+      div.top-po span {
+          position: absolute;
+          top: -1vh;
+          left: -1vw;
+          width: 13vw;
+          height: 2.4rem;
+          background-color: black;
+          z-index: -10;
+      }
+      div.polaroid {
+          box-shadow:none;
+          border: 2px solid black;
+      }
+}
+
+@media (max-width: 599px) {
+    :root {
+        --profile-width: 260px;
+        --profile-border-radius: 50%;
+
+        --table-width: 100%;
+        --table-font-size: 1em;
+        --table-border-collapse: collapse;
+        --table-position: relative;
+        --table-top: 40px;
+        --table-left: 0px;
+        --table-padding-bottom: none;
+        --table-bg-color: none;
+        --table-border: 1px solid black;
+
+        --gallery-width: 100vw;
+        --gallery-height: 180vh;   
+        --gallery-bg: url(../media/img/date1/1640377956117.jpg);
+        --gallery-position: absolute;
+        --gallery-top: 0px;
+    }
+
+    div.profile-1 {
+        position: relative;
+        margin-left: 30px;
+    }
+  
+    div.profile-2 {
+      position: relative;
+      margin-left: 30px;
+  }
+}
+
 .aui-slide-list {
     padding-left: 0;
     overflow: hidden;
@@ -71,3 +189,25 @@
     width: 200px;
     height: auto;
 } */
+
+.reveal{
+    /* position: relative; */
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .revealL{
+    /* position: relative; */
+    transform: translateX(50px);
+    opacity:0;
+  }
+  .revealL.active {
+      opacity: 1;
+      transform: translateX(0);
+  }

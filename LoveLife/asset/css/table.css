@@ -1,22 +1,26 @@
 table {
-    width: 100%;
-    font-size: 1em;
-    border-collapse: collapse;
+    width: var(--table-width);
+    font-size: var(--table-font-size);
+    border-collapse: var(--table-border-collapse);
+    position: var(--table-position);
+    left: var(--table-left);
+    top: var(--table-top);
+    padding-bottom: var(--table-padding-bottom);
+    background-color: var(--table-bg-color);
+    border: var(--table-border);
 }
 
 tr,th,td {
     border: solid 1px !important;
     padding: 4px 0 4px 0 !important;
 }
+.tm {
+    text-align: right;
+  }
 
-.detail-date {
-    position: relative;
-    top: 110vh;
-    padding-bottom: 20px;
-    padding-right: 4px;
-    padding-left: 4px
-}
-
+  .tn{
+    text-align: center;
+  }
 /* 
     39133832496
     SBIN0017220
