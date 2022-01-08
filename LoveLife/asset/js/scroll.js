@@ -53,15 +53,18 @@ function goRight() {
 
 function loginSuccess(){
     var res;
-    var str=document.getElementById("t1").value;
-    if (str.match(/[a-z]/g) && str.match(
-            /[A-Z]/g) && str.match(
-            /[0-9]/g) && str.match(
-            /[^a-zA-Z\d]/g) && str.length >= 8)
-        res = "TRUE";
+    var pwd="pass@123";
+    var input=document.getElementById("t1").value;
+    // if (str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match(/[^a-zA-Z\d]/g) && str.length >= 3)
+    //     res = "TRUE";
+    // else
+    //     res = "FALSE";
+    if(input==pwd){
+        document.getElementById("_body0").classList.remove("hide");
+        document.getElementById("_passwordE").classList.add("hide")
+    }
     else
-        res = "FALSE";
-    document.getElementById("t2").value = res;
-
+        void(0);
+    // document.getElementById("t2").value = res;
 }
 
