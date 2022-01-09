@@ -5,3 +5,5 @@ window.onload=function(){
     c.innerHTML='<p>Manisha Adhkari</p><p>D.O.B: 28-Mar-2002</p><p>BSC</p><p>Digboi College</p><p>Digboi</p><p>Home addr: Sadiya, Chapakhowa, Marwaripatti</p>';
 
 }
+
+
