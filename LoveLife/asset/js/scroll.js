@@ -50,18 +50,26 @@ function goRight() {
         }
     }
 }
-
-function loginSuccess(){
     var pwd="pokor@123";var pwd1="Pokor@123";var pwd2="POKOR@123";
-    var pwd3="bobu@123";var pwd4="Bobu@123";
+    var pwd3="bobu@123";var pwd4="Bobu@123";var pwd9="whateverus";var pwd10="Whateverus";
     var pwd5="anime@21";var pwd6="otaku@21";var pwd7="manisaikia";var pwd8="23112021";
-   
+function loginSuccess(){
     var input=document.getElementById("t1").value;
-    if(input==pwd || input==pwd1 || input==pwd2 || input==pwd3 || input==pwd4 || input==pwd5 || input==pwd6 || input==pwd7 || input==pwd8){
+    if(input==pwd || input==pwd1 || input==pwd2 || input==pwd3 || input==pwd4 || input==pwd5 || input==pwd6 || input==pwd7 || input==pwd8 || input==pwd9 || input==pwd10){
         document.getElementById("_body0").classList.remove("hide");
-        document.getElementById("_passwordE").classList.add("hide")
+        document.getElementById("_passwordE").classList.add("hide");
+        tabOnline();
     }
     else
-        void(0);
+        void(0);   
+}
+
+function tabOnline(){
+    var input=document.getElementById("t1").value;
+    if(input==pwd || input==pwd1 || input==pwd2 || input==pwd8){
+        document.getElementById("tab8").classList.remove("hide");
+        document.getElementById("tab10").classList.remove("hide");
+        document.getElementById("tab11").classList.remove("hide");
+    }
 }
 
