@@ -52,20 +52,15 @@ function goRight() {
 }
 
 function loginSuccess(){
-    // var res;
     var pwd="pokor@123";var pwd1="Pokor@123";var pwd2="POKOR@123";
     var pwd3="bobu@123";var pwd4="Bobu@123";
     var input=document.getElementById("t1").value;
-    // if (str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match(/[^a-zA-Z\d]/g) && str.length >= 3)
-    //     res = "TRUE";
-    // else
-    //     res = "FALSE";
+
     if(input==pwd || input==pwd1 || input==pwd2 || input==pwd3 || input==pwd4){
         document.getElementById("_body0").classList.remove("hide");
         document.getElementById("_passwordE").classList.add("hide")
     }
     else
         void(0);
-    // document.getElementById("t2").value = res;
 }
 
