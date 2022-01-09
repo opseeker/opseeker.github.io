@@ -54,9 +54,10 @@ function goRight() {
 function loginSuccess(){
     var pwd="pokor@123";var pwd1="Pokor@123";var pwd2="POKOR@123";
     var pwd3="bobu@123";var pwd4="Bobu@123";
+    var pwd5="anime@21";var pwd6="otaku@21";var pwd7="manisaikia";var pwd8="23112021";
+   
     var input=document.getElementById("t1").value;
-
-    if(input==pwd || input==pwd1 || input==pwd2 || input==pwd3 || input==pwd4){
+    if(input==pwd || input==pwd1 || input==pwd2 || input==pwd3 || input==pwd4 || input==pwd5 || input==pwd6 || input==pwd7 || input==pwd8){
         document.getElementById("_body0").classList.remove("hide");
         document.getElementById("_passwordE").classList.add("hide")
     }
