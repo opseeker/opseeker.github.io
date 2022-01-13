@@ -1,4 +1,7 @@
 @media (min-width: 600px) {
+    :root {
+        --pwd-left: 16vw;
+    }
     html {
         background-image: url(../media/img/mitsuha-miyamizu.jpg);
         background-repeat: no-repeat;
@@ -103,6 +106,15 @@
         --gallery-bg: url(../media/img/date1/1640377956117.jpg);
         --gallery-position: absolute;
         --gallery-top: 0px;
+
+        --pwd-width: calc(100% - 40%);
+        --pwd-height: 120px;
+        --pwd-left: 16vw;
+        --pwd-btn-size: 45px;
+        --pwd-btn-top: 42px;
+        --pwd-btn-size-left: calc(var(--pwd-left) - 50%);
+        --pwd-in-left: calc(var(--pwd-width) - 45%);
+        --pwd-label-left: calc(var(--pwd-width) - 30%);
     }
 
     div.profile-1 {
@@ -210,4 +222,73 @@
   .revealL.active {
       opacity: 1;
       transform: translateX(0);
+  }
+
+  #_passwordE {
+      /* width:100vw; */
+      /* height: 100vh; */
+      /* background-color:rgb(116, 43, 103); */
+      /* background-position: center; */
+      /* background-repeat: no-repeat; */
+      /* background-size: cover; */
+      z-index: 100;
+      /* position: relative; */
+  }
+
+  #_passwordE .bg-cover {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: red;
+      width: 100vw;
+      height: 100vh;
+      /* z-index: 10; */
+  }
+
+  #_passwordE form {
+      border: 2px solid black;
+      background-image: linear-gradient(to bottom,red,black);
+      width: 260px;
+      height: 120px;
+      /* position: relative; */
+      /* top: 30vh; */
+      /* left: var(--pwd-left); */
+      position: absolute;
+      top: 40vh;
+      left: var(--pwd-left);
+  }
+
+  #_passwordE label {
+      color: black;
+      font-weight: bold;
+      align-items: center;
+      margin: 18px 20px 10px 80px;
+      /* position: relative; */
+      /* left: var(--pwd-label-left); */
+  }
+
+  #_passwordE #t1{
+      border: 1px solid black;
+      text-align: center;
+      font-size: 12px;
+      color: black;
+      width: 155px;
+      margin: 14px 20px 5px 50px;
+      /* position: relative; */
+      /* left: var(--pwd-in-left); */
+  }
+
+  #_passwordE button {
+      border-radius: 50%;
+      border:1px solid red;
+      height: var(--pwd-btn-size);
+      width: var(--pwd-btn-size);
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: red;
+      background-color: black;
+      margin: 5px 40px 10px 100px;
+      /* position: relative; */
+      /* left: var(--pwd-btn-size-left); */
+      /* top: var(--pwd-btn-top); */
   }

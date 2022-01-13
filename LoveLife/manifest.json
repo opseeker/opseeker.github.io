@@ -1,0 +1,33 @@
+{
+    "short_name": "Lovers",
+    "name": "ILOMILO",
+    "icons": [
+      {
+        "src": "asset/img/me.jpg",
+        "type": "image/jpg",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "black",
+    "display": "fullscreen",
+    "scope": "/",
+    "theme_color": "red",
+    "shortcuts": [
+      {
+        "name": "Gallery",
+        "short_name": "Img",
+        "description": "View images",
+        "url": "/index.html",
+        "icons": [{ "src": "asset/img/me.jpg", "sizes": "192x192" }]
+      }
+    ],
+    "description": "Personal Browsing site",
+    "screenshots": [
+      {
+        "src": "/asset/img/me.jpg",
+        "type": "image/jpg",
+        "sizes": "540x720"
+      }
+    ]
+  }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-    <!-- <meta charset="utf-8" /> -->
+    <meta lang="en" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,6 +11,7 @@
     <meta name='theme-color' content="white" />
     <!-- link relations -->
     <script src='asset/js/detail.js' preload="true"></script>
+    <link rel="manifest" href="manifest.json"/>
     <link rel="shortcut icon" href="asset/icon/heart.png" />
     <link rel='stylesheet' href='asset/css/user.css' />
     <link rel='stylesheet' href='asset/css/table.css' />
@@ -20,12 +21,13 @@
     <title>Love you Mani | updated: 08/01/2022</title>
 </head>
 
-<section id="_passwordE" style="background-color:rgb(116, 43, 103);width:100vw;height: 100vh;">
-    <p style='position: absolute; z-index: 50;top:45vh;left:20%;font-weight:bold;font-size:1.2em;text-transform:uppercase;background-color:rgb(179, 166, 143);height: 180px;width:200px;padding:1em;border: solid 2px black;border-radius: 12px;color: green'>
-        :: password ::
-        <input type="password" placeholder="Enter the Password" id="t1" style="height:2em;position:absolute;top: 52px;left: 16px;text-align: center;border: solid 2px black;"/>
-        <input type="button" value="ENTER" onclick="loginSuccess()" style="position:absolute;left:60px;border:1px black;top:90px;color: red;font-weight:bold;background-color:rgb(0, 0, 0);padding: 30px 18px 30px 18px;border-radius:50%;"/>
-    </p>
+<section id="_passwordE">
+    <div class="bg-cover"></div>
+    <form action="javascript:loginSuccess()">
+        <label>PASSWORD</label>
+        <input type="password" placeholder="Enter your password" id="t1">
+        <button type="button" onclick="loginSuccess()">ENTER</button>
+    </form>
 </section>
 
 <section id="_body0" class="hide">
@@ -45,20 +47,19 @@
         <div class='profile-1 reveal-l'>
             <!--ankit saikia-->
             <div class='profile-img rotate_right polaroid'>
-                <img src='asset/media/img/me.jpg'>
+                <img id='profileAni'>
                 <div id='_aniD'></div>
             </div>
         </div>
         <div class='profile-2 reveal-r'>
             <!--manisha adhikari-->
             <div class='profile-img rotate_left polaroid'>
-                <img src='asset/media/img/mani.jpg'>
+                <img id='profileMani'>
                 <div id='_maniD'></div>
             </div>
         </div>
     </div>
-    <a href='javascript:menuOpen()' id='_i1' class=""><i></i><span></span></a>
-
+    <div><a href='javascript:menuOpen()' id='_i1' class=""><i></i><span></span></a></div>
     <div class='detail-date' id='_table1'></div>
 
     <div class="gallery hide" id="_gallery"></div>
