@@ -87,7 +87,7 @@ function error1(){
     var input=document.getElementById("t1").value,
     a="",b=" ",c="   ",d="  ",e="        ";
     if(input==a||input==b||input==c||input==d||input==e)
-    alert("Password is required to login");
+    swal("MESSEGE","Password is required to login","warning");
     else
     error3();
 }
@@ -95,14 +95,14 @@ function error1(){
 //wrong password
 function error2() {
     // var input=document.getElementById("t1").value;
-    alert("Invalid Password");
+    swal("MESSEGE","Invalid Password","error");
 }
 
 //at least 8 char
 function error3() {
     var input=document.getElementById("t1").value;
     if(input.length<8)
-    alert("Password must be at least 8 characters");
+    swal("MESSEGE","Password must be at least 8 characters","error");
     else
     error2();
 }
@@ -111,5 +111,5 @@ function error3() {
 function adminCame(){
     var input=document.getElementById("t1").value;
     if(input==pwd||input==pwd1||input==pwd2||input==pwd6)
-    alert("You have entered with the main password and all the contents are visible.");
+    swal("MESSEGE","You have entered with the main password and all the contents are visible.","success");
 }

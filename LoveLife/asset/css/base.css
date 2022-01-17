@@ -1,6 +1,18 @@
 @media (min-width: 600px) {
     :root {
-        --pwd-left: 16vw;
+        --pwd-btn-size: 5vw;
+        --pwd-top: 30vh;
+        --pwd-left: 20vw;
+        --pwd-bg-color: red;
+        --pwd-form-height: 40vh;
+        --pwd-form-width: 60vw;
+        --pwd-form-border: 2px solid black;
+        --pwd-form-border: 2px solid black;
+        --pwd-form-bg-image: linear-gradient(to bottom,red,black);
+        --pwd-font-size: 12px;
+        --pwd-label-margin: 18px 20px 10px 80px;
+        --pwd-input-margin: 14px 20px 5px 50px;
+        --pwd-input-width: 155px;
     }
     html {
         background-image: url(../media/img/mitsuha-miyamizu.jpg);
@@ -110,11 +122,22 @@
         --pwd-width: calc(100% - 40%);
         --pwd-height: 120px;
         --pwd-left: 16vw;
+        --pwd-top: 40vh;
+        --pwd-bg-color: red;
         --pwd-btn-size: 45px;
         --pwd-btn-top: 42px;
         --pwd-btn-size-left: calc(var(--pwd-left) - 50%);
         --pwd-in-left: calc(var(--pwd-width) - 45%);
         --pwd-label-left: calc(var(--pwd-width) - 30%);
+        --pwd-form-height: 120px;
+        --pwd-form-width: 260px;
+        --pwd-form-border: 2px solid black;
+        --pwd-form-bg-image: linear-gradient(to bottom,red,black);
+        --pwd-font-size: 12px;
+        --pwd-label-margin: 18px 20px 10px 80px;
+        --pwd-input-margin: 14px 20px 5px 50px;
+        --pwd-input-width: 155px;
+
     }
 
     div.profile-1 {
@@ -238,22 +261,19 @@
   #_passwordE .bg-cover {
       background-position: center;
       background-repeat: no-repeat;
-      background-color: red;
+      background-color: var(--pwd-bg-color);
       width: 100vw;
       height: 100vh;
       /* z-index: 10; */
   }
 
   #_passwordE form {
-      border: 2px solid black;
-      background-image: linear-gradient(to bottom,red,black);
-      width: 260px;
-      height: 120px;
-      /* position: relative; */
-      /* top: 30vh; */
-      /* left: var(--pwd-left); */
+      border: var(--pwd-form-border);
+      background-image: var(--pwd-form-bg-image);
+      width: var(--pwd-form-width);
+      height: var(--pwd-form-height);
       position: absolute;
-      top: 40vh;
+      top: var(--pwd-top);
       left: var(--pwd-left);
   }
 
@@ -261,7 +281,8 @@
       color: black;
       font-weight: bold;
       align-items: center;
-      margin: 18px 20px 10px 80px;
+      margin: var(--pwd-label-margin);
+      /* margin: 18px 20px 10px 80px; */
       /* position: relative; */
       /* left: var(--pwd-label-left); */
   }
@@ -271,8 +292,8 @@
       text-align: center;
       font-size: 12px;
       color: black;
-      width: 155px;
-      margin: 14px 20px 5px 50px;
+      width: var(--pwd-input-width);
+      margin: var(--pwd-input-margin);
       /* position: relative; */
       /* left: var(--pwd-in-left); */
   }
@@ -283,7 +304,7 @@
       height: var(--pwd-btn-size);
       width: var(--pwd-btn-size);
       text-align: center;
-      font-size: 12px;
+      font-size: var(--pwd-font-size);
       font-weight: bold;
       color: red;
       background-color: black;
@@ -292,3 +313,70 @@
       /* left: var(--pwd-btn-size-left); */
       /* top: var(--pwd-btn-top); */
   }
+
+  /* loader */
+
+  /* .loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #c42121;
+    background: -moz-linear-gradient(left, #c42121 10%, rgba(196,33,33, 0) 42%);
+    background: -webkit-linear-gradient(left, #c42121 10%, rgba(196,33,33, 0) 42%);
+    background: -o-linear-gradient(left, #c42121 10%, rgba(196,33,33, 0) 42%);
+    background: -ms-linear-gradient(left, #c42121 10%, rgba(196,33,33, 0) 42%);
+    background: linear-gradient(to right, #c42121 10%, rgba(196,33,33, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #c42121;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #0dc5c1;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+   */
