@@ -380,3 +380,32 @@
     }
   }
    */
+
+   #scrollTopBtn{
+     background-color:rgba(64,64,64,.9);
+     color:#fff;
+     padding:10px 10px;
+     position:fixed;
+     width:40px;
+     height:40px;
+     display:none;
+     cursor:pointer;
+     bottom:0;
+     right:calc(50% - 20px);
+     margin-bottom:0;
+     z-index:1023
+    }
+
+    @media only screen and (max-width:280px){
+      #scrollTopBtn{
+        left:215px
+      }
+    }
+    
+    @media only screen and (max-width:767px){
+      #scrollTopBtn{
+        right:40px;
+        bottom:60px;
+        border-radius:50%
+      }
+    }

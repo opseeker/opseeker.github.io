@@ -113,3 +113,9 @@ function adminCame(){
     if(input==pwd||input==pwd1||input==pwd2||input==pwd6)
     swal("MESSEGE","You have entered with the main password and all the contents are visible.","success");
 }
+
+// e(window).scroll(function(){
+//     e(this).scrollTop()>200?e("#scrollTopBtn").stop().fadeIn():e("#scrollTopBtn").stop().fadeOut()
+// }),
+// e("#scrollTopBtn").click(function(){
+//     return e("html, body").animate({scrollTop:0},600),!1});
