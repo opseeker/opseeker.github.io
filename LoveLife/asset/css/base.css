@@ -1,5 +1,6 @@
 @media (min-width: 600px) {
     :root {
+        --profile-width: 180px;
         --pwd-btn-size: 5vw;
         --pwd-top: 30vh;
         --pwd-left: 20vw;
@@ -77,10 +78,13 @@
       }
     
       div.top-po {
-        position: fixed;
+        position: sticky;
         top: 1%;
         left: 45%;
         z-index: 10;
+        height: 1.4em;
+        width: 100%;
+
       }
 
       div.top-po span {
@@ -112,6 +116,7 @@
         --table-padding-bottom: none;
         --table-bg-color: none;
         --table-border: 1px solid black;
+        --table-margin: 0px 0px 60px 0px;
 
         --gallery-width: 100vw;
         --gallery-height: 180vh;   
@@ -135,9 +140,10 @@
         --pwd-form-bg-image: linear-gradient(to bottom,red,black);
         --pwd-font-size: 12px;
         --pwd-label-margin: 18px 20px 10px 80px;
-        --pwd-input-margin: 14px 20px 5px 50px;
+        --pwd-input-margin: 14px 0px 5px 50px;
         --pwd-input-width: 155px;
-
+        --pwd-label-padding: 10px 80px 5px 80px;
+        --pwd-input-padding: 2px 2px 2px 2px;
     }
 
     div.profile-1 {
@@ -149,6 +155,19 @@
       position: relative;
       margin-left: 30px;
   }
+
+  /* @media screen and (max-width:599px) and (orientation:landscape){
+    #orientJS {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width:599px) and (orientation:portrait){
+    #orientJS {
+      display: none;
+    }
+  } */
+  
 }
 
 .aui-slide-list {
@@ -280,8 +299,9 @@
   #_passwordE label {
       color: black;
       font-weight: bold;
-      align-items: center;
-      margin: var(--pwd-label-margin);
+      padding: var(--pwd-label-padding);
+      /* align-items: center; */
+      /* margin: var(--pwd-label-margin); */
       /* margin: 18px 20px 10px 80px; */
       /* position: relative; */
       /* left: var(--pwd-label-left); */
@@ -293,6 +313,7 @@
       font-size: 12px;
       color: black;
       width: var(--pwd-input-width);
+      padding: var(--pwd-input-padding);
       margin: var(--pwd-input-margin);
       /* position: relative; */
       /* left: var(--pwd-in-left); */
@@ -308,7 +329,7 @@
       font-weight: bold;
       color: red;
       background-color: black;
-      margin: 5px 40px 10px 100px;
+      margin: 5px 0px 10px 100px;
       /* position: relative; */
       /* left: var(--pwd-btn-size-left); */
       /* top: var(--pwd-btn-top); */
@@ -408,4 +429,41 @@
         bottom:60px;
         border-radius:50%
       }
+    }
+
+    .not-supported-orientation{
+      display:none;width:100%;
+      height:100%;
+      background:#4d525e;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:20000;
+      align-items:center;
+      justify-content:center
+    }
+    
+    .not-supported-orientation--visible{
+      display:flex
+    }
+    
+    .not-supported-orientation__content{
+      border:2px dashed #a0a5b8;
+      border-radius:18px;
+      max-width:411px;
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      box-sizing:border-box;
+      padding:29px 40px
+    }
+    
+    .not-supported-orientation__text{
+      color:#f8fafb;
+      text-align:center;
+      font-family:open sans,sans-serif;
+      font-size:18px;
+      margin-top:25px
     }

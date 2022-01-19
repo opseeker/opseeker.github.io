@@ -119,3 +119,13 @@ function adminCame(){
 // }),
 // e("#scrollTopBtn").click(function(){
 //     return e("html, body").animate({scrollTop:0},600),!1});
+
+function orient() {
+    var o=document.getElementById('orientJS');
+if (window.innerHeight > window.innerWidth){
+    o.classList.add('hide');
+}
+else{
+    o.classList.remove('hide');
+}
+};

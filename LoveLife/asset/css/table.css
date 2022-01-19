@@ -8,6 +8,7 @@ table {
     padding-bottom: var(--table-padding-bottom);
     background-color: var(--table-bg-color);
     border: var(--table-border);
+    margin: var(--table-margin);
 }
 
 tr,th,td {
