@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none
+}
+
+.hide {
+  display: none
+}
+
+.uppercase {text-transform: uppercase}
+
+@media screen and (max-width:499px) {
+  body.passwordManager {
+    display: flex;
+    background-color: #cc0066;
+    z-index: 100;
+  }
+
+  .form {
+    width: 80vw;
+    height: 14rem;
+    background-color: #333;
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    border-radius: 18px;
+  }
+
+  .form form {
+    width: 90%;
+    height: 90%;
+    padding: 2rem;
+  }
+
+  .password-form label {
+    position: relative;
+    text-align: center;
+    padding: 1rem 35% 1rem 35%;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Phantomsans, sans-serif;
+  }
+
+  .password-form input {
+    width: 115%;
+    height: 2rem;
+    top: 1rem;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    color: rgb(139, 138, 138);
+    background-color: transparent;
+  }
+
+  .password-form .button {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    font-family: Phantomsans, sans-serif;
+    line-height: 1em;
+    padding: 5px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .password-form .submit-btn {
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    color: rgb(3, 97, 3);
+  }
+
+  .password-form .clear-btn {
+    position: relative;
+    top: 1.6rem;
+    left: 9rem;
+    color: rgb(158, 10, 10);
+
+  }
+
+  .lead {
+    font-weight: 300;
+    font-family: Phantomsans, sans-serif;
+    text-decoration: none;
+  }
+
+  .form .page-info {
+    position: relative;
+    top: 4rem;
+    right: 10vw;
+    width: 100vw;
+  }
+
+  .form .page-info h3 {
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+    background-color: #222;
+    padding: 5px;
+  }
+
+  .form .page-info p {
+    text-align: center;
+    padding: 0px 1em 2px 1em;
+    font-size: 12px;
+  }
+
+  .top-banner {
+    position: absolute;
+    top: -12rem;
+    left: -5vw;
+    background-color: #444;
+    width: 90vw;
+    height: 10rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+  }
+
+  .top-banner .news {
+    padding: 5px;
+  }
+
+  .toggle-news span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .news-control button {
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    align-items: center;
+    border: 0;
+    font-family: Phantomsans, sans-serif;
+    line-height: 1em;
+    padding: 5px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.4rem;
+    height: 1rem;
+    /* background-color: #555; */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    right: 0px;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex
+  }
+
+  .display-overflow {
+    background-color: #333;
+    position: absolute;
+    top: 2.8rem;
+    width: 50%;
+    height: 15.5rem;
+  }
+
+  .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    z-index: 100;
+  }
+
+  .navbar.hide {display: none}
+
+  .clearfix {
+    margin: .02rem
+  }
+
+  .fixed-top {
+    position: sticky !important;
+    top: 0px;
+  }
+
+  .brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Dancing Script', bold;
+  }
+
+  .navbar button {
+    align-items: center;
+    /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
+    border: 0;
+    line-height: 1em;
+    padding: 5px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .navbar button:active,
+  .navbar button:hover {
+    outline: 0;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-links li {
+    list-style: none;
+  }
+
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+
+  .navbar-links li:hover {
+    background-color: #555;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: .50rem;
+    right: .60rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.5rem;
+    height: 1.8rem;
+    padding: 5px;
+    background-color: #333;
+  }
+
+  .menu-toggle .bar {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .profile-text {
+    width:50vw;
+    aspect-ratio:1 / 1;
+    padding: 4px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .flex {
+    display: flex
+  }
+
+  .home {
+    margin-bottom: -30rem
+  }
+
+  .home .description .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .home .description {
+    margin-top: 1px;
+    padding: 2rem;
+    background-color:rgb(206, 119, 119);
+  }
+
+  .grayTheme {
+    filter: grayscale(1)
+  }
+
+  .blurTheme {
+    filter: blur(3px)
+  }
+
+  .dairy > .container {
+    padding: 1em;
+    margin-top: -1.5rem;
+    margin-bottom: -28rem;
+  }
+
+  .dairy > .container h4 {
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+
+  .dairy > .container h3 {
+    text-align: right;
+    font-size: .8em;
+    text-transform: capitalize;
+  }
+
+  .navbar .logout {
+    color: red;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Phantomsans, sans-serif;
+    background-color: black
+  }
+
+  .LightToggle-btn {
+    position: absolute;
+    top: .4rem;
+    left: -48vw;
+    padding: .4rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    aspect-ratio: 1/1;
+    background-color: #333;
+    border-radius: 50%;
+    border: 2px solid blue;
+  }
+
+  .LightToggle-btn.active {
+    background-color: #555;
+    border: 2px solid rgb(81, 255, 0);
+  }
+
+  .darkTheme {
+    color: #888;
+    background-color: #333;
+  }
+
+}

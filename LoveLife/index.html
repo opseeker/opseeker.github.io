@@ -1,75 +1,140 @@
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-    <meta lang="en" />
-    <meta property="og:title" content="Love"/>
-    <meta property="og:description" content=""/>
-    <meta property="og:site" content=""/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Ankit Saikia">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="application-name" content="Ankit Saikia">
-    <meta name='theme-color' content="white" />
-    <!-- link relations -->
-    <script src='asset/js/detail.js' preload="true"></script>
-    <link rel="manifest" href="manifest.json"/>
-    <link rel="shortcut icon" href="asset/icon/heart.png" />
-    <link rel='stylesheet' href='asset/css/user.css' />
-    <link rel='stylesheet' href='asset/css/table.css' />
-    <link rel='stylesheet' href='asset/css/base.css' />
-    <script src='asset/js/control.js'></script>
-    <script src='asset/js/scroll.js'></script>
-    <title>Love you Mani | updated: 08/01/2022</title>
-    <script src="asset/js/swAl.js"></script>
-    <style>html{overflow:hidden}</style>
+    <title>Our Little space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="translations" content="no-translations" />
+    <meta name="theme-color" content="#cc0066" id="metaTheme"/>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/imgHover.css" />
+    <link rel="stylesheet" href="css/table.css"/>
+    <link rel="shortcut icon" href="icon/heart.png"/>
+    <script src="js/base.js" defer></script>
+    <script src="js/swAl.js" defer></script>
+    <!-- <script src="js/documentWritter1.0.js" defer></script> -->
 </head>
-<div id="scroller" style="height:100%;width:100%;overflow-Y:scroll;position:fixed;-webkit-overflow-scrolling:touch;">
-<section id="_passwordE"><div class="bg-cover"></div><form action="javascript:loginSuccess()"><label>PASSWORD</label><input type="password" placeholder="Enter your password" id="t1"><button type="button" onclick="loginSuccess()">ENTER</button></form></section>
-<section id="_body0" class="hide">
-    <div class='navigation top'>
-        <div class='menu-btn'>
-        </div>
+<!-- <body class="passwordManager"> -->
+<body>
+    <div class="form hide">
+    <div class="password-form">
+    <form action="javascript:Login()">
+    <label>LOGiN</label>
+    <input type="password" placeholder="Enter the password to enter" id="input">
+    <button class="button submit-btn" onclick="Login()">submit</button>
+    <div><a href="javascript:clearField()" class="button clear-btn">clear</a></div>
+    </form>
     </div>
-
-    <div class='top-po'>
-        <div class='top'>
-            <p>Since 23-Nov-2021</p>
-            <span></span>
-        </div>
+    <div class="page-info">
+        <h3>📌 Notice 📌</h3>
+        <p class="lead">This is a private prooperty of A-M saikia.<br>
+        Any media object is prohibited from being circulated outside of the source, if required, the user may request an approval.<br>
+        If anyone is caught in the act, strict penalty will be charged against them by the article (6C) and article (2).<br>
+        The person has to pay the required penalty as per the written terms:<br>
+        </p><p class="copyright">opseeker.github.io&copy;<br>2021-22</p>
     </div>
-    <div class='clearfix'></div>
-    <div class='s1' id="_mains">
-        <div class='profile-1 reveal-l'>
-            <!--ankit saikia-->
-            <div class='profile-img rotate_right polaroid'>
-                <img id='profileAni'>
-                <div id='_aniD'></div>
+    <div class="top-banner">
+        <div class="news lead">
+            <div class="news-control">
+                <button class="toggle-news"><span></span><span></span><span></span></button>
+                <div class="news-list">
+                    <h5>News</h5>
+                    <ul>
+                        <li>
+                            <a href="#">old news</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="news-viewer">
+                <p>News not available...</p>    
             </div>
         </div>
-        <div class='profile-2 reveal-r'>
-            <!--manisha adhikari-->
-            <div class='profile-img rotate_left polaroid'>
-                <img id='profileMani'>
-                <div id='_maniD'></div>
+    </div>
+    </div>
+    <nav class="navbar fixed-top ">
+        <div class="brand-title">&#x2764 LillSpace &#x2764</div>
+        <button class="menu-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <div class="navbar-links display-overflow">
+            <ul>
+                <li><a href="javascript:home()">Home</a></li>
+                <li><a href="#">link-2</a></li>
+                <li><a href="#">link-3</a></li>
+                <li><a href="#">link-4</a></li>
+                <li><a href="#">link-5</a></li>
+                <li><a href="#">link-6</a></li>
+                <li><a href="javascript:logout()" class="logout">Log out &#x2693</a></li>
+            </ul>
+            <div class="LightToggle-btn" onclick="LightChange()">
+                <span>&#x1f319</span>
+            </div>
+        </div>
+    </nav>
+    <div class="clearfix"></div>
+    <div class="home hide">
+        <div class="container">
+            <div class="profile-image">
+                <div class="img-styling">
+                    <div class="flex">
+                    <div class="img-wrapper"style="position:absolute;width:50vw;">
+                        <img class="gray img-1" src="media/img/me.jpg">
+                        <div class="content slide-left">I love Mani &#x1f48b</div>
+                    </div>
+                    <div class="profile-text lead" style="position:relative;left:50vw">
+                        Ankit Saikia<br>BCA, Tinsukia<br>lives in Sadiya,<br>Lakhimipather<br>D.O.B: 11-May-2002<br>&#x2642
+                    </div>
+                    </div>
+                    <div class="flex">
+                        <div class="profile-text lead">
+                            Manisha Adhikari<br>BSC, Digboi<br>lives in Sadiya,<br>Marwaripati<br>D.O.B: 28-Mar-2002<br>&#x2640
+                        </div>
+                    <div class="img-wrapper"style="width:50vw;">
+                        <img class="gray img-2" src="media/img/mani.jpg">
+                        <div class="content slide-right">I love Ani &#x1f48b</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="description lead">
+                    <div class="title">description</div>
+                    <p>&quot;You know you're in love when you can't fall asleep because reality is finally better than your dreams.&quot;<br><span>- by Ankit</span></p>
+                    <p>The page is created in memory of our love that we have in between us.</p>
+                </div>
             </div>
         </div>
     </div>
-    <div><a href='javascript:menuOpen()' id='_i1' class=""><i></i><span></span></a></div>
-    <div class='detail-date' id='_table1'></div>
-
-    <div class="gallery hide" id="_gallery"></div>
-</section>
-</div>
-<!-- <button id="scrollTopBtn" title="Scroll to Top" type=button class="btn btn-success">&#9650;</button> -->
-
-<!-- <div class="not-supported-orientation not-supported-orientation--visible">
-    <div class="not-supported-orientation__content">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTEuMjk0IiBoZWlnaHQ9Ijg2LjI2OSIgdmlld0JveD0iMCAwIDExMS4yOTQgODYuMjY5Ij48ZGVmcz48c3R5bGU+LmEsLmMsLmksLmosLmx7ZmlsbDpub25lO30uYSwuYiwuZiwuaSwuantzdHJva2U6I2Y4ZmFmYjt9LmEsLmJ7c3Ryb2tlLWRhc2hhcnJheToyIDI7fS5he29wYWNpdHk6MC41O30uYntmaWxsOiM3MDc0N2U7fS5je3N0cm9rZTojZmZmO30uYywuantzdHJva2UtbGluZWNhcDpyb3VuZDt9LmR7ZmlsbDojZmZmO30uZXtmaWxsOiMzOTQwNTA7fS5me2ZpbGw6IzRkNTI1ZTt9Lmd7ZmlsbDojYTBhNWI4O29wYWNpdHk6MC4yNzU7fS5oe2ZpbGw6I2Y4ZmFmYjt9Lmt7c3Ryb2tlOm5vbmU7fTwvc3R5bGU+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zODkgLTk0LjIzMSkiPjxnIGNsYXNzPSJhIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcxOSwgMC42OTUsIC0wLjY5NSwgMC43MTksIDQxOS4zMTQsIDEyMS45OTYpIj48cmVjdCBjbGFzcz0iayIgd2lkdGg9IjUxIiBoZWlnaHQ9IjMwIiByeD0iNSIvPjxyZWN0IGNsYXNzPSJsIiB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjUwIiBoZWlnaHQ9IjI5IiByeD0iNC41Ii8+PC9nPjxnIGNsYXNzPSJiIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODkgMTQ2KSI+PHJlY3QgY2xhc3M9ImsiIHdpZHRoPSI1MSIgaGVpZ2h0PSIzMCIgcng9IjUiLz48cmVjdCBjbGFzcz0ibCIgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSI1MCIgaGVpZ2h0PSIyOSIgcng9IjQuNSIvPjwvZz48cGF0aCBjbGFzcz0iYyIgZD0iTTEwNzIuNzc0LDExODEuNzczcy0uNjQ2LTEwLjk1NiwxMC45NTYtMTAuOTU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjQ5IC0xMDM5KSIvPjxwYXRoIGNsYXNzPSJkIiBkPSJNNCwwLDgsNS42SDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzguNjAzIDEyNy41KSByb3RhdGUoOTApIi8+PHJlY3QgY2xhc3M9ImUiIHdpZHRoPSI2Ni4zMTIiIGhlaWdodD0iMzkuMDA3IiByeD0iMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDg4LjQwOCAxMTQuMTg4KSByb3RhdGUoOTApIi8+PGcgY2xhc3M9ImYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ4NC41MDcgMTA4LjMzNykgcm90YXRlKDkwKSI+PHJlY3QgY2xhc3M9ImsiIHdpZHRoPSI2Ni4zMTIiIGhlaWdodD0iMzkuMDA3IiByeD0iMyIvPjxyZWN0IGNsYXNzPSJsIiB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjY1LjMxMiIgaGVpZ2h0PSIzOC4wMDciIHJ4PSIyLjUiLz48L2c+PHJlY3QgY2xhc3M9ImciIHdpZHRoPSI1Mi41MjIiIGhlaWdodD0iMzEuMjA2IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDgwLjYwNyAxMTIuNTIxKSByb3RhdGUoOTApIi8+PHJlY3QgY2xhc3M9ImgiIHdpZHRoPSIxMS43MDIiIGhlaWdodD0iMi42IiByeD0iMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDU5LjE1MyAxNjguMTQ4KSIvPjxnIGNsYXNzPSJpIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0ODAuNjA3IDExMi41MjEpIHJvdGF0ZSg5MCkiPjxyZWN0IGNsYXNzPSJrIiB3aWR0aD0iNTIuNTIyIiBoZWlnaHQ9IjMxLjIwNiIgcng9IjIiLz48cmVjdCBjbGFzcz0ibCIgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSI1MS41MjIiIGhlaWdodD0iMzAuMjA2IiByeD0iMS41Ii8+PC9nPjxyZWN0IGNsYXNzPSJkIiB3aWR0aD0iMi42IiBoZWlnaHQ9IjMuOTAxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTUuMjUyIDEyOS4xNCkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjIuNiIgaGVpZ2h0PSIzLjkwMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDcyLjE1NSAxMjkuMTQpIi8+PHBhdGggY2xhc3M9ImMiIGQ9Ik0uMDA2LDEwLjdTLS42MjUsMCwxMC43LDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ2NS4wMDUgMTQ3LjM0NCkgcm90YXRlKC0xMzUpIi8+PHBhdGggY2xhc3M9ImoiIGQ9Ik0xMTM0LjEzMiwxMTU5LjM2MnYtNi44MjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02NTAuMTAzIC0xMDU3LjgwNSkiLz48cGF0aCBjbGFzcz0iaiIgZD0iTTAsNi44MjVWMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDkyLjk2OSAxMTAuNDk2KSByb3RhdGUoLTkwKSIvPjxwYXRoIGNsYXNzPSJqIiBkPSJNMCw2LjgyNVYwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0OTUuMTc3IDk5LjM0OSkgcm90YXRlKDQ1KSIvPjxwYXRoIGNsYXNzPSJpIiBkPSJNMTA3OC43ODcsMTIwOS45NjNsOC4xLDguMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY2OC44NzIgLTEwNTMuNzMyKSIvPjxwYXRoIGNsYXNzPSJpIiBkPSJNMTA3OC43ODcsMTIwOS45NjNsOC4xLDguMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgwMC4wNDcgMTI0My4xMTYpIHJvdGF0ZSgtOTApIi8+PC9nPjwvc3ZnPg==">
-        <div class="not-supported-orientation__text">
-            For an optimal experience use your mobile in Portrait (vertical) Mode.
+    <div class="dairy ">
+        <div class="logs lead hide">
+            <h3>Logs</h3>
+            <table>
+                <thead>
+                    <tr class="uppercase">
+                        <th scope="col" colspan="4">Dairy Logs</th>
+                    </tr>
+                    <tr class="table-labels uppercase">
+                        <th scope="col">Sl.</th>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>written-by</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>26-01-2022</td>
+                        <td>Republic day</td>
+                        <td>Ankit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container lead">
+            <div class="story">
+                <div class="jan-26-2022">
+                    <h4>Republic day</h4>
+                    <h3>Date: 26-01-2022</h3>
+                <p class="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    The weather is very dim, feels too boring to be doing anything. I woke up nnearly at 9:00am and called Mani, she replied while still sleeping,she was sleeping and I tried waking her up. Eventually she did wake up, but not because of my call but because of a milk tea (Dhud-Chai) 😤. I was shocked to see how energeticshe can be when she eats 🥲. In the evening, I was angry at her, the reason was quiet simple- she said she was watching the movie "Pushpa", and I said okay, go watch the movie and then call me. Since she was doing something and I was getting bored, I searched for a manga but I found a new Manhwa and it was very intresting.I wanted to complete all the total 49 chapters of that. She called while I was in the middle of reading chapter-17, and I pick up her call, she says she's half part from the movie and would call me when it finishes. I told her that I am reading a manga and she said "okay, fine".Then, when she was finished with her movie, she called me and I asked her if I could read some more of it. But she told me not to do so.I repeatedly asked her to re-consider that, however she did not agree at all. At last, I asked her to let me talk over to her friend (Himanjana), as she was an anime-fanatic too just like me, I hoped that she could understand what I was talking about and all her room-mates asked her to let me go read the manga.Later when I wanted to talk to her as I was on the 28th chapter, she did not pick up my calls then I called her about 15 times and at last I thought that she was just doing that on purpose. Later, she said that she was out for a shopping with her room-mates and her phone was on charge.<br><br>Small fights and arguments are not a bad thing to have, they make our relationship stable and help us understand each other well.
+                </p>
+                </div>
+            </div>
         </div>
     </div>
-</div> -->
-<section id="orientJS" class="hide"></section>
+</body>

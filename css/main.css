@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    z-index: 100;
+}
+
+.clearfix {
+    margin: .01rem
+}
+
+.fixed-top {
+    position: sticky !important;
+    top:0px;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar button {
+    align-items: center;
+    /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
+    border: 0;
+    font-family: Phantomsans, sans-serif;
+    line-height: 1em;
+    padding: 5px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+    .navbar button:active,
+    .navbar button:hover {
+      outline: 0;
+    }
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.6rem;
+    background-color: #333;
+}
+
+.toggle-button .bar {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+html {
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+}
+
+.display-overflow {
+    background-color: #333;
+    position: absolute;
+    top: 2.8rem;
+    height: 7rem;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 50%;
+        right:0px;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .author-img {
+        --w: 80%;
+        --b: 10%;
+        width: var(--w);
+        height: var(--w);
+        text-align: center;
+        position: relative;
+        left: var(--b);
+        right: var(--b);
+        margin-top: var(--b);
+    }
+
+    .author-img > .img-wrapper {
+        border-radius: 50%
+    }
+    .home{display:none}
+    .home.active {display: flex}
+
+}
+
+.text-center{
+    text-align: center;   
+}
+
+.text-box {
+    --tw: 1rem;
+    padding: 1px var(--tw) 1px var(--tw);
+}
+
+.lead {
+    font-size:1.25rem;
+    font-weight:300;
+}
+
+.dropdown.active {
+    display: flex;
+}
+.dropdown{
+    position: absolute;
+    top: 2.2rem;
+    left:-50vw;
+    border-right: 1px solid #555;
+}
+.dropdown .links{
+    min-height: 14rem;
+    width: 50vw;
+    background-color: #333;
+}
+
+.dropdown.active {display: flex;}
+.dropdown{display:none}
+
+.dropdown-fav {
+    position: absolute;
+    top:4.4rem;
+    left: -50vw;
+    width: 50vw;
+    background-color: #333;
+    display: none;
+    border-right: 1px solid #555;
+}
+.dropdown-favMedia {
+    position: absolute;
+    top: 2.2rem;
+    left: 50vw;
+    width: 40vw;
+    background-color: #333;
+    display:none;
+    border-left:1px solid #555;
+}
+.dropdown-webNovel{
+    position: absolute;
+    top: 4.4rem;
+    left: 50vw;
+    width: 40vw;
+    background-color: #333;
+    display: none;
+    border-left:1px solid #555;
+}
+.dropdown-fav.active{display: flex}
+.dropdown-favMedia.active{display: flex}
+.dropdown-webNovel.active{display: flex}

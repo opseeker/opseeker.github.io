@@ -1,6 +1,6 @@
 {
-    "short_name": "Lovers",
-    "name": "ILOMILO",
+    "short_name": "LS",
+    "name": "LillSpace",
     "icons": [
       {
         "src": "asset/img/me.jpg",
@@ -15,7 +15,7 @@
     "theme_color": "red",
     "shortcuts": [
       {
-        "name": "Gallery",
+        "name": "open",
         "short_name": "Img",
         "description": "View images",
         "url": "/index.html",

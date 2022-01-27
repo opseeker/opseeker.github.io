@@ -1,153 +1,163 @@
 <!DOCTYPE html>
-
 <head>
-    <title>Aero021</title>
-    <meta name='author' content="ankit saikia ie- opseeker" />
-    <meta name='viewport' content='width=device-width, initial-scale=1'/>
-    <meta name='description' content='Heartbroken souls find their way to this site just cuz they are alone and lonely.'/>
-    
-    <link rel='shortcut icon' href='index/icons/icox.png'/>
-
-    <!-- css below -->
-    <link rel='stylesheet' href='index/css/animate.css'/>
-    <link rel='stylesheet' href='index/css/style.css'/>
-    <link rel='stylesheet' href='index/css/preloader.css'/>
-
-    <style>
-        .hide {display: none;}
-
-        html {
-            user-select: none;
-            -ms-user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-        }
-    </style>
-
+  <title>Main page start</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <meta name="translations" content="no-translations"/>
+  <meta name="theme-color" content="#333"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/imgHover.css"/>
+  <link rel="stylesheet" href="css/car.css"/>
+  <script src="js/main.js" defer></script>
+  <script src="js/car.js" defer></script>
+  <script src="js/navLinks.js" defer></script>
 </head>
 
-<div class="preloader"><div class="spinner"><span>LOADing</span></div></div>
-
-<div class='navigation'>
-    <div class='menu-btn btn' onclick='click1()'><a href='#s1'><img src='index/icons/doraemon sit.png' id='_menu-btn1' /></a></div>
-    <div class='menu-btn btn' onclick='click2()'><a href='#s2'><img src='index/icons/doraemon stand.png' id='_menu-btn2' /></a></div>
-    <div class='menu-btn btn-1' onclick='click5()'><a href='#home'><img src='index/icons/home ico.png' /></a></div>
-    <div class='menu-btn btn-2' onclick='click6()'><a href='#gallery'><img src='index/icons/camera.png' /></a></div>
-    <div class='bg-nav'></div>
-    <div class='menu-nav' id='_menuL'>
-        <ul>
-            <li><a href='#animepage' onclick='anime()'>Anime list</a></li>
-            <li><a href='#content1'>2</a></li>
-        </ul>
+<!-- navigation bar top -->
+<nav class="navbar fixed-top">
+<div class="brand-title">saikia</div>
+<button class="toggle-button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+<div class="navbar-links display-overflow">
+<ul>
+<li><a href="#" id="home-btn">Home</a></li>
+<li><a href="#" id="friend-btn">Friends</a>
+  <div class="dropdown">
+    <div class="links">
+      <ul>
+        <li><a href="#">Close friends</a></li>
+        <li><a href="#">Current friends</a></li>
+        <li><a href="#">Old friends</a></li>
+        <li><a href="#">Close friends</a></li>
+        <li><a href="#">School friends</a></li>
+        <li><a href="#">College friends</a></li>
+      </ul>
     </div>
-</div>
-
-
-<!-- <div class='author'>
-    <div class='contain'>
-        <div class='img'></div>
-        <div class='lights'>
-            <p>
-                "This is the first open source project that is free of cost and no other assets have been used during the development stages."
-            </p>
-            <p>
-                This site has a long way to go. Be a partner with its development and help build up a community together.
-            </p>
+  </div></li>
+<li><a href="#" id="fav-btn">Favs</a>
+  <div class="dropdown-fav">
+    <ul>
+      <li><a href="#">hobbies</a></li>
+      <li><a href="#" id="media-btn">media</a>
+        <div class="dropdown-favMedia">
+          <ul>
+            <li><a href="#">audio</a></li>
+            <li><a href="#">video</a></li>
+            <li><a href="#"></a>celebs</li>
+            <li><a href="#"></a>sites</li>
+          </ul>
         </div>
-    </div>
-</div> -->
-
-<!-- <div class='pk-hostel'>
-    <div class='text contain'>
-        <p>Kakoty Boys Hostel<br></p>
-        <p>All currently residing students list:</p>
-        <table>
-            <thead>
-                <th colspan='7'>Student Details</th>
-            </thead>
-        </table>
-    </div>
-</div> -->
-
-<footer>
-    <div class='contain'>
-        <div class='text'>
-            <p>Site creator: Ankit Saikia</p>
-            <p>Date Re-published: 10-Nov-2021</p>
-            <p>Report issues on the <green>whatsapp</green> channel.</p>
+      </li>
+      <li>
+        <li><a href="#" id="otaku-btn">Otaku</a>
+        <div class="dropdown-webNovel">
+          <ul>
+            <li><a href="#">manga</a></li>
+            <li><a href="#">manhwa</a></li>
+            <li><a href="#">anime</a></li>
+          </ul>
+          </li>
         </div>
-    </div>
-</footer>
-
-<div class='animate'>
-    <div class="container">
-        <div class="pole"><div></div><div></div><div></div><div></div></div>
-        <div class="pole"><div></div><div></div><div></div><div></div></div>
-        <div class="pole"><div></div><div></div><div></div><div></div></div>
-        <div class="pole"><div></div><div></div><div></div><div></div></div>
-        <div class="pole"><div></div><div></div><div></div><div></div></div>
-        <div class="pole"><div></div><div></div><div></div><div></div></div>
-        <div class="neon neon_a"><div></div><div></div><div></div><div></div></div>
-        <div class="neon neon_b"><div></div><div></div><div></div><div></div></div>
-        <div class="neon neon_c"><div></div><div></div><div></div><div></div></div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- div clear sect -->
+<div class="clearfix"></div>
+<!-- home -->
+<div class="home">
+  <div class="container">
+    <div class="intro">
+      <div class="author-img">
+      <div class="img-wrapper">
+        <img class="gray" src="LoveLife/asset/media/img/me.jpg" alt="Ankit Saikia">
+        <div class="content slide-up">Ankit Saikia</div>
       </div>
-</div>
-
-<!-- audio @ startup when clicked through the click3 works -->
-<div class='music-box hide'>
-    <audio controls loop type="audio/mpeg" id='_startup_audio'>
-        <source src='index/audio/eternal youth.mp3' />
-    </audio>
-</div>
-
-<!-- audio controler -->
-<div class='audio-prompt' id='_audio_prompt'>
-    <div class='bg'></div>
-    <div class='audio-btn'>
-        <img src='index/icons/music ico.png' onclick="click3()" id='_musicBtn1' />
-        <img src='index/icons/music ico2.png' onclick="click4()" id='_musicBtn2' />
+      </div>
+      <div class="text-box">
+        <h3 class="text-center">How I started this passion</h3>
+        <p class="lead">There are various several things that we can do in our free time, the thing that we enjoy doing, for example: some hobbies, etc...</p>
+        <p>The most good part is that, I learned to spread my messege to others in an efficient way.</p>
+        <p>You can find some links to a lill useful stuffs up there.</p>
+      </div>
     </div>
+  </div>
 </div>
-
-<!-- anime list view -->
-<section id='_anime'>
-    <div class='contain'>
-        <div class='list'>
-            <div class='new'>
-                <ul>
-                    <li><a href=''>the world's finest assasin gets reincarnated in another world</a></li>
-                    <li><a href=''>fruit of evolution</a></li>
-                    <li><a href=''>platinum end</a></li>
-                    <li><a href='https://www.wcofun.com/anime/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita'>Banished from the Hero's party</a></li>
-                    <li><a href=''>Daughter of the spirit king</a></li>
-                    <li><a href=''>solo max level newbie</a></li>
-                    <li><a href=''>my unlimited level 9999 gacha</a></li>
-                </ul>
-            </div>
-        </div>
+<div class="friends">
+  <div class="container">
+    <div class="group">
+      <div class="close-friends">
+      </div>
     </div>
-</section>
-
-<!-- gallery section ----stores images that need to be shown... all internal gallery functions must be here -->
-<section id='_gallery'>
-    <div class='contain'>
-        <div class='function-box'>
-            <a href='#delete'><img src='index/icons/bin.png' alt='delete' id='_delG' /></a>
-            <a href='#close'><img src='index/icons/close.png' ></a>
-        </div>
-        <div class='img-col'>
-            <div class='img-row'>
-                <img src='index/icons/study girl.jpg' id='_img01' alt='image001'/>
-            </div>
-        </div>
+  </div>
+</div>
+<div class="favs">
+  <div class="container">
+    <!-- <div class="list-grid selection">
+      <ul>
+        <li><a href="#"><img src=""></a></li>
+      </ul>
+    </div> -->
+    <div class="fav-items">
+      <div class="fav-hobbies"></div>
+      <div class="fav-media">
+        <div class="fav-audio"></div>
+        <div class="fav-video"></div>
+        <div class="fav-celebs"></div>
+        <div class="fav-sites"></div>
+      </div>
+      <div class="fav-webNovel">
+        <div class="fav-manga"></div>
+        <div class="fav-manhwa"></div>
+        <div class="fav-anime"></div>
+      </div>
     </div>
-</section>
-
-
-
-<!-- script below -->
-<script type='text/javascript' src='index/js/jquery.js'></script>
-<script type='text/javascript' src='index/js/preloader.js'></script>
-<script src='index/js/btn.js'></script>
-
+  </div>
+</div>
+<!-- picture carousel section -->
+<!-- <section aria-label="Newest Photos">
+<div class="carousel" data-carousel>
+<button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+<button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+<ul data-slides>
+<li class="slide" data-active>
+<img src="https://picsum.photos/500?random=8" alt="Nature Image #1">
+</li>
+<li class="slide">
+<img src="https://picsum.photos/500?random=9" alt="Nature Image #2">
+</li>
+<li class="slide">
+<img src="https://picsum.photos/500?random=10" alt="Nature Image #3">
+</li>
+</ul>
+</div>
+</section> -->
+<!-- picture grid section -->
+<!-- <div class="grid">
+<div class="img-wrapper">
+<img class="blur" src="https://picsum.photos/500?random=1">
+<div class="content fade">This is a pic</div>
+</div>
+<div class="img-wrapper">
+<img class="zoom blur" src="https://picsum.photos/500?random=2">
+<div class="content fade">This is a pic</div>
+</div>
+<div class="img-wrapper">
+<img class="blur" src="https://picsum.photos/500?random=3">
+<div class="content slide-left">This is a pic</div>
+</div>
+<div class="img-wrapper">
+<img class="blur" src="https://picsum.photos/500?random=4">
+<div class="content slide-right">This is a pic</div>
+</div>
+<div class="img-wrapper">
+<img class="blur" src="https://picsum.photos/500?random=5">
+<div class="content slide-up">This is a pic</div>
+</div>
+<div class="img-wrapper">
+<img class="blur" src="https://picsum.photos/500?random=6">
+<div class="content slide-down">This is a pic</div>
+</div>
+<div class="img-wrapper">
+<img class="gray" src="https://picsum.photos/500?random=7">
+<div class="content slide-down">This is a pic</div>
+</div>
+</div> -->
