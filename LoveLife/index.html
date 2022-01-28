@@ -2,15 +2,29 @@
 <head>
     <title>Our Little space</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!-- <meta name="refresh" content="300"/> -->
     <meta name="translations" content="no-translations" />
     <meta name="theme-color" content="#cc0066" id="metaTheme"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-status-bar" content="no" />
+    <meta name="apple-mobile-web-app-status-bar" content="transclucent"/>
+    <link rel="manifest" href="manifest.json"/>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/imgHover.css" />
     <link rel="stylesheet" href="css/table.css"/>
-    <link rel="shortcut icon" href="icon/heart.png"/>
+    <link rel="shortcut icon" href="./heart.png"/>
     <script src="js/base.js" defer></script>
     <script src="js/swAl.js" defer></script>
     <!-- <script src="js/documentWritter1.0.js" defer></script> -->
+    <script>
+        if ('serviceWorker' in navigator) {
+          try {
+              await navigator.serviceWorker.register('./service-worker.js');
+          } catch (e) {
+              consle.log('SW registration failed');
+          }
+        }
+        </script>
 </head>
 <!-- <body class="passwordManager"> -->
 <body>
@@ -69,8 +83,14 @@
         </div>
     </nav>
     <div class="clearfix"></div>
-    <div class="home hide">
-        <div class="container">
+    <div class="home">
+        <div class="container wrapper">
+            <div class="bg-fg">
+                <img src="media/img/wall bg.jpeg" class="background">
+                <img src="media/img/wall fg.png" class="foreground">
+                <h1 class="g-title">Welcome</h1>
+            </div>
+            <div class="profile-box">
             <div class="profile-image">
                 <div class="img-styling">
                     <div class="flex">
@@ -98,9 +118,10 @@
                     <p>The page is created in memory of our love that we have in between us.</p>
                 </div>
             </div>
+            </div>
         </div>
     </div>
-    <div class="dairy ">
+    <div class="dairy hide">
         <div class="logs lead hide">
             <h3>Logs</h3>
             <table>
