@@ -27,20 +27,11 @@
         "purpose": "maskable"
       }
     ],
-    "start_url": "/index.html",
-    "background_color": "black",
+    "start_url": "./index.html",
+    "background_color": "#cc0066",
     "display": "standalone",
     "scope": "/",
     "theme_color": "#cc0066",
     "orientation": "portrait",
-    "shortcuts": [
-      {
-        "name": "open",
-        "short_name": "Img",
-        "description": "View images",
-        "url": "https://opseeker.github.io/LoveLife/index.html",
-        "icons": [{ "src": "./heart.png", "sizes": "192x192" }]
-      }
-    ],
     "description": "Personal Browsing site"
   }

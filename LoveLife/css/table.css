@@ -37,6 +37,27 @@ tr,th,td {
     text-align: center;
     text-transform: uppercase;
   }
+
+  tbody a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .prevS, .nextS {
+    --widS: 3rem;
+    width: var(--widS);
+    height: var(--widS);
+    position: absolute;
+    fill:blue;
+  }
+
+  .prevS{
+    left: 1em
+  }
+
+  .nextS {
+    right: 1em
+  }
 /* 
     39133832496
     SBIN0017220

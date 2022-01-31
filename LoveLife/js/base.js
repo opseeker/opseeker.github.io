@@ -7,13 +7,16 @@ menuButton= document.getElementsByClassName('menu-toggle')[0],
 navLinks= document.getElementsByClassName('navbar-links')[0],
 home =document.getElementsByClassName('home')[0],
 dairy=document.getElementsByClassName('dairy')[0],
-theme = document.getElementById('metaTheme')
+theme = document.getElementById('metaTheme'),
+music=document.getElementById('audio1'),
+musicButton= document.getElementsByClassName('audio-p2')[0]
 
 function Login(){
     const a = ["pokor@123","Pokor@123","POKOR@123","BOBU@123","Bobu@123","bobu@123","whateverus","Whateverus","anime@21","otaku@21","manisaikia","23112021"]
     const e = [""," ","  ","    "]
     const i= document.getElementById('input').value;
     if (i==a[0]||i==a[1]||i==a[2]||i==a[3]||i==a[4]||i==a[5]||i==a[6]||i==a[7]||i==a[8]||i==a[9]||i==[10]||i==a[11]){
+        music.play();
         body.classList.remove('passwordManager')
         passForm.classList.add('hide')
         navBar.classList.remove('hide')
@@ -40,6 +43,13 @@ function clearField(){
 menuButton.addEventListener('click',()=>{
     navLinks.classList.toggle('active')
     themeChange()
+})
+
+musicButton.addEventListener('click',()=>{
+    if(music.paused)
+    music.play()
+    else
+    music.pause()
 })
 
 function themeChange() {
@@ -81,3 +91,17 @@ function LightChange() {
         return Th=1
     }
 }
+
+//======================================================================================
+function dairyb() {
+        home.classList.add('hide')
+        dairy.classList.remove('hide')
+        menuButton.click()
+}
+
+function homeb(){
+    home.classList.remove('hide')
+    dairy.classList.add('hide')
+    menuButton.click()
+}
+

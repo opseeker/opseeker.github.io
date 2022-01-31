@@ -7,28 +7,20 @@
     <meta name="theme-color" content="#cc0066" id="metaTheme"/>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-status-bar" content="no" />
-    <meta name="apple-mobile-web-app-status-bar" content="transclucent"/>
-    <link rel="manifest" href="manifest.json"/>
+    <meta name="apple-mobile-web-app-status-bar" content="black"/>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/imgHover.css" />
     <link rel="stylesheet" href="css/table.css"/>
     <link rel="shortcut icon" href="./heart.png"/>
     <script src="js/base.js" defer></script>
+    <script src="js/diary.control.js"></script>
     <script src="js/swAl.js" defer></script>
     <!-- <script src="js/documentWritter1.0.js" defer></script> -->
-    <script>
-        if ('serviceWorker' in navigator) {
-          try {
-              await navigator.serviceWorker.register('./service-worker.js');
-          } catch (e) {
-              consle.log('SW registration failed');
-          }
-        }
-        </script>
+    <link rel="manifest" href="manifest.json"/>
 </head>
-<!-- <body class="passwordManager"> -->
-<body>
-    <div class="form hide">
+<body class="passwordManager">
+<!-- <body> -->
+    <div class="form">
     <div class="password-form">
     <form action="javascript:Login()">
     <label>LOGiN</label>
@@ -64,26 +56,29 @@
         </div>
     </div>
     </div>
-    <nav class="navbar fixed-top ">
+    <nav class="navbar fixed-top hide">
         <div class="brand-title">&#x2764 LillSpace &#x2764</div>
         <button class="menu-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
         <div class="navbar-links display-overflow">
             <ul>
-                <li><a href="javascript:home()">Home</a></li>
-                <li><a href="#">link-2</a></li>
+                <li><a href="javascript:homeb()">Home</a></li>
+                <li><a href="javascript:dairyb()">Dairy</a></li>
                 <li><a href="#">link-3</a></li>
                 <li><a href="#">link-4</a></li>
                 <li><a href="#">link-5</a></li>
                 <li><a href="#">link-6</a></li>
                 <li><a href="javascript:logout()" class="logout">Log out &#x2693</a></li>
             </ul>
-            <div class="LightToggle-btn" onclick="LightChange()">
-                <span>&#x1f319</span>
+            <div class="LightToggle-btn" onclick="LightChange()"><span>&#x1f319</span></div>
+            <div class="AudioControls">
+                <div class="audio-previous hide"><span>&#x23ee</span></div>
+                <div class="audio-p2"><span>&#x1F3B5</span></div> <!--pause:&#x23f8 | play:&#x25b6 -->
+                <div class="audio-next hide"><span>&#x23ed</span></div>
             </div>
         </div>
     </nav>
     <div class="clearfix"></div>
-    <div class="home">
+    <div class="home hide">
         <div class="container wrapper">
             <div class="bg-fg">
                 <img src="media/img/wall bg.jpeg" class="background">
@@ -122,7 +117,7 @@
         </div>
     </div>
     <div class="dairy hide">
-        <div class="logs lead hide">
+        <!-- <div class="logs lead hide">
             <h3>Logs</h3>
             <table>
                 <thead>
@@ -140,22 +135,64 @@
                     <tr>
                         <th>1</th>
                         <td>26-01-2022</td>
-                        <td>Republic day</td>
+                        <td><a href="javascript:table1()">Republic day</a></td>
+                        <td>Ankit</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>28-01-2022</td>
+                        <td><a href="javascript:table2()">A lovely day</a></td>
                         <td>Ankit</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
         <div class="container lead">
             <div class="story">
-                <div class="jan-26-2022">
+                <div class="jan-26-2022"id="story1">
                     <h4>Republic day</h4>
                     <h3>Date: 26-01-2022</h3>
                 <p class="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     The weather is very dim, feels too boring to be doing anything. I woke up nnearly at 9:00am and called Mani, she replied while still sleeping,she was sleeping and I tried waking her up. Eventually she did wake up, but not because of my call but because of a milk tea (Dhud-Chai) 😤. I was shocked to see how energeticshe can be when she eats 🥲. In the evening, I was angry at her, the reason was quiet simple- she said she was watching the movie "Pushpa", and I said okay, go watch the movie and then call me. Since she was doing something and I was getting bored, I searched for a manga but I found a new Manhwa and it was very intresting.I wanted to complete all the total 49 chapters of that. She called while I was in the middle of reading chapter-17, and I pick up her call, she says she's half part from the movie and would call me when it finishes. I told her that I am reading a manga and she said "okay, fine".Then, when she was finished with her movie, she called me and I asked her if I could read some more of it. But she told me not to do so.I repeatedly asked her to re-consider that, however she did not agree at all. At last, I asked her to let me talk over to her friend (Himanjana), as she was an anime-fanatic too just like me, I hoped that she could understand what I was talking about and all her room-mates asked her to let me go read the manga.Later when I wanted to talk to her as I was on the 28th chapter, she did not pick up my calls then I called her about 15 times and at last I thought that she was just doing that on purpose. Later, she said that she was out for a shopping with her room-mates and her phone was on charge.<br><br>Small fights and arguments are not a bad thing to have, they make our relationship stable and help us understand each other well.
                 </p>
+                <div class="story-control">
+                    <button class="prevS">prev</button>
+                    <button class="nextS" onclick="s1n()">next</button>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-circle prevS" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-circle nextS" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg> -->
+                </div>
+                </div>
+                <div class="jan-28-2022 hide"id="story2">
+                    <h4>A lovely day</h4>
+                    <h3>Date: 28-01-2022</h3>
+                    <p class="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Today Mani was leaving for Sadiya wiith Susmita and they both were supposed to go to a bookstore in Tinsukia-Market, the books were for her brothers who are in ninth standard.
+                        She also bought some additional books for someone of the same class. The total amount at last was Rs. 1,983.00. She had no cash on her and her friend too had less than that amount.
+                        Luckily I took my bag with me, where I always carry all my important stuffs like ATM-cards and all, she was just about to leave and I told her to pay the amout to my account and complete the payment using my card.
+                        <br>After that, we took a rikshaw and went straight to Nirjulee Bus Counter where they got onto a traveller that was about to depart to Sadiya.
+                    </p>
+                    <p>
+                        All three of us got onto the traveller and Mani and I ate the burgers that she bought at the ASTC bus counter, then I and Mani sat besides each other eating burgers and holding hands. I did a little something to her and because of that, I got very lovely slaps in my cheeks. I gave her the Oreo that she wanted to have, as I had a little cash on me, I bought her a Rs. 80 one.
+                    </p>
+                    <p>
+                        As they were going to their hometown, the vehicle got some sudden issues with the engine and they waited for some time, then she and her friend got onto a bus that was heading to the same direction. She reached her home by 04:00pm and she called me.
+                    </p>
+                    <p>
+                        The most amusing part today was that, she gifted me so many things that I almost cried tears of joy.
+                        She gave me many edible items and a pair of pen for the exams. I felt really lucky and wanted to thank her, so I made a video for her to see and uploaded it to the whatsapp story.
+                    </p>
+                    <div class="story-control">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-circle prevS" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-circle nextS" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg> -->
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="audio-container hide">
+        <audio controls id="audio1">
+            <source src="media/audio/super_idol_but_it's_chill(128k).mp3" type="audio/mpeg" />
+        </audio>
     </div>
 </body>
