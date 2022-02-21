@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: Phantomsans, sans-serif
 }
 
 body {
@@ -113,7 +114,42 @@ html {
     background-color: #333;
     position: absolute;
     top: 2.8rem;
-    height: 7rem;
+    min-height: 7rem;
+}
+
+::-webkit-scrollbar {display: none}
+
+.inline-scroll {
+    display: flex;
+    overflow-X: scroll;
+    overflow-Y: none;
+    padding: 0;
+}
+
+.inline-box {
+    padding: 10vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inline-box h3 {
+    font-size: 2em;
+    color: #555;
+    position: relative;
+    top: -12vw;
+}
+
+.inline-box p {
+    font-size: 1.2em;
+    position: relative;
+    top: -20vw;
+    padding: 1em;
+}
+
+.inline-box img{
+    width: 80vw;
+    aspect-ratio: 1/1;
 }
 
 @media (max-width: 800px) {

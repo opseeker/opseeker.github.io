@@ -1,4 +1,5 @@
-const password= document.getElementsByClassName('passwordManager')[0],
+const 
+password= document.getElementsByClassName('passwordManager')[0],
 body= document.getElementsByTagName('body')[0],
 passForm= document.getElementsByClassName('form')[0],
 navBar=document.getElementsByClassName('navbar')[0],
@@ -44,6 +45,7 @@ menuButton.addEventListener('click',()=>{
     navLinks.classList.toggle('active')
     themeChange()
 })
+
 
 musicButton.addEventListener('click',()=>{
     if(music.paused)

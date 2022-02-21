@@ -15,6 +15,8 @@ html {
 
 .uppercase {text-transform: uppercase}
 
+netflix {color:red;background-color:black;border-radius: 4px;padding: 2px; font-size: .8em;font-weight: bold}
+
 @media screen and (max-width:499px) {
   body.passwordManager {
     display: flex;
@@ -334,7 +336,7 @@ html {
   .dairy > .container {
     padding: 1em;
     margin-top: -1.5rem;
-    margin-bottom: -28rem;
+    margin-bottom: -22rem;
   }
 
   .dairy > .container h4 {
@@ -445,4 +447,116 @@ html {
     top: 4rem;
     display: flex;
   }
+
+  /* .dairy .story .ds {
+    width: 100vw;
+    position: relative;
+
+  } */
+
+  /* .dairy .story {
+    display: inline-flex;
+  } */
 }
+
+.d1 {display: none}
+.d1.active{display: block}
+
+.d2 {display: none}
+.d2.active{display: block}
+
+.d3 {display: none}
+.d3.active{display: block}
+
+.d4 {display: none}
+.d4.active{display: block}
+
+#prevBtn, #nextBtn{
+  border-radius: 10px;
+  border: none;
+  padding: 4px;
+  font-weight: bold;
+  color: #222;
+}
+
+#prevBtn{
+  position: fixed;
+  bottom: 10px;
+  left: 2em;
+} 
+
+#nextBtn{
+  position: fixed;
+  bottom: 10px;
+  right: 2em;
+}
+
+.diaryControl .backgroundD {
+  background-color: #333;
+  position: absolute;
+  bottom:-10px;
+  left: -16px;
+  height: 42px;
+  width: 100vw;
+  z-index: -1;
+}
+
+.diaryControl {
+  position: fixed;
+  bottom: 10px;
+}
+
+.pageNumber {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  left: 42vw;
+  font-size: 1em;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+
+.short-menu {
+  display: flex;
+  position: absolute;
+  left: -22vw;
+  bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  background-color: #333;
+  font-size: .8em;
+  font-weight: 350;
+  text-transform: capitalize;
+  font-family: Phantomsans, sans-serif;
+  border-radius: 4px 4px 0 0;
+  padding: 1em
+}
+
+.short-menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: .5rem 1rem;
+}
+
+.short-menu ul li {
+  list-style-type: none;
+  padding: 4px;
+  text-align: center;
+}
+
+.short-menu ul {
+  display: flex;
+  text-align:left;
+  width: 100%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.short-menu li:hover {
+  background-color: #555;
+}
+
+.short-menu.hide{display: none}

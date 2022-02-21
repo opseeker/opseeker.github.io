@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/imgHover.css" />
     <link rel="stylesheet" href="css/table.css"/>
     <link rel="shortcut icon" href="./heart.png"/>
+    <link rel="stylesheet" href="css/largerScreens/large.css"/>
     <script src="js/base.js" defer></script>
-    <script src="js/diary.control.js"></script>
     <script src="js/swAl.js" defer></script>
     <!-- <script src="js/documentWritter1.0.js" defer></script> -->
     <link rel="manifest" href="manifest.json"/>
@@ -24,7 +24,7 @@
     <div class="password-form">
     <form action="javascript:Login()">
     <label>LOGiN</label>
-    <input type="password" placeholder="Enter the password to enter" id="input">
+    <input type="password" placeholder="Enter the password to enter" autocomplete="new-password" id="input">
     <button class="button submit-btn" onclick="Login()">submit</button>
     <div><a href="javascript:clearField()" class="button clear-btn">clear</a></div>
     </form>
@@ -61,23 +61,24 @@
         <button class="menu-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
         <div class="navbar-links display-overflow">
             <ul>
-                <li><a href="javascript:homeb()">Home</a></li>
-                <li><a href="javascript:dairyb()">Dairy</a></li>
+                <li><a href="javascript:homeb()" title="Homepage">Home</a></li>
+                <li><a href="javascript:dairyb()" title="memories on the past">Dairy</a></li>
                 <li><a href="#">link-3</a></li>
                 <li><a href="#">link-4</a></li>
                 <li><a href="#">link-5</a></li>
                 <li><a href="#">link-6</a></li>
-                <li><a href="javascript:logout()" class="logout">Log out &#x2693</a></li>
+                <li><a href="javascript:logout()" class="logout" title="LogOut of the current session">Log out &#x2693</a></li>
             </ul>
-            <div class="LightToggle-btn" onclick="LightChange()"><span>&#x1f319</span></div>
+            <div class="LightToggle-btn" onclick="LightChange()"><span title="Dark Mode">&#x1f319</span></div>
             <div class="AudioControls">
                 <div class="audio-previous hide"><span>&#x23ee</span></div>
-                <div class="audio-p2"><span>&#x1F3B5</span></div> <!--pause:&#x23f8 | play:&#x25b6 -->
+                <div class="audio-p2"><span title="Music">&#x1F3B5</span></div> <!--pause:&#x23f8 | play:&#x25b6 -->
                 <div class="audio-next hide"><span>&#x23ed</span></div>
             </div>
         </div>
     </nav>
     <div class="clearfix"></div>
+    <section class="con-1">
     <div class="home hide">
         <div class="container wrapper">
             <div class="bg-fg">
@@ -149,20 +150,14 @@
         </div> -->
         <div class="container lead">
             <div class="story">
-                <div class="jan-26-2022"id="story1">
+                <div class="d1 ds active">
                     <h4>Republic day</h4>
                     <h3>Date: 26-01-2022</h3>
                 <p class="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     The weather is very dim, feels too boring to be doing anything. I woke up nnearly at 9:00am and called Mani, she replied while still sleeping,she was sleeping and I tried waking her up. Eventually she did wake up, but not because of my call but because of a milk tea (Dhud-Chai) 😤. I was shocked to see how energeticshe can be when she eats 🥲. In the evening, I was angry at her, the reason was quiet simple- she said she was watching the movie "Pushpa", and I said okay, go watch the movie and then call me. Since she was doing something and I was getting bored, I searched for a manga but I found a new Manhwa and it was very intresting.I wanted to complete all the total 49 chapters of that. She called while I was in the middle of reading chapter-17, and I pick up her call, she says she's half part from the movie and would call me when it finishes. I told her that I am reading a manga and she said "okay, fine".Then, when she was finished with her movie, she called me and I asked her if I could read some more of it. But she told me not to do so.I repeatedly asked her to re-consider that, however she did not agree at all. At last, I asked her to let me talk over to her friend (Himanjana), as she was an anime-fanatic too just like me, I hoped that she could understand what I was talking about and all her room-mates asked her to let me go read the manga.Later when I wanted to talk to her as I was on the 28th chapter, she did not pick up my calls then I called her about 15 times and at last I thought that she was just doing that on purpose. Later, she said that she was out for a shopping with her room-mates and her phone was on charge.<br><br>Small fights and arguments are not a bad thing to have, they make our relationship stable and help us understand each other well.
                 </p>
-                <div class="story-control">
-                    <button class="prevS">prev</button>
-                    <button class="nextS" onclick="s1n()">next</button>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-circle prevS" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-circle nextS" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg> -->
                 </div>
-                </div>
-                <div class="jan-28-2022 hide"id="story2">
+                <div class="d2 ds" >
                     <h4>A lovely day</h4>
                     <h3>Date: 28-01-2022</h3>
                     <p class="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -181,18 +176,86 @@
                         The most amusing part today was that, she gifted me so many things that I almost cried tears of joy.
                         She gave me many edible items and a pair of pen for the exams. I felt really lucky and wanted to thank her, so I made a video for her to see and uploaded it to the whatsapp story.
                     </p>
-                    <div class="story-control">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-circle prevS" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right-circle nextS" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg> -->
+                </div>
+                <div class="d3 ds" >
+                    <h4>Home Visit</h4>
+                    <h3>Date: 11-02-2022</h3>
+                    <p class="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        For the first time, I visited her at her house. It was a fine rainy day with a little bit of sunshine with it. She looked as if she had been sleeping all day.
+                        I was with Vishal Pao, and we rode the scooty with the umbrella on the top of it. It looked as if the whole scooty was a nano car...
+                    </p>
+                    <p>
+                        People did laugh about how the scooty looks with the uumbrella on top of it, but sadly she laughed out loud too. And she did a video recording too.<br>
+                        I was not embaraced nor was I shy, in fact, I was very happy to see her smile.
+                    </p>
+                    <p>
+                        I was just looking forward to meeting her in person after so long. She looked very cheerful, maybe it was because of the way the whole scooter looked ?
+                        <br>But I do know one thing for sure, she was happy seeing me. She was with her lill sister. They both look almost the same.
+                    </p>
+                    <p>
+                    </p>
+                </div>
+                <div class="d4 ds" >
+                    <h4>First Valentine</h4>
+                    <h3>Date: 14-02-2022</h3>
+                    <p class="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Today was the day of couples, spending time together, and having some private time between one another. The special celebration that every new couples enjoy together.
+                    </p>
+                    <p>
+                        I started my day just as usual, the only difference was that I had woke up at 6 in the early morning and then just watched some <netflix>Netflix</netflix> under my blanket, it was so much cold outside the blanket, I couldn't even take a breath. I finally got up around 7, and started doing the early morning chores like brushing teeth, going to the toilet, watching after the two pups, and some other stuffs. Then around 8:10am when it was time for my mother to go on school-duty, I dressed up in jeans, put on the Plain-Black T-Shirt that Mani gifted me (which I never wore before...) and then added the yellow light jacket over it. My mom gave me &#8377;500, from which I filled the gas for &#8377;300 and the rest &#8377;200 was given by her to celebrate with her. As me and my mom were leaving for the school, half-way she suddenly recalls leaving her tiffin in the veranda, in which she pack her lunch for the school. It was hilarious cuz she just nearly forgot that whole thing, and we had to go back home from the Medical-Charali. After that I droped her off near the school and went to Bishal's house.
+                    </p>
+                    <p>
+                        Bishal and I spent some time together until Mani called. She said the previous day that she had some business in the PNB bank, and I was waiting for her to get ready. She called me nearly at 10:40 and I headed to pick her up. We waited at the bank but the person in-charge wasn't there at all. Afterwards she had to go for the Hokam at her Mama's house with her relatives, so she left with them. Afterwards because she made me mad at the bank as she wasn't showing some things on her phone's gallery, I felt real bad and wasn't in the right mood. Later around 12 o'clock, Bishal and I wanted to drink beer, so I bought one glass Tuborg and one canned Beer which cost around &#8377;150.
+                    </p>
+                    <p>
+                        Later she calls me around 2pm and tells me that her sister who is about to be married soon, will be going on a date to Shantipur and she wants to go there with me. But alas, I had no money, and the biggest issue was that my mother her other plans after the school, she would take the scooter with her as per the pre-planning. But I just could not let this Golden oppurtinity pass by, so I just made some quick decisions and asked mother for some extra cash and the scooter, but I also felt bad for my mother, as she had her plans with her friend for today as well. My mother sent me &#8377;200 via UPI and I waited until 4:35pm for Manisha to get ready and on my way I couldn't find a single place from where I could withdraw money from the bank account, so I called mom and luckily she was in the market and was about to just go home, she gave me &#8377;200 cash and I went on my way to Shantipur, Dhakinline...<br>
+                        dropped Mani at the restaurant with her sister and her sister's To-Be-Husband, and filled up Bishal's scooter's gas with &#8377;100 and went to the restaurant. There we had one bowl of 1/2 Thuppa each while her sister and Bhinaju had a plate of chowmin and fried-rice, which they shared. They really make a great couple.
+                    </p>
+                    <p>Let me summarise some things that I may have left out...<br>
+                        We had a cold and chilly ride, but she kept me warm as she hugged me tight.<br>
+                        It was really a chilly night,<br>
+                        Where we hugged tight.<br>
+                    </p>
+                    <p>
+                        This was my life's first valentine as well as her's too.
+                    </p>
+                    <p>
+                        Now we gathered quiet a lot of memories to look onto when we become old.
+                    </p>
+                </div>
+                <div class="diaryControl">
+                    <div class="backgroundD"></div>
+                    <div class="pageNumber">
+                        <span id="pgNum"></span>
+                        <div class="short-menu hide">
+                            <ul>
+                                <li>
+                                    <a href="javascript:p1()">republic day</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:p2()">a lovely day</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:p3()">home visit</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:p4()">first valentine</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <button id="prevBtn">BACK</button>
+                <button id="nextBtn">NEXT</button>
             </div>
         </div>
     </div>
-
+    </section>
     <div class="audio-container hide">
         <audio controls id="audio1">
             <source src="media/audio/super_idol_but_it's_chill(128k).mp3" type="audio/mpeg" />
         </audio>
     </div>
+
+    <script src="js/dControl.js"></script>
 </body>

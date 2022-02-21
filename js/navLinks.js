@@ -1,9 +1,26 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-const homeButton= document.getElementById('home-btn')
-const home= document.getElementsByClassName('home')[0]
-const friendButton= document.getElementById('friend-btn')
-const friendOptions= document.getElementsByClassName('dropdown')[0]
+const 
+toggleButton = document.getElementsByClassName('toggle-button')[0],
+navbarLinks = document.getElementsByClassName('navbar-links')[0],
+homeButton= document.getElementById('home-btn'),
+home= document.getElementsByClassName('home')[0],
+friendButton= document.getElementById('friend-btn'),
+friendOptions= document.getElementsByClassName('dropdown')[0],
+lc0="white",
+lc1 = "rgb(22, 122, 189)",
+lf1="1.4em",
+lf0="1em"
+
+addEventListener('click',()=>{
+    // home
+    if(home.classList.contains('active')){
+        homeButton.style.color=lc1
+        homeButton.style.fontSize=lf1
+    }
+    else {
+        homeButton.style.color=lc0
+        homeButton.style.fontSize=lf0
+    }
+})
 
 homeButton.addEventListener('click',()=>{
     home.classList.add('active')

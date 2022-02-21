@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <meta name="theme-color" content="#030005" />
     <meta name='description' content="Error 404 - Not Found | The object you are searching for can not be found" />
     <title>FATAL ERROR: 404</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
@@ -12,6 +13,11 @@
         * {
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+            width: 0px;
         }
 
         body {
@@ -120,22 +126,29 @@
 
         button {
             border: 1px solid;
-            border-radius: 20%;
+            border-radius: 25px;
             font-size: 2em;
             font-weight: bold;
+            padding: 2px 20px 2px 20px;
             background-color: #8400ff;
         }
     </style>
 </head>
 
 <body>
+
+    <!-- <div class="top-para">
+        <h3></h3>
+        <p></p>
+    </div> -->
+
     <div id="notfound">
         <div class="notfound">
             <div class="notfound-404">
                 <h1>404</h1>
                 <h2>Page not found</h2>
             </div>
-            <button onclick="goBack()">Back</button>
+            <button onclick="goBack()">Go bAck</button>
         </div>
     </div>
 
