@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <style>
+        html {justify-content:center;align-items:center;text-align:center;user-select:none;color: #888;background-color: #000}
+        table {border-collapse: collapse; border-spacing: 0;text-align: center;text-transform: uppercase;margin: 1em 10vw;width:80vw}
+        th,td,tr {border: 1px solid #944;padding: 4px 1em}
+        td {font-weight: 400}
+        ::-webkit-scrollbar{display:none}
+    </style>
+    <style>
+        tr:nth-child(2) {color: lightblue}
+        tr:nth-child(4) td:nth-child(3){color:red;font-weight:bold;}
+        tr:nth-child(16) td:nth-child(3){color:red;font-weight:bold;}
+        tr:nth-child(19) td:nth-child(3),tr:nth-child(19) td:nth-child(2){color:green;}
+    </style>
+</head>
+<div root></div>
+<script>
+const tableDiv = document.querySelector("[root]")
+
+window.addEventListener("load",e=>{
+    let table = document.createElement("table")
+    let headerRow = document.createElement("tr")
+
+    headers.forEach(headerText => {
+        let header = document.createElement('th')
+        let textNode = document.createTextNode(headerText)
+        header.appendChild(textNode)
+        headerRow.appendChild(header)
+    })
+
+    table.appendChild(headerRow)
+    items.forEach(item=>{
+        let row = document.createElement("tr")
+        Object.values(item).forEach(text=>{
+            let cell =  document.createElement("td")
+            let textNode = document.createTextNode(text)
+            cell.appendChild(textNode)
+            row.appendChild(cell)
+        })
+        table.appendChild(row)
+    })
+    tableDiv.appendChild(table)
+})
+</script>
+<script>
+let headers = ["No.","Object","price","Amt. left"]
+
+let items = [
+    {num:'',obj:'',price:'',al:3000+500},
+    {num:'',obj:'sadiya-tsk',price:'150',al:3500-150},
+    {num:1,obj:'jaya enterprise',price:721,al:3350-721},
+    {num:2,obj:'umbrella',price:260,al:2629-260},
+    {num:3,obj:'jio recharge',price:239,al:2369-239},
+    {num:4,obj:'wine shop',price:120,al:2130-120},
+    {num:5,obj:'bus fare(tsk-digboi)',price:60,al:2010-60},
+    {num:6,obj:'bus fare(digboi-tsk[2])',price:60*2,al:1950-60*2},
+    {num:7,obj:'bus fare(tsk-sadiya)',price:150*2,al:1830-150*2},
+    {num:8,obj:'auto fare(pg-bus)',price:30,al:1530-30},
+    {num:9,obj:'auto fare(digboiBus-digboiCollege)',price:40,al:1500-40},
+    {num:10,obj:'meat(digboi)',price:100,al:1460-100},
+    {num:11,obj:'sim city',price:45,al:1360-45},
+    {num:12,obj:'college(4-april)(2-oreo and signature)',price:35,al:1315-35},
+
+    {num:13,obj:'Gpay @ Jaya Store (total from 4th april till 11th)',
+    price:20+30+20+60+20+40+40+30+50+10+10+30+30+30+50+40+50,
+    al:1280-560},
+
+    {num:14,obj:'Total mobile data-recharges',price:15+15+5,al:720-35},
+    {num:15,obj:'chai @ hotel on 4th-april',price:10+10+10+20,al:685-50},
+    {num:16,obj:'gave 5 to anis',price:5,al:635-5},
+    {num:17,obj:'Namcold',price:30,al:630-30},
+    {num:18,obj:'missing amount record',price:0,al:600-289},
+    {num:19,obj:'',price:0,al:0},
+    {num:20,obj:'',price:0,al:0}
+]
+
+</script>
