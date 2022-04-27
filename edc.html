@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+
+<body root>
+    <div>
+        <div>
+            <input type="text" placeholder="type here!" text-input>
+        </div>
+    </div>
+    <div>
+        <style>
+            .output {
+                padding: 2em;
+                text-align: center;
+                font-size: 1.2em;
+                font-weight: 350;
+            }
+        </style>
+        <div text-res class="output"></div>
+    </div>
+</body>
+<script>
+    const inputTxt = document.querySelector('[text-input]')
+    const outTxt = document.querySelector('[text-res]')
+    inputTxt.addEventListener('input', e => {
+        const value = e.target.value
+        
+        const s = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+            's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+            'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 0, 1, 2, 3, 4, 5, 6,
+            7, 8, 9
+        ]
+
+        const r = ['@``', '!`$#', '$#@', '%%#', '$^', '^%%', '#$$', '$##@', '%JH', 'lol', 'cagg', 'pass', 'm**',
+            '#$^', '**&*', '$^#', '!~', '~!@#', '()*', '()((', '(((', '.Ij', 'i__', '-_-', '+_+', '*^*',
+            ':D', ';)', 'pH', 'SS', 'f.', '|;;', 'O00', 'iIi', 'PO', 'KO', ']', '-{', '{}', 'g|]', '??>',
+            '.', 'gl', 'fpk', 'ggii', 'PJJJ', 'DDDD', 'M', 'A', 'N', 'I', 'S', 'H', 'A', 'A', 'D', 'H', 'I',
+            'K', 'A', 'R', 'I'
+        ]
+
+        // console.log(r.length)
+        outTxt.textContent = value
+            .replace(s[0], r[0]).replace(s[1], r[1]).replace(s[2], r[2]).replace(s[3], r[3]).replace(s[4], r[4])
+            .replace(s[5], r[5]).replace(s[6], r[6]).replace(s[7], r[7]).replace(s[8], r[8]).replace(s[9], r[9])
+            .replace(s[10], r[10])
+            .replace(s[11], r[11]).replace(s[12], r[12]).replace(s[13], r[13]).replace(s[14], r[14]).replace(s[
+                15], r[15]).replace(s[16], r[16]).replace(s[17], r[17]).replace(s[18], r[18]).replace(s[19], r[
+                19]).replace(s[20], r[20])
+            .replace(s[21], r[21]).replace(s[22], r[22]).replace(s[23], r[23]).replace(s[24], r[24]).replace(s[
+                25], r[25]).replace(s[26], r[26]).replace(s[27], r[27]).replace(s[28], r[28]).replace(s[29], r[
+                29]).replace(s[30], r[30])
+            .replace(s[31], r[31]).replace(s[32], r[32]).replace(s[33], r[33]).replace(s[34], r[34]).replace(s[
+                35], r[35]).replace(s[36], r[36]).replace(s[37], r[37]).replace(s[38], r[38]).replace(s[39], r[
+                39]).replace(s[40], r[40])
+            .replace(s[41], r[41]).replace(s[42], r[42]).replace(s[43], r[43]).replace(s[44], r[44]).replace(s[
+                45], r[45]).replace(s[46], r[46]).replace(s[47], r[47]).replace(s[48], r[48]).replace(s[49], r[
+                49]).replace(s[50], r[50])
+            .replace(s[51], r[51]).replace(s[52], r[52]).replace(s[53], r[53]).replace(s[54], r[54]).replace(s[
+                55], r[55]).replace(s[56], r[56]).replace(s[57], r[57]).replace(s[58], r[58]).replace(s[59], r[
+                59]).replace(s[60], r[60])
+            .replace(s[61], r[61])
+
+    })
+</script>
+</html>

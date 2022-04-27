@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="description" content="Calculator application for the web."/>
+        <meta name="author" content="Ankit Saikia"/>
+        <style>
+            .calculator-button {
+                display: flex;
+            }
+            li {list-style: none;border: 1px solid black;height:2em;width:2em;margin:1em;text-align: center;}
+            ul {display: flex;}
+            .display {display: flex}
+            .display-res {
+                text-align: center;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div>
+                <div calculator-body>
+                    <div calculator-display class="display">
+                        <div results-output class="display-res">90000</div>
+                    </div>
+                    <div calculator-button>
+                        <ul row-1>
+                            <li calc-sum>+</li>
+                            <li calc-sub>-</li>
+                            <li calc-mul>x</li>
+                            <li calc-per>%</li>
+                        </ul>
+                        <ul row-2>
+                            <li in-1>1</li>
+                            <li in-2>2</li>
+                            <li in-3>3</li>
+                            <li calc-div>/</li>
+                        </ul>
+                        <ul row-3>
+                            <li in-4>4</li>
+                            <li in-5>5</li>
+                            <li in-6>6</li>
+                            <li calc-back>bk</li>
+                        </ul>
+                        <ul row-4>
+                            <li in-7>7</li>
+                            <li in-8>8</li>
+                            <li in-9>9</li>
+                        </ul>
+                        <ul row-5>
+                            <li></li>
+                            <li in-0>0</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <script defer>
+        const 
+        doSum = document.querySelector('[calc-sum]'),
+        doSub = document.querySelector('[calc-sub]'),
+        doMul = document.querySelector('[calc-mul]'),
+        doDiv = document.querySelector('[calc-div]')
+
+        const 
+        b1 = document.querySelector('[in-1]'),
+        b2 = document.querySelector('[in-2]'),
+        b3 = document.querySelector('[in-3]'),
+        b4 = document.querySelector('[in-4]'),
+        b5 = document.querySelector('[in-5]'),
+        b6 = document.querySelector('[in-6]'),
+        b7 = document.querySelector('[in-7]'),
+        b8 = document.querySelector('[in-8]'),
+        b9 = document.querySelector('[in-9]'),
+        b0 = document.querySelector('[in-0]')
+
+        const 
+        dis = document.querySelector('[results-output]')
+
+        b1.addEventListener('click',e=>{
+            dis.textContent = 1
+        })
+
+        b2.addEventListener('click',e=>{
+            dis.textContent = 2
+        })
+
+        b3.addEventListener('click',e=>{
+            dis.textContent = 3
+        })
+
+        b4.addEventListener('click',e=>{
+            dis.textContent = 4
+        })
+
+        b5.addEventListener('click',e=>{
+            dis.textContent = 5
+        })
+
+        b6.addEventListener('click',e=>{
+            dis.textContent = 6
+        })
+
+        b7.addEventListener('click',e=>{
+            dis.textContent = 7
+        })
+
+        b8.addEventListener('click',e=>{
+            dis.textContent = 8
+        })
+
+        b9.addEventListener('click',e=>{
+            dis.textContent = 9
+        })
+
+        b0.addEventListener('click',e=>{
+            dis.textContent = 0
+        })
+    </script>
+</html>

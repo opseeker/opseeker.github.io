@@ -9,13 +9,19 @@
         ::-webkit-scrollbar{display:none}
     </style>
     <style>
+        tr:hover{color: yellow; background-color: #222;}
         tr:nth-child(2) {color: lightblue}
         tr:nth-child(4) td:nth-child(3){color:red;font-weight:bold;}
         tr:nth-child(16) td:nth-child(3){color:red;font-weight:bold;}
         tr:nth-child(19) td:nth-child(3),tr:nth-child(19) td:nth-child(2){color:green;}
     </style>
+    <style>
+        tr:nth-child(1):hover {color: yellow}
+    </style>
 </head>
+
 <div root></div>
+
 <script>
 const tableDiv = document.querySelector("[root]")
 
@@ -44,11 +50,18 @@ window.addEventListener("load",e=>{
     tableDiv.appendChild(table)
 })
 </script>
+
 <script>
 let headers = ["No.","Object","price","Amt. left"]
+let jaya_april_after_bihu = 40+20+40+20+100
+let jaya_b1 = 20+30+20+60+20+40+40+30+50+10+10+30+30+30+50+40+50
+let al0 = 600-289-jaya_april_after_bihu
+let p0 = 500+4700
+let al1 = al0-45+p0
+
 
 let items = [
-    {num:'',obj:'',price:'',al:3000+500},
+    {num:'-',obj:'-',price:' - ',al:3000+500},
     {num:'',obj:'sadiya-tsk',price:'150',al:3500-150},
     {num:1,obj:'jaya enterprise',price:721,al:3350-721},
     {num:2,obj:'umbrella',price:260,al:2629-260},
@@ -64,16 +77,23 @@ let items = [
     {num:12,obj:'college(4-april)(2-oreo and signature)',price:35,al:1315-35},
 
     {num:13,obj:'Gpay @ Jaya Store (total from 4th april till 11th)',
-    price:20+30+20+60+20+40+40+30+50+10+10+30+30+30+50+40+50,
-    al:1280-560},
+    price:jaya_b1,
+    al:1280-jaya_b1},
 
     {num:14,obj:'Total mobile data-recharges',price:15+15+5,al:720-35},
     {num:15,obj:'chai @ hotel on 4th-april',price:10+10+10+20,al:685-50},
-    {num:16,obj:'gave 5 to anis',price:5,al:635-5},
+    {num:16,obj:'charity',price:5,al:635-5},
     {num:17,obj:'Namcold',price:30,al:630-30},
-    {num:18,obj:'missing amount record',price:0,al:600-289},
-    {num:19,obj:'',price:0,al:0},
-    {num:20,obj:'',price:0,al:0}
+    {num:18,obj:'missing amount record',price:'???',al:600-289},
+    
+    {num:'X',obj:'X',price:'X',al:'X'},
+
+    {num:19,obj:'Jaya store online payment after BIHU - (april)',price:jaya_april_after_bihu,al:al0},
+    {num:20,obj:'play store (sim city cash)',price:45,al:al0-45},
+    {num:21,obj:'PG fees and 500 extra',price:p0,al:al1},
+    {num:22,obj:'pg fee',price:4700,al:al1-4700},
+    {num:23,obj:'green WW',price:200,al:al1-4700-200},
+    {num:24,obj:'actual_amount left',price:0,al:461.96}
 ]
 
 </script>
