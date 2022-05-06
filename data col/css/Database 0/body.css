@@ -1,0 +1,52 @@
+table {
+    border-collapse: collapse;
+}
+
+.database-0 {
+    background-color: teal;
+    width: 40%;
+    height: auto;
+    border: 1px solid #000;
+    position: relative;
+    top: 1.5em;
+    left: 1em
+}
+
+.database-0 table {
+    width: 100%;
+    padding: 1em 0em 1em 0em;
+    position: relative;
+}
+
+.database-0 table th {
+    font-weight: bold;
+    padding: 2px
+}
+
+.database-0 .tBody td {
+    border: 1px solid #fff;
+    padding: 1em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.database-0 .tBody tr td:nth-child(1){
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.database-0 .tBody tr td:nth-child(2){
+    text-transform: capitalize
+}
+
+.database-0 .header td{
+    background-color: rgb(90, 172, 172);
+    text-transform: uppercase;
+    font-weight: bold;  
+}
+
+.database-0 table tr td:nth-child(4){
+    text-transform: uppercase;
+    color: rgb(100, 3, 3);
+    font-weight: bold
+}

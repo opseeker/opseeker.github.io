@@ -1,0 +1,60 @@
+.database-0 {
+    padding: 1em;
+    color: #000;
+    text-decoration: none;
+}
+
+.database-0 .header td {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 2px 1em
+}
+
+.database-2 {
+    width: 40vw;
+    padding: 2em;
+    position: relative;
+}
+
+.database-2 table{
+    background-color: blue; 
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000
+}
+
+.database-2 table td {
+    padding: 1em 0
+}
+
+.database-1 {
+    padding: 2em;
+    width: 30vw;
+    height: auto;
+    position: relative;
+}
+
+.database-1 table {
+    background-color: rgb(81, 81, 31);
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.database-1 table th {
+    padding: .4em
+}
+
+.diff-exp {
+    background-color: rgb(25, 86, 48);
+    color:#000;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.plan-exp {
+    background-color: green
+}
+.actual-exp {
+    background-color: orange
+}
