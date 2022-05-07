@@ -14,11 +14,22 @@
         width: 120px
       }
 
-      #allAnime, #mcReader {
+      #allAnime, #mcReader, #asuraScans, #reaperScans, #realmScans {
         position: relative;
-        padding: 2em 0 2em 35%;
+        padding: 1em 0 1em 35%;
       }
-      #allAnime .logo-img, #mcReader .logo-img {
+      #asuraScans .logo-img {
+        width: 50px
+      }
+      #reaperScans .logo-img {
+        width: 100px;
+        padding: 5px
+      }
+      #realmScans .logo-img {
+        width: 70px;
+        background-image: linear-gradient(to left, rgb(204, 69, 181),rgb(116, 37, 234))
+      }
+      #allAnime .logo-img, #mcReader .logo-img, #asuraScans .logo-img {
         animation: fade-in 1s linear;
       }
       @keyframes fade-in {
@@ -31,23 +42,30 @@
       }
   </style>
 </head>
+
 <body id="root">
   <div container class="container">
     <div allAnime id="allAnime">
       <a href="https://allanime.site/">
         <img src="https://allanimemedias.b-cdn.net/media/allanime.png" class="logo-img">
       </a>
-      <div class="container-0">
-        <h3><strong style="color: #333;font-family: Phantom;">All Anime</strong></h3>
-      </div>
     </div>
     <div mcReader id="mcReader">
       <a href="https://www.mcreader.net/">
         <img src="https://www.mcreader.net/static/img/logo.png" class="logo-img">
       </a>
     </div>
+    <div asuraScans id="asuraScans">
+      <a href="https://www.asurascans.com/"><img src="https://www.asurascans.com/wp-content/uploads/2021/03/Group_1.png" class="logo-img"></a>
+    </div>
+    <div reaperScans id="reaperScans">
+      <a href="https://reaperscans.com/"><img src="./may2207/logo-reaper-2.png" class="logo-img"></a>
+    </div>
+    <div realmScans id="realmScans">
+      <a href="https://realmscans.com/"><img src="./may2207/logo-realm-scans-2.webp" class="logo-img"></a>
+    </div>
     <div anime class="anime">
-      <div>
+      <div gogoAnime id="gogoAnime">
         <a href="https://gogoanime.sk/"><img src="https://gogoanime.sk/img/icon/logo.png" class="logo-img"></a>
       </div>
     </div>
